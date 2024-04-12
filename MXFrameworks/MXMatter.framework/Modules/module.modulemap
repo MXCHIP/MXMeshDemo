@@ -1,0 +1,11 @@
+framework module MXMatter {
+  umbrella header "MXMatter.h"
+  export *
+
+  module * { export * }
+}
+
+module MXMatter.Swift {
+  header "MXMatter-Swift.h"
+  requires objc
+}

@@ -1,0 +1,254 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MXMatter
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreBluetooth
+@_exported import CryptoSwift
+import Foundation
+@_exported import MXMatter
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Swift.UInt16 {
+  public var toBytes: [Swift.UInt8] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MXFTPFile {
+  public func infoData() -> Foundation.Data
+  public func packetData() -> Foundation.Data?
+  public func endData() -> Foundation.Data
+  @objc deinit
+}
+public protocol MXMatterDelegate {
+  func getMacAddress(with peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]) -> Swift.String?
+  func matter(matter: MXMatter.MXMatter, didFinishSync gateway: MXMatter.MXMatterGateway, with error: (any Swift.Error)?)
+}
+@objc @_inheritsConvenienceInitializers public class MXMatter : ObjectiveC.NSObject {
+  public func sync(with gateway: MXMatter.MXMatterGateway)
+  public func showLog(status: Swift.Bool)
+  public var delegate: (any MXMatter.MXMatterDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MXMatter.MXMatter : MXMatter.MXMatterGatewayDelegate {
+  public func gateway(gateway: MXMatter.MXMatterGateway, didFinishSync error: (any Swift.Error)?)
+}
+extension MXMatter.MXMatter : CoreBluetooth.CBCentralManagerDelegate {
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+}
+extension Swift.UInt32 {
+  public var toBytes: [Swift.UInt8] {
+    get
+  }
+}
+public protocol MXMatterGatewayDelegate {
+  func gateway(gateway: MXMatter.MXMatterGateway, didFinishSync error: (any Swift.Error)?)
+}
+@objc public class MXMatterGateway : ObjectiveC.NSObject {
+  public init(shareSecrectType: MXMatter.MXBTShareSecrectType!, shareSecrect: Swift.String!, macAddress: Swift.String, subDevices: [MXMatter.MXMatterDevice])
+  @objc deinit
+}
+extension MXMatter.MXMatterGateway : MXMatter.MXFTPDelegate {
+  public func ftp(ftp: MXMatter.MXFTP, onReadyWith error: (any Swift.Error)?)
+  public func ftp(ftp: MXMatter.MXFTP, didFinishWith error: (any Swift.Error)?)
+}
+public enum MXBTOPCodeControl : Swift.UInt16 {
+  case Echo
+  case Reboot
+  case FTPFileInfo
+  case FTPFileData
+  case FTPFileValid
+  public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum MXBTOPCodeEvent : Swift.UInt16 {
+  case status
+  case Echo
+  public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum MXBTStatusCode : Swift.Int32 {
+  case kNoErr
+  case kGeneralErr
+  case kInProgressErr
+  case kUnknownErr
+  case kOptionErr
+  case kSelectorErr
+  case kExecutionStateErr
+  case kPathErr
+  case kParamErr
+  case kUserRequiredErr
+  case kCommandErr
+  case kIDErr
+  case kStateErr
+  case kRangeErr
+  case kRequestErr
+  case kResponseErr
+  case kChecksumErr
+  case kNotHandledErr
+  case kVersionErr
+  case kSignatureErr
+  case kFormatErr
+  case kNotInitializedErr
+  case kAlreadyInitializedErr
+  case kNotInUseErr
+  case kAlreadyInUseErr
+  case kTimeoutErr
+  case kCanceledErr
+  case kAlreadyCanceledErr
+  case kCannotCancelErr
+  case kDeletedErr
+  case kNotFoundErr
+  case kNoMemoryErr
+  case kNoResourcesErr
+  case kDuplicateErr
+  case kImmutableErr
+  case kUnsupportedDataErr
+  case kIntegrityErr
+  case kIncompatibleErr
+  case kUnsupportedErr
+  case kUnexpectedErr
+  case kValueErr
+  case kNotReadableErr
+  case kNotWritableErr
+  case kBadReferenceErr
+  case kFlagErr
+  case kMalformedErr
+  case kSizeErr
+  case kNameErr
+  case kNotPreparedErr
+  case kReadErr
+  case kWriteErr
+  case kMismatchErr
+  case kDateErr
+  case kUnderrunErr
+  case kOverrunErr
+  case kEndingErr
+  case kConnectionErr
+  case kAuthenticationErr
+  case kOpenErr
+  case kTypeErr
+  case kSkipErr
+  case kNoAckErr
+  case kCollisionErr
+  case kBackoffErr
+  case kNoAddressAckErr
+  case kInternalErr
+  case kNoSpaceErr
+  case kCountErr
+  case kEndOfDataErr
+  case kWouldBlockErr
+  case kLookErr
+  case kSecurityRequiredErr
+  case kOrderErr
+  case kUpgradeErr
+  case kAsyncNoErr
+  case kDeprecatedErr
+  case kPermissionErr
+  case kGenericErrorEnd
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+public protocol MXBTChannalDelegate {
+  func onReady(with error: (any Swift.Error)?)
+  func didReceivedData(with data: Foundation.Data)
+}
+@objc public class MXBTChannal : ObjectiveC.NSObject {
+  public var type: MXMatter.MXBTShareSecrectType!
+  public var shareSecrect: Swift.String!
+  public var peripheral: CoreBluetooth.CBPeripheral!
+  public var delegate: (any MXMatter.MXBTChannalDelegate)?
+  public var isOpen: Swift.Bool {
+    get
+  }
+  public func send(data: Foundation.Data)
+  public init(with type: MXMatter.MXBTShareSecrectType, shareSecrect: Swift.String, peripheral: CoreBluetooth.CBPeripheral)
+  @objc deinit
+}
+extension MXMatter.MXBTChannal : CoreBluetooth.CBPeripheralDelegate {
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+  @objc dynamic public func peripheralIsReady(toSendWriteWithoutResponse peripheral: CoreBluetooth.CBPeripheral)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didModifyServices invalidatedServices: [CoreBluetooth.CBService])
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateNotificationStateFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+}
+extension MXMatter.MXBTChannal {
+  public func readyToSend(packets: [Foundation.Data])
+  public func onReceived(data: Foundation.Data)
+}
+public class MXMatterDevice {
+  public init(meshAddress: Swift.UInt16!, serviceIndex: Swift.UInt8!, serviceKind: Swift.UInt16!)
+  @objc deinit
+}
+public enum MXBTShareSecrectType : Swift.UInt8 {
+  case networkKey
+  case LinkKitDeviceSecrect
+  case fogDeviceSecrect
+  case bleMAC
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public protocol MXFTPDelegate {
+  func ftp(ftp: MXMatter.MXFTP, onReadyWith error: (any Swift.Error)?)
+  func ftp(ftp: MXMatter.MXFTP, didFinishWith error: (any Swift.Error)?)
+}
+@objc public class MXFTP : ObjectiveC.NSObject {
+  public init(with keyType: MXMatter.MXBTShareSecrectType!, shareSecrect: Swift.String, peripheral: CoreBluetooth.CBPeripheral)
+  public func file(with path: Foundation.URL, name: Swift.String) -> MXMatter.MXFTPFile?
+  public func file(with data: Foundation.Data, name: Swift.String) -> MXMatter.MXFTPFile?
+  public func transfer(file: MXMatter.MXFTPFile)
+  public func rebootDevice()
+  @objc deinit
+}
+extension MXMatter.MXFTP : MXMatter.MXBTDelegate {
+  public func onReady(with error: (any Swift.Error)?)
+  public func didReceived(data: Foundation.Data, type: MXMatter.MXBTOPCodeEvent)
+}
+public protocol MXBTDelegate {
+  func onReady(with error: (any Swift.Error)?)
+  func didReceived(data: Foundation.Data, type: MXMatter.MXBTOPCodeEvent)
+}
+@objc public class MXBT : ObjectiveC.NSObject {
+  public var delegate: (any MXMatter.MXBTDelegate)?
+  public var MPS: Swift.UInt16 {
+    get
+  }
+  public init(with type: MXMatter.MXBTShareSecrectType, shareSecrect: Swift.String, peripheral: CoreBluetooth.CBPeripheral)
+  public func send(data: Foundation.Data, in type: MXMatter.MXBTOPCodeControl)
+  @objc deinit
+}
+extension MXMatter.MXBT : MXMatter.MXBTChannalDelegate {
+  public func onReady(with error: (any Swift.Error)?)
+  public func didReceivedData(with data: Foundation.Data)
+}
+extension MXMatter.MXBTOPCodeControl : Swift.Equatable {}
+extension MXMatter.MXBTOPCodeControl : Swift.Hashable {}
+extension MXMatter.MXBTOPCodeControl : Swift.RawRepresentable {}
+extension MXMatter.MXBTOPCodeEvent : Swift.Equatable {}
+extension MXMatter.MXBTOPCodeEvent : Swift.Hashable {}
+extension MXMatter.MXBTOPCodeEvent : Swift.RawRepresentable {}
+extension MXMatter.MXBTStatusCode : Swift.Equatable {}
+extension MXMatter.MXBTStatusCode : Swift.Hashable {}
+extension MXMatter.MXBTStatusCode : Swift.RawRepresentable {}
+extension MXMatter.MXBTShareSecrectType : Swift.Equatable {}
+extension MXMatter.MXBTShareSecrectType : Swift.Hashable {}
+extension MXMatter.MXBTShareSecrectType : Swift.RawRepresentable {}

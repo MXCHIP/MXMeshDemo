@@ -1,0 +1,11 @@
+framework module MXRGBMusic {
+  umbrella header "MXRGBMusic.h"
+  export *
+
+  module * { export * }
+}
+
+module MXRGBMusic.Swift {
+  header "MXRGBMusic-Swift.h"
+  requires objc
+}

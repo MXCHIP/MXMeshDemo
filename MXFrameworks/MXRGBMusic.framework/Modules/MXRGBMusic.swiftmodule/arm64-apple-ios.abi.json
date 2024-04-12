@@ -1,0 +1,441 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXRGBMusic",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXRGBMusicDelegate",
+        "printedName": "MXRGBMusicDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(with:saturation:brightness:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MXRGBMusic0A8DelegateP6update4with10saturation10brightnessys6UInt16V_s5UInt8VAKtF",
+            "mangledName": "$s10MXRGBMusic0A8DelegateP6update4with10saturation10brightnessys6UInt16V_s5UInt8VAKtF",
+            "moduleName": "MXRGBMusic",
+            "genericSig": "<τ_0_0 where τ_0_0 : MXRGBMusic.MXRGBMusicDelegate>",
+            "sugared_genericSig": "<Self where Self : MXRGBMusic.MXRGBMusicDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10MXRGBMusic0A8DelegateP",
+        "mangledName": "$s10MXRGBMusic0A8DelegateP",
+        "moduleName": "MXRGBMusic",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXRGBMusic",
+        "printedName": "MXRGBMusic",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MXRGBMusic",
+                "printedName": "MXRGBMusic.MXRGBMusic",
+                "usr": "c:@M@MXRGBMusic@objc(cs)MXRGBMusic"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MXRGBMusic@objc(cs)MXRGBMusic(im)init",
+            "mangledName": "$s10MXRGBMusicAACABycfc",
+            "moduleName": "MXRGBMusic",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MXRGBMusicAAC5startyyF",
+            "mangledName": "$s10MXRGBMusicAAC5startyyF",
+            "moduleName": "MXRGBMusic",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MXRGBMusicAAC4stopyyF",
+            "mangledName": "$s10MXRGBMusicAAC4stopyyF",
+            "moduleName": "MXRGBMusic",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXRGBMusicDelegate",
+                    "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                    "usr": "s:10MXRGBMusic0A8DelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvp",
+            "mangledName": "$s10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvp",
+            "moduleName": "MXRGBMusic",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXRGBMusicDelegate",
+                        "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                        "usr": "s:10MXRGBMusic0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvg",
+                "mangledName": "$s10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvg",
+                "moduleName": "MXRGBMusic",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXRGBMusicDelegate",
+                        "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                        "usr": "s:10MXRGBMusic0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvs",
+                "mangledName": "$s10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvs",
+                "moduleName": "MXRGBMusic",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvM",
+                "mangledName": "$s10MXRGBMusicAAC8delegateAA0A8Delegate_pSgvM",
+                "moduleName": "MXRGBMusic",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(with:saturation:brightness:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MXRGBMusicAAC6update4with10saturation10brightnessys6UInt16V_s5UInt8VAJtF",
+            "mangledName": "$s10MXRGBMusicAAC6update4with10saturation10brightnessys6UInt16V_s5UInt8VAJtF",
+            "moduleName": "MXRGBMusic",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MXRGBMusic@objc(cs)MXRGBMusic",
+        "mangledName": "$s10MXRGBMusicAAC",
+        "moduleName": "MXRGBMusic",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXRGBMusic",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 896,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 994,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "FloatLiteral",
+      "offset": 1118,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1226,
+      "length": 3,
+      "value": "360"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1263,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1306,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "StringLiteral",
+      "offset": 1627,
+      "length": 47,
+      "value": "\"device name:\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "StringLiteral",
+      "offset": 1673,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2088,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2148,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}
