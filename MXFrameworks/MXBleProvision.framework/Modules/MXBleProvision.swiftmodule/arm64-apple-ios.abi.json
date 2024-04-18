@@ -677,6 +677,86 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "ResultCode_ConnectWifiFail",
+            "printedName": "ResultCode_ConnectWifiFail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXBleProvision.MXProvisionResultCode.Type) -> MXBleProvision.MXProvisionResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXProvisionResultCode",
+                    "printedName": "MXBleProvision.MXProvisionResultCode",
+                    "usr": "s:14MXBleProvision21MXProvisionResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXBleProvision.MXProvisionResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXProvisionResultCode",
+                        "printedName": "MXBleProvision.MXProvisionResultCode",
+                        "usr": "s:14MXBleProvision21MXProvisionResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXBleProvision21MXProvisionResultCodeO0dE16_ConnectWifiFailyA2CmF",
+            "mangledName": "$s14MXBleProvision21MXProvisionResultCodeO0dE16_ConnectWifiFailyA2CmF",
+            "moduleName": "MXBleProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_ConnectCloudFail",
+            "printedName": "ResultCode_ConnectCloudFail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXBleProvision.MXProvisionResultCode.Type) -> MXBleProvision.MXProvisionResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXProvisionResultCode",
+                    "printedName": "MXBleProvision.MXProvisionResultCode",
+                    "usr": "s:14MXBleProvision21MXProvisionResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXBleProvision.MXProvisionResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXProvisionResultCode",
+                        "printedName": "MXBleProvision.MXProvisionResultCode",
+                        "usr": "s:14MXBleProvision21MXProvisionResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXBleProvision21MXProvisionResultCodeO0dE17_ConnectCloudFailyA2CmF",
+            "mangledName": "$s14MXBleProvision21MXProvisionResultCodeO0dE17_ConnectCloudFailyA2CmF",
+            "moduleName": "MXBleProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -1296,8 +1376,8 @@
           },
           {
             "kind": "Function",
-            "name": "requestBleKey",
-            "printedName": "requestBleKey(params:type:handler:)",
+            "name": "requestCipherKey",
+            "printedName": "requestCipherKey(params:type:handler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1365,13 +1445,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate(im)requestBleKeyWithParams:type:handler:",
-            "mangledName": "$s14MXBleProvision0aB8DelegateP13requestBleKey6params4type7handlerySDySSypGSg_SiySSSgctF",
+            "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate(im)requestCipherKeyWithParams:type:handler:",
+            "mangledName": "$s14MXBleProvision0aB8DelegateP16requestCipherKey6params4type7handlerySDySSypGSg_SiySSSgctF",
             "moduleName": "MXBleProvision",
             "genericSig": "<τ_0_0 where τ_0_0 : MXBleProvision.MXBleProvisionDelegate>",
             "sugared_genericSig": "<Self where Self : MXBleProvision.MXBleProvisionDelegate>",
             "protocolReq": true,
-            "objc_name": "requestBleKeyWithParams:type:handler:",
+            "objc_name": "requestCipherKeyWithParams:type:handler:",
             "declAttributes": [
               "Optional",
               "ObjC",
@@ -3682,7 +3762,7 @@
           {
             "kind": "Function",
             "name": "provisionDevice",
-            "printedName": "provisionDevice(productKey:deviceName:secret:delegate:)",
+            "printedName": "provisionDevice(productKey:deviceName:secret:httpURL:mqttURL:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3719,6 +3799,36 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
@@ -3732,8 +3842,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogProvisionManager(im)provisionDeviceWithProductKey:deviceName:secret:delegate:",
-            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC15provisionDevice10productKey10deviceName6secret8delegateySS_S2SSgAA0aB8Delegate_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogProvisionManager(im)provisionDeviceWithProductKey:deviceName:secret:httpURL:mqttURL:delegate:",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC15provisionDevice10productKey10deviceName6secret7httpURL04mqttM08delegateySS_S2SSgA2kA0aB8Delegate_pSgtF",
             "moduleName": "MXBleProvision",
             "declAttributes": [
               "Dynamic",
@@ -4809,7 +4919,7 @@
           {
             "kind": "Function",
             "name": "startProvision",
-            "printedName": "startProvision(type:productKey:deviceName:mac:secret:delegate:)",
+            "printedName": "startProvision(type:productKey:deviceName:mac:secret:httpURL:mqttURL:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4876,6 +4986,36 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
@@ -4889,8 +5029,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleProvisionManager(cm)startProvisionWithType:productKey:deviceName:mac:secret:delegate:",
-            "mangledName": "$s14MXBleProvision0aB7ManagerC05startB04type10productKey10deviceName3mac6secret8delegateySi_S2SSgA2kA0aB8Delegate_pSgtFZ",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleProvisionManager(cm)startProvisionWithType:productKey:deviceName:mac:secret:httpURL:mqttURL:delegate:",
+            "mangledName": "$s14MXBleProvision0aB7ManagerC05startB04type10productKey10deviceName3mac6secret7httpURL04mqttM08delegateySi_S2SSgA4mA0aB8Delegate_pSgtFZ",
             "moduleName": "MXBleProvision",
             "static": true,
             "declAttributes": [
@@ -5218,65 +5358,16 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 176,
+      "offset": 732,
       "length": 5,
-      "value": "10000"
+      "value": "20006"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 802,
       "length": 5,
-      "value": "10002"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 283,
-      "length": 5,
-      "value": "10003"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 337,
-      "length": 5,
-      "value": "20000"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 390,
-      "length": 5,
-      "value": "20001"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 452,
-      "length": 5,
-      "value": "20002"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 515,
-      "length": 5,
-      "value": "20003"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 589,
-      "length": 5,
-      "value": "20004"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 666,
-      "length": 5,
-      "value": "20005"
+      "value": "20007"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
@@ -5344,294 +5435,385 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 750,
+      "offset": 732,
+      "length": 5,
+      "value": "20006"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 802,
+      "length": 5,
+      "value": "20007"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 176,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 226,
+      "length": 5,
+      "value": "10002"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 5,
+      "value": "10003"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 5,
+      "value": "20000"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "20001"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 5,
+      "value": "20002"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 515,
+      "length": 5,
+      "value": "20003"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 589,
+      "length": 5,
+      "value": "20004"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 666,
+      "length": 5,
+      "value": "20005"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 732,
+      "length": 5,
+      "value": "20006"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 802,
+      "length": 5,
+      "value": "20007"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 886,
       "length": 4,
       "value": "0b00"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 918,
       "length": 4,
       "value": "0b01"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 814,
+      "offset": 950,
       "length": 4,
       "value": "0b10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 982,
       "length": 4,
       "value": "0b11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 906,
+      "offset": 1042,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 976,
+      "offset": 1112,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 982,
+      "offset": 1118,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 750,
+      "offset": 886,
       "length": 4,
       "value": "0b00"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 918,
       "length": 4,
       "value": "0b01"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 814,
+      "offset": 950,
       "length": 4,
       "value": "0b10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 982,
       "length": 4,
       "value": "0b11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 750,
+      "offset": 886,
       "length": 4,
       "value": "0b00"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 918,
       "length": 4,
       "value": "0b01"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 814,
+      "offset": 950,
       "length": 4,
       "value": "0b10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 982,
       "length": 4,
       "value": "0b11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1135,
+      "offset": 1271,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "Array",
-      "offset": 1241,
+      "offset": 1377,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1411,
+      "offset": 1547,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1718,
+      "offset": 1854,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1825,
+      "offset": 1961,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1903,
+      "offset": 2039,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1907,
+      "offset": 2043,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1962,
+      "offset": 2098,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1966,
+      "offset": 2102,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2028,
+      "offset": 2164,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2040,
+      "offset": 2176,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2142,
+      "offset": 2278,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2155,
+      "offset": 2291,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2198,
+      "offset": 2334,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2366,
+      "offset": 2502,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2370,
+      "offset": 2506,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "Array",
-      "offset": 2891,
+      "offset": 3027,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 2934,
+      "offset": 3070,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 3062,
+      "offset": 3198,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 3338,
+      "offset": 3474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 3367,
+      "offset": 3503,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 3403,
+      "offset": 3539,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3484,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
       "offset": 3620,
       "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3756,
+      "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 3818,
+      "offset": 3954,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 4069,
+      "offset": 4205,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 5003,
+      "offset": 5139,
       "length": 1,
       "value": "1"
     },
@@ -6380,294 +6562,294 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12399,
+      "offset": 12402,
       "length": 8,
       "value": "\"params\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12423,
+      "offset": 12426,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12865,
+      "offset": 12868,
       "length": 54,
       "value": "\"device_name = \""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12918,
+      "offset": 12921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13374,
+      "offset": 13377,
       "length": 54,
       "value": "\"device_name = \""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13427,
+      "offset": 13430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13570,
+      "offset": 13573,
       "length": 11,
       "value": "\"Hi,Server\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13648,
+      "offset": 13651,
       "length": 4,
       "value": "\"12\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "Array",
-      "offset": 14003,
+      "offset": 14006,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15001,
+      "offset": 15004,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15062,
+      "offset": 15065,
       "length": 10,
       "value": "\"%02X%02X\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15085,
+      "offset": 15088,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15099,
+      "offset": 15102,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15141,
+      "offset": 15144,
       "length": 6,
       "value": "\"01A8\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15207,
+      "offset": 15210,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15238,
+      "offset": 15241,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15252,
+      "offset": 15255,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15266,
+      "offset": 15269,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15280,
+      "offset": 15283,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15325,
+      "offset": 15328,
       "length": 31,
       "value": "\"%02x:%02x:%02x:%02x:%02x:%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15369,
+      "offset": 15372,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15384,
+      "offset": 15387,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15399,
+      "offset": 15402,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15414,
+      "offset": 15417,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15429,
+      "offset": 15432,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15443,
+      "offset": 15446,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15897,
+      "offset": 15900,
       "length": 20,
       "value": "\"蓝牙连接成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16096,
+      "offset": 16099,
       "length": 20,
       "value": "\"蓝牙连接失败\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16357,
+      "offset": 16360,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16499,
+      "offset": 16502,
       "length": 6,
       "value": "\"FEB3\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16544,
+      "offset": 16547,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16676,
+      "offset": 16679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17045,
+      "offset": 17048,
       "length": 6,
       "value": "\"FEB3\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17235,
+      "offset": 17238,
       "length": 6,
       "value": "\"FED5\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17375,
+      "offset": 17378,
       "length": 6,
       "value": "\"FED6\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17517,
+      "offset": 17520,
       "length": 6,
       "value": "\"FED8\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18143,
+      "offset": 18146,
       "length": 14,
       "value": "\"发现服务\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18206,
+      "offset": 18209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18749,
+      "offset": 18752,
       "length": 26,
       "value": "\"启用特征服务成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18942,
+      "offset": 18945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 19388,
+      "offset": 19391,
       "length": 47,
       "value": "\"收到设备回消息：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 19434,
+      "offset": 19437,
       "length": 2,
       "value": "\"\""
     },
@@ -7416,315 +7598,315 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13327,
+      "offset": 13330,
       "length": 8,
       "value": "\"params\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13351,
+      "offset": 13354,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13868,
+      "offset": 13871,
       "length": 4,
       "value": "\"00\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 13874,
+      "offset": 13877,
       "length": 4,
       "value": "\"12\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13880,
+      "offset": 13883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14216,
+      "offset": 14219,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14226,
+      "offset": 14229,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "Array",
-      "offset": 14613,
+      "offset": 14616,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15611,
+      "offset": 15614,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15672,
+      "offset": 15675,
       "length": 10,
       "value": "\"%02X%02X\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15695,
+      "offset": 15698,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15709,
+      "offset": 15712,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15751,
+      "offset": 15754,
       "length": 6,
       "value": "\"01A8\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15817,
+      "offset": 15820,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15848,
+      "offset": 15851,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15862,
+      "offset": 15865,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15876,
+      "offset": 15879,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15890,
+      "offset": 15893,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15935,
+      "offset": 15938,
       "length": 31,
       "value": "\"%02x:%02x:%02x:%02x:%02x:%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15979,
+      "offset": 15982,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15994,
+      "offset": 15997,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16009,
+      "offset": 16012,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16024,
+      "offset": 16027,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16039,
+      "offset": 16042,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16053,
+      "offset": 16056,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16242,
+      "offset": 16245,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16253,
+      "offset": 16256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16602,
+      "offset": 16605,
       "length": 20,
       "value": "\"蓝牙连接成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16801,
+      "offset": 16804,
       "length": 20,
       "value": "\"蓝牙连接失败\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17062,
+      "offset": 17065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17204,
+      "offset": 17207,
       "length": 6,
       "value": "\"FEB3\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17249,
+      "offset": 17252,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17381,
+      "offset": 17384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17750,
+      "offset": 17753,
       "length": 6,
       "value": "\"FEB3\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17940,
+      "offset": 17943,
       "length": 6,
       "value": "\"FED5\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18080,
+      "offset": 18083,
       "length": 6,
       "value": "\"FED6\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18222,
+      "offset": 18225,
       "length": 6,
       "value": "\"FED8\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18848,
+      "offset": 18851,
       "length": 14,
       "value": "\"发现服务\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18911,
+      "offset": 18914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 19454,
+      "offset": 19457,
       "length": 26,
       "value": "\"启用特征服务成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19647,
+      "offset": 19650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 19840,
+      "offset": 19843,
       "length": 4,
       "value": "\"10\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 19846,
+      "offset": 19849,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 20189,
+      "offset": 20192,
       "length": 47,
       "value": "\"收到设备回消息：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 20235,
+      "offset": 20238,
       "length": 2,
       "value": "\"\""
     },
@@ -7780,735 +7962,812 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1161,
+      "offset": 1216,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1303,
+      "offset": 1358,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1635,
+      "offset": 1690,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1664,
+      "offset": 1719,
       "length": 32,
       "value": "\"发给设备的数据：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1695,
+      "offset": 1750,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2363,
+      "offset": 2418,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2929,
+      "offset": 2965,
+      "length": 33,
+      "value": "\"收到设备的消息：\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2997,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3033,
       "length": 9,
       "value": "\"msgtype\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3076,
+      "offset": 3180,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3220,
       "length": 8,
       "value": "\"cipher\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3350,
+      "offset": 3453,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3493,
       "length": 8,
       "value": "\"result\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3419,
+      "offset": 3522,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3577,
+      "offset": 3680,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3615,
+      "offset": 3718,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3713,
+      "offset": 3816,
       "length": 29,
       "value": "\"kFogDeviceConnectedCallback\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3902,
+      "offset": 4005,
       "length": 29,
       "value": "\"kFogDeviceConnectedCallback\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4366,
+      "offset": 4121,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4161,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4322,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4435,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4557,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4444,
+      "offset": 5210,
       "length": 43,
       "value": "\"发出的消息：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4486,
+      "offset": 5252,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4848,
+      "offset": 5614,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4970,
+      "offset": 5736,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5056,
+      "offset": 5822,
       "length": 6,
       "value": "\"FED5\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5080,
+      "offset": 5846,
       "length": 6,
       "value": "\"FED6\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5622,
+      "offset": 6554,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6035,
+      "offset": 7029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6396,
+      "offset": 7390,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6432,
+      "offset": 7426,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6467,
+      "offset": 7461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6770,
+      "offset": 7764,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6782,
+      "offset": 7776,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6995,
+      "offset": 7989,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7085,
+      "offset": 8079,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7126,
+      "offset": 8120,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7233,
+      "offset": 8227,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 7796,
+      "offset": 8790,
       "length": 38,
       "value": "\"连接失败，请检查设备状态\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 7917,
+      "offset": 8911,
       "length": 17,
       "value": "\"未发现设备\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8018,
+      "offset": 9012,
       "length": 17,
       "value": "\"未发现服务\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8127,
+      "offset": 9121,
       "length": 17,
       "value": "\"未发现特征\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8238,
+      "offset": 9232,
       "length": 20,
       "value": "\"启用特征失败\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8334,
+      "offset": 9328,
       "length": 24,
       "value": "\"配网超时,请重试\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8443,
+      "offset": 9437,
       "length": 23,
       "value": "\"请检查蓝牙状态\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8539,
+      "offset": 9545,
+      "length": 29,
+      "value": "\"请检查网络连接状态\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9658,
+      "length": 34,
+      "value": "\"请检查Wi-Fi密码是否正确\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9765,
       "length": 14,
       "value": "\"配网失败\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9249,
+      "offset": 10475,
       "length": 9,
       "value": "\"msgtype\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9259,
+      "offset": 10485,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9262,
+      "offset": 10488,
       "length": 8,
       "value": "\"random\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9313,
+      "offset": 10539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9677,
+      "offset": 10926,
       "length": 9,
       "value": "\"msgtype\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9687,
+      "offset": 10939,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9690,
+      "offset": 10963,
       "length": 6,
       "value": "\"ssid\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9703,
+      "offset": 11000,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9724,
+      "offset": 11045,
       "length": 5,
       "value": "\"psk\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11094,
+      "length": 9,
+      "value": "\"httpurl\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11142,
+      "length": 9,
+      "value": "\"mqtturl\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9788,
+      "offset": 11206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9984,
+      "offset": 11402,
       "length": 4,
       "value": "4096"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10013,
+      "offset": 11431,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10311,
+      "offset": 11729,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10321,
+      "offset": 11739,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 10821,
+      "offset": 12239,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 10869,
+      "offset": 12287,
       "length": 13,
       "value": "\"product_key\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10980,
+      "offset": 12398,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 11553,
+      "offset": 12971,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 11601,
+      "offset": 13019,
       "length": 13,
       "value": "\"product_key\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 11649,
+      "offset": 13067,
       "length": 8,
       "value": "\"random\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11752,
+      "offset": 13170,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12235,
+      "offset": 13653,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12259,
+      "offset": 13677,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12270,
+      "offset": 13688,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12342,
+      "offset": 13760,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12395,
+      "offset": 13813,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12636,
+      "offset": 14054,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12684,
+      "offset": 14102,
       "length": 13,
       "value": "\"product_key\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12732,
+      "offset": 14150,
       "length": 8,
       "value": "\"cipher\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 12774,
+      "offset": 14192,
       "length": 8,
       "value": "\"random\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12870,
+      "offset": 14291,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "Array",
-      "offset": 13310,
+      "offset": 14731,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14308,
+      "offset": 15729,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 14353,
+      "offset": 15774,
       "length": 10,
       "value": "\"%02X%02X\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14376,
+      "offset": 15797,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14390,
+      "offset": 15811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 14432,
+      "offset": 15853,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 14500,
+      "offset": 15921,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14531,
+      "offset": 15952,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14545,
+      "offset": 15966,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14559,
+      "offset": 15980,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14573,
+      "offset": 15994,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 14620,
+      "offset": 16041,
       "length": 19,
       "value": "\"%02x%02x%02x%02x%\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14652,
+      "offset": 16073,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14667,
+      "offset": 16088,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14682,
+      "offset": 16103,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14697,
+      "offset": 16118,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15164,
+      "offset": 16585,
       "length": 20,
       "value": "\"蓝牙连接成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15363,
+      "offset": 16784,
       "length": 20,
       "value": "\"蓝牙连接失败\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15624,
+      "offset": 17045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 15766,
+      "offset": 17187,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15811,
+      "offset": 17232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15943,
+      "offset": 17364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16312,
+      "offset": 17733,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16502,
+      "offset": 17923,
       "length": 6,
       "value": "\"FED5\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 16642,
+      "offset": 18063,
       "length": 6,
       "value": "\"FED6\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17188,
+      "offset": 18609,
       "length": 14,
       "value": "\"发现服务\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17251,
+      "offset": 18672,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 17724,
+      "offset": 19145,
       "length": 26,
       "value": "\"启用特征服务成功\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18128,
+      "offset": 19549,
       "length": 47,
       "value": "\"收到设备回消息：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18174,
+      "offset": 19595,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18501,
+      "offset": 19922,
       "length": 57,
       "value": "\"给设备发送消息失败：\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 18557,
+      "offset": 19978,
       "length": 2,
       "value": "\"\""
     },
@@ -8557,483 +8816,455 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1293,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1377,
+      "offset": 1328,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1411,
+      "offset": 1362,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1440,
+      "offset": 1391,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1966,
+      "offset": 1917,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2032,
+      "offset": 1983,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2044,
+      "offset": 1995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2097,
+      "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2205,
+      "offset": 2156,
       "length": 11,
       "value": "\"timeStamp\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2274,
+      "offset": 2225,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2347,
+      "offset": 2298,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2393,
+      "offset": 2344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2447,
+      "offset": 2398,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2549,
+      "offset": 2500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2713,
+      "offset": 2664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3187,
+      "offset": 3138,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3236,
+      "offset": 3187,
       "length": 10,
       "value": "\"%02X%02X\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3259,
+      "offset": 3210,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3273,
+      "offset": 3224,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3462,
+      "offset": 3413,
       "length": 6,
       "value": "\"01A8\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3538,
+      "offset": 3489,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3569,
+      "offset": 3520,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3583,
+      "offset": 3534,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3597,
+      "offset": 3548,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3611,
+      "offset": 3562,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3676,
+      "offset": 3627,
       "length": 31,
       "value": "\"%02x:%02x:%02x:%02x:%02x:%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3720,
+      "offset": 3671,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3735,
+      "offset": 3686,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3750,
+      "offset": 3701,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3765,
+      "offset": 3716,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3780,
+      "offset": 3731,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3794,
+      "offset": 3745,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3847,
+      "offset": 3798,
       "length": 6,
       "value": "\"rssi\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3870,
+      "offset": 3821,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3897,
+      "offset": 3848,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3900,
+      "offset": 3851,
       "length": 12,
       "value": "\"peripheral\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3924,
+      "offset": 3875,
       "length": 5,
       "value": "\"mac\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3937,
+      "offset": 3888,
       "length": 11,
       "value": "\"productId\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3957,
+      "offset": 3908,
       "length": 11,
       "value": "\"timeStamp\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4087,
+      "offset": 4038,
       "length": 12,
       "value": "\"peripheral\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4167,
+      "offset": 4118,
       "length": 11,
       "value": "\"timeStamp\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4359,
+      "offset": 4310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4458,
-      "length": 20,
-      "value": "\"kMXDiscoverDevices\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4565,
+      "offset": 4388,
       "length": 6,
       "value": "\"0922\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4649,
+      "offset": 4472,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4680,
+      "offset": 4503,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4694,
+      "offset": 4517,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4708,
+      "offset": 4531,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4722,
+      "offset": 4545,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4786,
+      "offset": 4609,
       "length": 18,
       "value": "\"%02x%02x%02x%02x\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4817,
+      "offset": 4640,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4832,
+      "offset": 4655,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4847,
+      "offset": 4670,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4862,
+      "offset": 4685,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4916,
+      "offset": 4739,
       "length": 6,
       "value": "\"rssi\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4939,
+      "offset": 4762,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4966,
+      "offset": 4789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4969,
+      "offset": 4792,
       "length": 12,
       "value": "\"peripheral\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4993,
+      "offset": 4816,
       "length": 12,
       "value": "\"deviceName\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5012,
+      "offset": 4835,
       "length": 12,
       "value": "\"productKey\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5032,
+      "offset": 4855,
       "length": 11,
       "value": "\"timeStamp\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5162,
+      "offset": 4985,
       "length": 12,
       "value": "\"peripheral\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5065,
       "length": 11,
       "value": "\"timeStamp\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5434,
+      "offset": 5257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5533,
-      "length": 20,
-      "value": "\"kMXDiscoverDevices\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "Array",
-      "offset": 5855,
+      "offset": 5550,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5915,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6731,
+      "offset": 6693,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6878,
+      "offset": 6840,
       "length": 1,
       "value": "2"
     }

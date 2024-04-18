@@ -215,6 +215,14 @@ public struct SensorSettingGet : MeshSDK.AcknowledgedSensorPropertyMessage {
   public init(_ setting: MeshSDK.DeviceProperty, of property: MeshSDK.DeviceProperty)
   public init?(parameters: Foundation.Data)
 }
+extension MeshSDK.MeshSDK {
+  @objc dynamic public func subscribeMeshProxyFilter(address: Swift.UInt16)
+  @objc dynamic public func unsubscribeMeshProxyFilter(address: Swift.UInt16)
+}
+extension MeshSDK.MeshSDK : MeshSDK.ProxyFilterDelegate {
+  public func proxyFilterUpdated(type: MeshSDK.ProxyFilerType, addresses: Swift.Set<MeshSDK.Address>)
+  public func proxyFilterUpdateAcknowledged(type: MeshSDK.ProxyFilerType, listSize: Swift.UInt16)
+}
 public struct LightLCOccupancyModeStatus : MeshSDK.GenericMessage {
   public static let opCode: Swift.UInt32
   public var parameters: Foundation.Data? {
@@ -2808,10 +2816,6 @@ extension MeshSDK.MeshSDK {
   @objc dynamic public func getNextUnicastAddress() -> Swift.UInt16
   @objc dynamic public func readCurrentGattRssi(callback: @escaping MeshSDK.MeshSDK.MeshGattRSSICallback)
 }
-extension MeshSDK.MeshSDK {
-  @objc dynamic public func subscribeMeshProxyFilter(address: Swift.UInt16)
-  @objc dynamic public func unsubscribeMeshProxyFilter(address: Swift.UInt16)
-}
 extension MeshSDK.MeshSDK : MeshSDK.LoggerDelegate {
   public func log(message: Swift.String, ofCategory category: MeshSDK.LogCategory, withLevel level: MeshSDK.LogLevel)
 }
@@ -3214,10 +3218,6 @@ public struct LightCTLTemperatureStatus : MeshSDK.GenericMessage, MeshSDK.Transi
   public init(temperature: Swift.UInt16, deltaUV: Swift.Int16)
   public init(temperature: Swift.UInt16, deltaUV: Swift.Int16, targetTemperature: Swift.UInt16, targetDeltaUV: Swift.Int16, remainingTime: MeshSDK.TransitionTime)
   public init?(parameters: Foundation.Data)
-}
-extension MeshSDK.MeshSDK : MeshSDK.ProxyFilterDelegate {
-  public func proxyFilterUpdated(type: MeshSDK.ProxyFilerType, addresses: Swift.Set<MeshSDK.Address>)
-  public func proxyFilterUpdateAcknowledged(type: MeshSDK.ProxyFilerType, listSize: Swift.UInt16)
 }
 extension MeshSDK.ApplicationKey {
   public func isUsed(in meshNetwork: MeshSDK.MeshNetwork) -> Swift.Bool

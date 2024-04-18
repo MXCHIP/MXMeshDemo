@@ -445,10 +445,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 @end
 
 
-
 @interface MeshSDK (SWIFT_EXTENSION(MeshSDK))
 - (void)getGATTProxyStatusWithUuid:(NSString * _Nullable)uuid callback:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))callback;
 @end
+
 
 
 
@@ -458,6 +458,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 - (void)subscribeMeshProxyFilterWithAddress:(uint16_t)address;
 - (void)unsubscribeMeshProxyFilterWithAddress:(uint16_t)address;
 @end
+
 
 
 
