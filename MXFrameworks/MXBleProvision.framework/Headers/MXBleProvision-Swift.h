@@ -311,7 +311,7 @@ SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleProvisionDelegate_")
 - (void)mxBleProvisionProcessWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier step:(NSInteger)step;
 - (void)mxBleProvisionFinishWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name;
 - (void)requestRandomWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
-- (void)requestCipherKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
+- (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler;
 @end
 

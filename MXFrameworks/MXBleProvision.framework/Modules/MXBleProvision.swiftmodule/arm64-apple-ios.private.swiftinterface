@@ -51,7 +51,7 @@ public enum MXProvisionResultCode : Swift.Int {
   @objc optional func mxBleProvisionProcess(deviceIdentifier: Swift.String, step: Swift.Int)
   @objc optional func mxBleProvisionFinish(deviceIdentifier: Swift.String, error: Foundation.NSError?, device_name: Swift.String?)
   @objc optional func requestRandom(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ randomStr: Swift.String?) -> Swift.Void))
-  @objc optional func requestCipherKey(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ cipher: Swift.String?) -> Swift.Void))
+  @objc optional func requestBleKey(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ cipher: Swift.String?) -> Swift.Void))
   @objc optional func requestConnectStatus(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ connectStatus: Swift.Bool) -> Swift.Void))
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MXLivingProvisionManager : ObjectiveC.NSObject {
