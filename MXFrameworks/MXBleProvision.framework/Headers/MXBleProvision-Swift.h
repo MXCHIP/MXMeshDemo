@@ -310,7 +310,6 @@ SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleProvisionDelegate_")
 - (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))handler;
 - (void)mxBleProvisionProcessWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier step:(NSInteger)step;
 - (void)mxBleProvisionFinishWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name;
-- (void)requestRandomWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler;
 @end
@@ -328,7 +327,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MXBleProvisi
 
 
 @interface MXBleProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-+ (void)startProvisionWithType:(NSInteger)type productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nullable)deviceName mac:(NSString * _Nullable)mac secret:(NSString * _Nullable)secret httpURL:(NSString * _Nullable)httpURL mqttURL:(NSString * _Nullable)mqttURL delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
++ (void)startProvisionWithType:(NSInteger)type productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nullable)deviceName mac:(NSString * _Nullable)mac secret:(NSString * _Nullable)secret customParams:(NSDictionary<NSString *, id> * _Nullable)customParams delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
 + (void)cleanProvisionCache;
 @end
 
@@ -369,7 +368,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogProvisionManager 
 
 
 @interface MXFogProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-- (void)provisionDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName secret:(NSString * _Nullable)secret httpURL:(NSString * _Nullable)httpURL mqttURL:(NSString * _Nullable)mqttURL delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)provisionDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName secret:(NSString * _Nullable)secret customParams:(NSDictionary<NSString *, id> * _Nullable)customParams delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
 @end
 
 @class CBService;
