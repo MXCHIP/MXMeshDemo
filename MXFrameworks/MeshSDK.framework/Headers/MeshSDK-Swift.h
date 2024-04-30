@@ -498,7 +498,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 - (BOOL)isNetworkKeyExistsWithNetworkKey:(NSString * _Nonnull)networkKey SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)createNetworkKeyWithKey:(NSString * _Nonnull)key appKey:(NSString * _Nullable)appKey SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)createNetworkKeyWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)deleteNetworkKeyWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (void)deleteNetworkKeyWithKey:(NSString * _Nonnull)key;
 - (void)setCurrentNetworkKeyWithKey:(NSString * _Nonnull)key;
 - (NSString * _Nonnull)getCurrentNetworkKey SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -533,8 +533,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 
 
 @interface MeshSDK (SWIFT_EXTENSION(MeshSDK))
-- (void)disconnect;
-- (void)connect;
 - (void)disconnectWithMac:(NSString * _Nullable)mac;
 - (void)connectWithMac:(NSString * _Nullable)mac;
 - (void)addMeshProxyWithPeripheral:(CBPeripheral * _Nonnull)peripheral mac:(NSString * _Nonnull)mac;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MeshSDK-Swift.h</key>
 		<data>
-		0Iw3xmu7+vGyNJlv23U75c2hz/E=
+		9b5PoHLQ3MH7y4NCHIG+GQmvroQ=
 		</data>
 		<key>Headers/MeshSDK.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		v70JbB/266QUI0KvpowaQ8jWCa0=
+		xY2olMPVrz5xC70NnPtBiw/duk8=
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Q4HHjWSdyqqUb3KMh2DO1IGF51g=
+		/mBD8DB+dl8kNraMzRk5Xd2hWbA=
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		NCzgOa4fZk8FShUpuOLwvczsRms=
+		8mzpFmpRho/p1/jyfNMxE6GlZKI=
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NCzgOa4fZk8FShUpuOLwvczsRms=
+		8mzpFmpRho/p1/jyfNMxE6GlZKI=
 		</data>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		jU1U2+BVPwLjWFE8zPPClIPK1RM=
+		ZhFrQBRadTvXN9K0H2+JfLYdgzY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Iw3xmu7+vGyNJlv23U75c2hz/E=
+			9b5PoHLQ3MH7y4NCHIG+GQmvroQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HA+HNRUyYD7Eo+2rj2An0TkGmibLYMv3AJk8s49OO4A=
+			BRJx2bZhogwzCNPx4OXTlgg8q78zDhTF7eh8da7Cymo=
 			</data>
 		</dict>
 		<key>Headers/MeshSDK.h</key>
@@ -73,33 +73,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v70JbB/266QUI0KvpowaQ8jWCa0=
+			xY2olMPVrz5xC70NnPtBiw/duk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			f3L1TJw4V3ldLWvHdZQeuF22MQRsVquClanFVTYAA6E=
+			8x+PsPHnuHwNGYQWZwk7YTIbiUdusk7Ykzbu3TQHP7o=
 			</data>
 		</dict>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q4HHjWSdyqqUb3KMh2DO1IGF51g=
+			/mBD8DB+dl8kNraMzRk5Xd2hWbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			M1eyG7F2uLT3KCPVNNhywn9cH74Y4C6Pho1unY038nA=
+			5u6csKKMReLF2KTGgD95boPm47XjpB4Bs0zILyzK2gw=
 			</data>
 		</dict>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NCzgOa4fZk8FShUpuOLwvczsRms=
+			8mzpFmpRho/p1/jyfNMxE6GlZKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			bDO0ofJOpF2oZX5cp8L/TNPhuyaow29XU1OecgTXDmg=
+			zxZUd7zPXbGTOtcHPu80FWaX06vs4fqPAH7toST8FoA=
 			</data>
 		</dict>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -117,22 +117,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NCzgOa4fZk8FShUpuOLwvczsRms=
+			8mzpFmpRho/p1/jyfNMxE6GlZKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			bDO0ofJOpF2oZX5cp8L/TNPhuyaow29XU1OecgTXDmg=
+			zxZUd7zPXbGTOtcHPu80FWaX06vs4fqPAH7toST8FoA=
 			</data>
 		</dict>
 		<key>Modules/MeshSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jU1U2+BVPwLjWFE8zPPClIPK1RM=
+			ZhFrQBRadTvXN9K0H2+JfLYdgzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4cDBOyAILOoDdf47awUbsZ5MdbA5ya+c6XTdCs+psAE=
+			JhzdHvAkoR76etMqtEMZAWp7gbl7qn8DwO3B+RaB2x0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

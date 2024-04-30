@@ -1369,7 +1369,7 @@ extension MeshSDK.MeshSDK {
   @objc dynamic public func isNetworkKeyExists(networkKey: Swift.String) -> Swift.Bool
   @objc dynamic public func createNetworkKey(key: Swift.String, appKey: Swift.String?) -> Swift.Bool
   @objc dynamic public func createNetworkKey(key: Swift.String) -> Swift.Bool
-  @objc dynamic public func deleteNetworkKey(key: Swift.String) -> Swift.Bool
+  @objc dynamic public func deleteNetworkKey(key: Swift.String)
   @objc dynamic public func setCurrentNetworkKey(key: Swift.String)
   @objc dynamic public func getCurrentNetworkKey() -> Swift.String
 }
@@ -2801,8 +2801,6 @@ extension MeshSDK.MeshSDK {
   @objc dynamic public func setMeshNetworkIvIndex(index: Swift.UInt32)
 }
 extension MeshSDK.MeshSDK {
-  @objc dynamic public func disconnect()
-  @objc dynamic public func connect()
   @objc dynamic public func disconnect(mac: Swift.String? = nil)
   @objc dynamic public func connect(mac: Swift.String? = nil)
   @objc dynamic public func addMeshProxy(peripheral: CoreBluetooth.CBPeripheral, mac: Swift.String)
@@ -4930,6 +4928,7 @@ public struct LightHSLSet : MeshSDK.AcknowledgedGenericMessage, MeshSDK.Transact
   public var scenes: [MeshSDK.Scene] {
     get
   }
+  public var currentNetworkKey: MeshSDK.NetworkKey?
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit

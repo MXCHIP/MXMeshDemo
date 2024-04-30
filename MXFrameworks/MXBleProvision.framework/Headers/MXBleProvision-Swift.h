@@ -307,11 +307,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleProvisionDelegate_")
 @protocol MXBleProvisionDelegate
 @optional
-- (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))handler;
-- (void)mxBleProvisionProcessWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier step:(NSInteger)step;
-- (void)mxBleProvisionFinishWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name;
+- (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *, id> * _Nullable))handler;
+- (void)mxBleProvisionFinishWithProductKey:(NSString * _Nonnull)productKey deviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name;
 - (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler;
+- (void)requestRandomWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 @end
 
 
@@ -325,14 +325,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MXBleProvisi
 - (void)stopScan;
 @end
 
+@class CBPeripheral;
 
 @interface MXBleProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-+ (void)startProvisionWithType:(NSInteger)type productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nullable)deviceName mac:(NSString * _Nullable)mac secret:(NSString * _Nullable)secret customParams:(NSDictionary<NSString *, id> * _Nullable)customParams delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
++ (void)startProvisionWithType:(NSInteger)type peripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceIdentifier:(NSString * _Nonnull)deviceIdentifier productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
 + (void)cleanProvisionCache;
 @end
 
 @class CBCentralManager;
-@class CBPeripheral;
 @class NSNumber;
 
 @interface MXBleProvisionManager (SWIFT_EXTENSION(MXBleProvision)) <CBCentralManagerDelegate>
@@ -368,7 +368,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogProvisionManager 
 
 
 @interface MXFogProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-- (void)provisionDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName secret:(NSString * _Nullable)secret customParams:(NSDictionary<NSString *, id> * _Nullable)customParams delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class CBService;
@@ -404,7 +406,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXLivingProvisionManag
 
 
 @interface MXLivingProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-- (void)provisionDeviceWithProductKey:(NSString * _Nonnull)productKey mac:(NSString * _Nullable)mac delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey mac:(NSString * _Nonnull)mac productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
 @end
 
 
@@ -438,7 +440,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXTMallProvisionManage
 
 
 @interface MXTMallProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-- (void)provisionDeviceWithProductKey:(NSString * _Nonnull)productKey mac:(NSString * _Nullable)mac secret:(NSString * _Nullable)secret delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey mac:(NSString * _Nonnull)mac productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
