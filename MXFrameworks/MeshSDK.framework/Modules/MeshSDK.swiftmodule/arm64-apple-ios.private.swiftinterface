@@ -3065,7 +3065,7 @@ public struct LightLightnessLastStatus : MeshSDK.GenericMessage {
   public init?(parameters: Foundation.Data)
 }
 extension MeshSDK.MeshSDK {
-  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String?, callback: @escaping MeshSDK.MeshSDK.MeshMessageCallBack)
+  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String, callback: @escaping MeshSDK.MeshSDK.MeshMessageCallBack)
 }
 public enum PduType : Swift.UInt8 {
   case networkPdu
@@ -3914,7 +3914,7 @@ public enum MeshMessageSendStatusCode : Swift.Int {
   }
 }
 extension MeshSDK.MeshSDK : MeshSDK.MeshNetworkDelegate {
-  @objc dynamic public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval = 1.5, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MeshSDK.MeshMessageCallBack? = nil)
+  @objc dynamic public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval = 2.0, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MeshSDK.MeshMessageCallBack? = nil)
   @objc dynamic public func sendMessage(address: Swift.String, opCode: Swift.String, tid: Swift.String? = nil, message: Any, networkKey: Swift.String, repeatNum: Swift.Int = 1, isQueue: Swift.Bool = true)
   public func meshNetworkManager(_ manager: MeshSDK.MeshNetworkManager, didReceiveMessage message: any MeshSDK.MeshMessage, sentFrom source: MeshSDK.Address, to destination: MeshSDK.Address)
   public func meshNetworkManager(_ manager: MeshSDK.MeshNetworkManager, didSendMessage message: any MeshSDK.MeshMessage, from localElement: MeshSDK.Element, to destination: MeshSDK.Address)
@@ -4210,12 +4210,10 @@ extension MeshSDK.MeshNetwork {
   @objc public static let shared: MeshSDK.MXMeshProvisionManager
   @objc public var isNeedCompositionData: Swift.Bool
   @objc weak public var provisionDelegate: (any MeshSDK.MXMeshProvisioningDelegate)?
-  @objc public var isBusy: Swift.Bool {
-    @objc get
-    @objc set
-  }
+  @objc public var isBusy: Swift.Bool
   @objc public func mxProvisionFinish()
   @objc public func startUnprovisionedDeviceProvision(device: MeshSDK.UnprovisionedDevice, peripheral: CoreBluetooth.CBPeripheral, networkKey: Swift.String, delegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
+  @objc public func nextGattSwitch()
   @objc public func startUnprovisionedDeviceProvision(mac: Swift.String, networkKey: Swift.String, delegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
   @objc public func startUnprovisionedDeviceProvision(advertisementData: [Swift.String : Any], peripheral: CoreBluetooth.CBPeripheral, networkKey: Swift.String, provisioningDelegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
   @objc override dynamic public init()

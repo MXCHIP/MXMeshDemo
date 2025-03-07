@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YITZuEqynj0mi9OM9o3rxOcr5OI=
+		jutTgiBAkeyAPuRtdyYjx1WZw/Q=
 		</data>
 		<key>Modules/MXMatter.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		caFx6pz24Yo5fV4tjjlHn+8rle8=
+		7wkkuDVVtRRISKp7aAyoREvKlp4=
 		</data>
 		<key>Modules/MXMatter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/MXMatter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xDOo0hfvCYsigjHelTC8nFzfZuE=
+		TngHNJQDJ2FmgMQKxlD8T8qasBk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			caFx6pz24Yo5fV4tjjlHn+8rle8=
+			7wkkuDVVtRRISKp7aAyoREvKlp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rxK6sER1AEW0PaK2dpbdKua822gbd/EAsVE9NJMtHH4=
+			S1NxAH6jWbk1vx7MchW5CMdbIsvsxqIOCXLXBhSQ0ds=
 			</data>
 		</dict>
 		<key>Modules/MXMatter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xDOo0hfvCYsigjHelTC8nFzfZuE=
+			TngHNJQDJ2FmgMQKxlD8T8qasBk=
 			</data>
 			<key>hash2</key>
 			<data>
-			R5iMmlK3MKh1xoBF04KhTqdW0AWiJhXZm1bYBpckqkY=
+			6fIiSyo9F7J4J+f3D7isQNgDzIAqfbEB2/DPM4aPvBk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

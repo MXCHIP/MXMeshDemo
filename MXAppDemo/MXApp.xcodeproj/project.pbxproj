@@ -1,0 +1,1683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0617B0F59B1DEAAC33750219 /* Pods_MXApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420575CDD7328DEE39FBB740 /* Pods_MXApp.framework */; };
+		DC0776FA2941B976002A9865 /* MXBridgeLightApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0776F92941B976002A9865 /* MXBridgeLightApi.swift */; };
+		DC0E63E62918D5D900D6BD18 /* MXProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63E52918D5D900D6BD18 /* MXProductInfo.swift */; };
+		DC0E63E82918D71200D6BD18 /* MXDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63E72918D71200D6BD18 /* MXDeviceInfo.swift */; };
+		DC0E63EA2918D73D00D6BD18 /* MXPropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63E92918D73D00D6BD18 /* MXPropertyInfo.swift */; };
+		DC0E63EC2918D74B00D6BD18 /* MXSceneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63EB2918D74B00D6BD18 /* MXSceneInfo.swift */; };
+		DC0E63EE2918D76900D6BD18 /* MXRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63ED2918D76900D6BD18 /* MXRoomInfo.swift */; };
+		DC0E63F02918D79A00D6BD18 /* MXHomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63EF2918D79A00D6BD18 /* MXHomeInfo.swift */; };
+		DC0E63F22918D7E800D6BD18 /* MXProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63F12918D7E800D6BD18 /* MXProductManager.swift */; };
+		DC0E63F42918D7F900D6BD18 /* MXHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63F32918D7F900D6BD18 /* MXHomeManager.swift */; };
+		DC0E63F62918D81F00D6BD18 /* MXDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63F52918D81F00D6BD18 /* MXDeviceManager.swift */; };
+		DC0E63F82918D8A100D6BD18 /* MXMainHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63F72918D8A100D6BD18 /* MXMainHomePage.swift */; };
+		DC0E63FA2918D96F00D6BD18 /* MXMainScenePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63F92918D96F00D6BD18 /* MXMainScenePage.swift */; };
+		DC0E63FC2918DB0400D6BD18 /* MXMainRoomPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E63FB2918DB0400D6BD18 /* MXMainRoomPage.swift */; };
+		DC0E64082918E50F00D6BD18 /* MXAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E64072918E50F00D6BD18 /* MXAccountManager.swift */; };
+		DC0E640A2918EB2E00D6BD18 /* MXCategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E64092918EB2E00D6BD18 /* MXCategoryInfo.swift */; };
+		DC0E640C2918F16900D6BD18 /* AppUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E640B2918F16900D6BD18 /* AppUIConfiguration.swift */; };
+		DC0E640F2918F7A800D6BD18 /* MXHSVColorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E640E2918F7A800D6BD18 /* MXHSVColorHandle.swift */; };
+		DC0E64122918F83D00D6BD18 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E64112918F83D00D6BD18 /* UIFont+Extension.swift */; };
+		DC0E64152919E6C000D6BD18 /* MXMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E64142919E6C000D6BD18 /* MXMainTabBarController.swift */; };
+		DC0E64182919E81C00D6BD18 /* MXTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E64172919E81C00D6BD18 /* MXTabBar.swift */; };
+		DC12E6DB29BEF09C008E0B3E /* MXGroupSelectCategoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6CE29BEF09C008E0B3E /* MXGroupSelectCategoryPage.swift */; };
+		DC12E6DC29BEF09C008E0B3E /* MXGroupDevicesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6CF29BEF09C008E0B3E /* MXGroupDevicesPage.swift */; };
+		DC12E6DD29BEF09C008E0B3E /* MXGroupSettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D029BEF09C008E0B3E /* MXGroupSettingPage.swift */; };
+		DC12E6DE29BEF09C008E0B3E /* MXGroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D129BEF09C008E0B3E /* MXGroupDetailViewController.swift */; };
+		DC12E6DF29BEF09C008E0B3E /* MXGroupSettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D329BEF09C008E0B3E /* MXGroupSettingHeaderView.swift */; };
+		DC12E6E029BEF09C008E0B3E /* MXSelectDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D429BEF09C008E0B3E /* MXSelectDeviceCell.swift */; };
+		DC12E6E129BEF09C008E0B3E /* MXSelectCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D529BEF09C008E0B3E /* MXSelectCategoryCell.swift */; };
+		DC12E6E229BEF09C008E0B3E /* MXGroupSettingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D629BEF09C008E0B3E /* MXGroupSettingFooterView.swift */; };
+		DC12E6E329BEF09C008E0B3E /* MXGroupSettingRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D729BEF09C008E0B3E /* MXGroupSettingRoomCell.swift */; };
+		DC12E6E429BEF09C008E0B3E /* MXGroupSelectCategoryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D829BEF09C008E0B3E /* MXGroupSelectCategoryAlertView.swift */; };
+		DC12E6E529BEF09C008E0B3E /* MXGroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E6D929BEF09C008E0B3E /* MXGroupManager.swift */; };
+		DC14D74A293DB9240029F2F0 /* MXDeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D749293DB9240029F2F0 /* MXDeviceDetailViewController.swift */; };
+		DC14D74C293DB9F60029F2F0 /* MXDeviceDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D74B293DB9F60029F2F0 /* MXDeviceDetailHeaderView.swift */; };
+		DC14D74E293DBBB50029F2F0 /* MXLongPressMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D74D293DBBB50029F2F0 /* MXLongPressMenuCell.swift */; };
+		DC14D750293DC3A90029F2F0 /* MXDeviceSelectRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D74F293DC3A90029F2F0 /* MXDeviceSelectRoomViewController.swift */; };
+		DC14D752293DD7710029F2F0 /* MXBleMeshConnectGuidePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D751293DD7710029F2F0 /* MXBleMeshConnectGuidePage.swift */; };
+		DC14D754293DD9BB0029F2F0 /* MXDeviceListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D753293DD9BB0029F2F0 /* MXDeviceListPage.swift */; };
+		DC14D756293DEE850029F2F0 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D755293DEE850029F2F0 /* UITapGestureRecognizer+Extension.swift */; };
+		DC14D75B293DF7260029F2F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC14D759293DF7260029F2F0 /* InfoPlist.strings */; };
+		DC2AB0752950137000C75BDA /* MXLinkageSelectedScenePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AB0742950137000C75BDA /* MXLinkageSelectedScenePage.swift */; };
+		DC5B39A329ADECFC00AA9CCB /* MXAppPageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B39A229ADECFC00AA9CCB /* MXAppPageConfig.swift */; };
+		DC67EF2F291DD7B8004E7DCB /* MXHomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF2E291DD7B8004E7DCB /* MXHomeTitleView.swift */; };
+		DC67EF3E291DD9BB004E7DCB /* MXProvisionDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF3D291DD9BB004E7DCB /* MXProvisionDeviceInfo.swift */; };
+		DC67EF40291DDBED004E7DCB /* MXHomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF3F291DDBED004E7DCB /* MXHomeMenuView.swift */; };
+		DC67EF42291DDC93004E7DCB /* MXHomeMenuFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF41291DDC93004E7DCB /* MXHomeMenuFooterView.swift */; };
+		DC67EF47291DE925004E7DCB /* MXMenuAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF46291DE925004E7DCB /* MXMenuAlertView.swift */; };
+		DC67EF5E291DEEE1004E7DCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF49291DEEE1004E7DCB /* Localizable.strings */; };
+		DC67EF5F291DEEE1004E7DCB /* loading_Light.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF4C291DEEE1004E7DCB /* loading_Light.json */; };
+		DC67EF60291DEEE1004E7DCB /* loading_Dark.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF4D291DEEE1004E7DCB /* loading_Dark.json */; };
+		DC67EF63291DEEE1004E7DCB /* smart-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF53291DEEE1004E7DCB /* smart-dark.json */; };
+		DC67EF64291DEEE1004E7DCB /* home-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF54291DEEE1004E7DCB /* home-dark.json */; };
+		DC67EF65291DEEE1004E7DCB /* device.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF55291DEEE1004E7DCB /* device.json */; };
+		DC67EF66291DEEE1004E7DCB /* smart.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF56291DEEE1004E7DCB /* smart.json */; };
+		DC67EF67291DEEE1004E7DCB /* device-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF57291DEEE1004E7DCB /* device-dark.json */; };
+		DC67EF68291DEEE1004E7DCB /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF58291DEEE1004E7DCB /* home.json */; };
+		DC67EF6E291DEF33004E7DCB /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC67EF6D291DEF33004E7DCB /* iconfont.ttf */; };
+		DC67EF7F291DFC2E004E7DCB /* MXRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67EF7E291DFC2E004E7DCB /* MXRouterManager.swift */; };
+		DC6C5ECE29CDA5380092869E /* MXSelectedRoomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C5ECD29CDA5380092869E /* MXSelectedRoomHeaderView.swift */; };
+		DC6C5ED029CDAC2D0092869E /* MXSceneSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C5ECF29CDAC2D0092869E /* MXSceneSelectionViewController.swift */; };
+		DC6CDAC92A0F3B2500AEF992 /* MXScenePropertyBrightnessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CDAC82A0F3B2500AEF992 /* MXScenePropertyBrightnessCell.swift */; };
+		DC701D212939909A00E74234 /* MXWebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC701D202939909A00E74234 /* MXWebViewPage.swift */; };
+		DC701D23293996CA00E74234 /* MXLaunchedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC701D22293996CA00E74234 /* MXLaunchedPage.swift */; };
+		DC78B27829150F7D0015B01C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC78B27729150F7D0015B01C /* AppDelegate.swift */; };
+		DC78B27F29150F7D0015B01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC78B27D29150F7D0015B01C /* Main.storyboard */; };
+		DC78B28129150F7F0015B01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC78B28029150F7F0015B01C /* Assets.xcassets */; };
+		DC78B28429150F7F0015B01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC78B28229150F7F0015B01C /* LaunchScreen.storyboard */; };
+		DC7A16BE29DED294009CAB6B /* MXSceneSelectConditionDevicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A16BD29DED294009CAB6B /* MXSceneSelectConditionDevicePage.swift */; };
+		DC7A16C029DFA3FD009CAB6B /* MXSelectCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A16BF29DFA3FD009CAB6B /* MXSelectCollectionHeaderView.swift */; };
+		DC7A16C329DFEB8B009CAB6B /* MXWriteRuleFailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A16C229DFEB8B009CAB6B /* MXWriteRuleFailPage.swift */; };
+		DC7FA44A2A209BAD00F54244 /* MXResourcesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7FA4492A209BAD00F54244 /* MXResourcesManager.swift */; };
+		DC7FA44E2A20D4A600F54244 /* AppResources.zip in Resources */ = {isa = PBXBuildFile; fileRef = DC7FA44D2A20D4A600F54244 /* AppResources.zip */; };
+		DCAA1F092923290A008F653D /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA1F082923290A008F653D /* UIButton+Extension.swift */; };
+		DCAF2CA72B26DE9D003B7F58 /* MXDeviceManager+Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF2CA62B26DE9D003B7F58 /* MXDeviceManager+Gateway.swift */; };
+		DCB08E062934AEA9007257FE /* MXHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB08E042934AEA9007257FE /* MXHomeListViewController.swift */; };
+		DCB08E092934B262007257FE /* MXHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB08E082934B261007257FE /* MXHomeDetailViewController.swift */; };
+		DCB2720F292714C4007272C5 /* MXManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F2292714C4007272C5 /* MXManualViewController.swift */; };
+		DCB27210292714C4007272C5 /* MXAddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F3292714C4007272C5 /* MXAddDeviceViewController.swift */; };
+		DCB27211292714C4007272C5 /* MXAutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F4292714C4007272C5 /* MXAutoSearchViewController.swift */; };
+		DCB27212292714C4007272C5 /* MXInputWifiPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F5292714C4007272C5 /* MXInputWifiPasswordViewController.swift */; };
+		DCB27213292714C4007272C5 /* MXAddDeviceStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F6292714C4007272C5 /* MXAddDeviceStepViewController.swift */; };
+		DCB27214292714C4007272C5 /* MXAddDeviceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F7292714C4007272C5 /* MXAddDeviceSearchViewController.swift */; };
+		DCB27215292714C4007272C5 /* MXAddDeviceInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271F8292714C4007272C5 /* MXAddDeviceInitViewController.swift */; };
+		DCB27216292714C4007272C5 /* MXAddDeviceBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FA292714C4007272C5 /* MXAddDeviceBottomView.swift */; };
+		DCB27217292714C4007272C5 /* MXCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FB292714C4007272C5 /* MXCategoryCell.swift */; };
+		DCB27218292714C4007272C5 /* MXAddDeviceSelectRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FC292714C4007272C5 /* MXAddDeviceSelectRoomCell.swift */; };
+		DCB27219292714C4007272C5 /* MXWifiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FD292714C4007272C5 /* MXWifiInputView.swift */; };
+		DCB2721A292714C4007272C5 /* MXAddDeviceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FE292714C4007272C5 /* MXAddDeviceHeaderView.swift */; };
+		DCB2721B292714C4007272C5 /* MXSearchDeviceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB271FF292714C4007272C5 /* MXSearchDeviceHeader.swift */; };
+		DCB2721C292714C4007272C5 /* MXAddDeviceRoomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27200292714C4007272C5 /* MXAddDeviceRoomHeaderView.swift */; };
+		DCB2721D292714C4007272C5 /* MXProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27201292714C4007272C5 /* MXProductCell.swift */; };
+		DCB2721E292714C4007272C5 /* MXAddDeviceStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27202292714C4007272C5 /* MXAddDeviceStepCell.swift */; };
+		DCB2721F292714C4007272C5 /* MXWifiPasswordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27203292714C4007272C5 /* MXWifiPasswordHeaderView.swift */; };
+		DCB27220292714C4007272C5 /* MXAutoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27204292714C4007272C5 /* MXAutoAnimationView.swift */; };
+		DCB27221292714C4007272C5 /* MXProvisionStepHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27205292714C4007272C5 /* MXProvisionStepHeaderView.swift */; };
+		DCB27222292714C4007272C5 /* DiscoveryDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27206292714C4007272C5 /* DiscoveryDeviceCell.swift */; };
+		DCB27223292714C4007272C5 /* MXAddDeviceRoomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27207292714C4007272C5 /* MXAddDeviceRoomFooterView.swift */; };
+		DCB27224292714C4007272C5 /* MXSelectWifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27208292714C4007272C5 /* MXSelectWifiView.swift */; };
+		DCB27225292714C4007272C5 /* MXPermissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB27209292714C4007272C5 /* MXPermissionCell.swift */; };
+		DCB27226292714C4007272C5 /* MXProvisionDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2720A292714C4007272C5 /* MXProvisionDeviceCell.swift */; };
+		DCB27227292714C4007272C5 /* MXProductCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2720B292714C4007272C5 /* MXProductCollectionHeader.swift */; };
+		DCB27228292714C4007272C5 /* MXAddDeviceHelpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2720C292714C4007272C5 /* MXAddDeviceHelpPage.swift */; };
+		DCB27229292714C4007272C5 /* MXDeviceProvisionStepPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2720D292714C4007272C5 /* MXDeviceProvisionStepPage.swift */; };
+		DCB2722A292714C4007272C5 /* MXAddDeviceSelectRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2720E292714C4007272C5 /* MXAddDeviceSelectRoomViewController.swift */; };
+		DCB2722E292715C1007272C5 /* MXPageHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2722C292715C1007272C5 /* MXPageHeadView.swift */; };
+		DCB2722F292715C1007272C5 /* MXPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2722D292715C1007272C5 /* MXPageContentView.swift */; };
+		DCB2723429278F29007272C5 /* MXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2723329278F29007272C5 /* MXTableViewCell.swift */; };
+		DCBF1A892937396400F1B067 /* MXFooterMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A872937396400F1B067 /* MXFooterMenuCell.swift */; };
+		DCBF1A8A2937396400F1B067 /* MXListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A882937396400F1B067 /* MXListFooterView.swift */; };
+		DCBF1A8C29373A0E00F1B067 /* MXDeviceEditListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A8B29373A0E00F1B067 /* MXDeviceEditListPage.swift */; };
+		DCBF1A8E29373D1D00F1B067 /* MXSceneEditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A8D29373D1D00F1B067 /* MXSceneEditListViewController.swift */; };
+		DCBF1A9029375C3A00F1B067 /* MXSceneDevicesSwitchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A8F29375C3A00F1B067 /* MXSceneDevicesSwitchPage.swift */; };
+		DCBF1A93293851E500F1B067 /* MXSceneLightScenePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A91293851E500F1B067 /* MXSceneLightScenePage.swift */; };
+		DCBF1A94293851E500F1B067 /* MXSceneLightSceneStencilsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A92293851E500F1B067 /* MXSceneLightSceneStencilsPage.swift */; };
+		DCBF1A96293852D900F1B067 /* MXSceneTemplateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1A95293852D900F1B067 /* MXSceneTemplateInfo.swift */; };
+		DCBF1AE529389A8E00F1B067 /* MXMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AA429389A8E00F1B067 /* MXMenuViewModel.swift */; };
+		DCBF1AE929389A8E00F1B067 /* MXAboutPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AA829389A8E00F1B067 /* MXAboutPageViewModel.swift */; };
+		DCBF1AEE29389A8E00F1B067 /* MXMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AAE29389A8E00F1B067 /* MXMenuView.swift */; };
+		DCBF1AF629389A8E00F1B067 /* MXMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AB629389A8E00F1B067 /* MXMenuViewController.swift */; };
+		DCBF1B0429389A8E00F1B067 /* MXAboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AC429389A8E00F1B067 /* MXAboutPage.swift */; };
+		DCBF1B0929389A8E00F1B067 /* MXOTADeviceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1ACA29389A8E00F1B067 /* MXOTADeviceListCell.swift */; };
+		DCBF1B0E29389A8E00F1B067 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AD029389A8E00F1B067 /* TableViewCellModel.swift */; };
+		DCBF1B1029389A8E00F1B067 /* MXMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AD229389A8E00F1B067 /* MXMenuModel.swift */; };
+		DCBF1B1129389A8E00F1B067 /* MXDarkModeSettingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AD329389A8E00F1B067 /* MXDarkModeSettingPageModel.swift */; };
+		DCBF1B1529389A8F00F1B067 /* MXAboutPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AD729389A8E00F1B067 /* MXAboutPageModel.swift */; };
+		DCBF1B1629389A8F00F1B067 /* MXMineSettingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1AD829389A8E00F1B067 /* MXMineSettingPageModel.swift */; };
+		DCBF1B212938BB0600F1B067 /* MXRoomDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B1C2938BB0600F1B067 /* MXRoomDetailsPage.swift */; };
+		DCBF1B222938BB0600F1B067 /* MXRoomWallpaperPreviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B1D2938BB0600F1B067 /* MXRoomWallpaperPreviewPage.swift */; };
+		DCBF1B232938BB0600F1B067 /* MXRoomWallpaperPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B1E2938BB0600F1B067 /* MXRoomWallpaperPage.swift */; };
+		DCBF1B242938BB0600F1B067 /* MXRoomsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B1F2938BB0600F1B067 /* MXRoomsPage.swift */; };
+		DCBF1B252938BB0600F1B067 /* MXWallpapersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B202938BB0600F1B067 /* MXWallpapersPage.swift */; };
+		DCBF1B342938BD7200F1B067 /* MXRoomCreatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF1B332938BD7200F1B067 /* MXRoomCreatePage.swift */; };
+		DCCD0180292DEF3A00B98498 /* MXRoomDevicesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD017F292DEF3A00B98498 /* MXRoomDevicesPage.swift */; };
+		DCCD01BB292DF08B00B98498 /* MXSceneDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0182292DF08B00B98498 /* MXSceneDetailPage.swift */; };
+		DCCD01BE292DF08B00B98498 /* MXSceneSelectedTypePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0185292DF08B00B98498 /* MXSceneSelectedTypePage.swift */; };
+		DCCD01C0292DF08B00B98498 /* MXSceneExceptionListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0187292DF08B00B98498 /* MXSceneExceptionListPage.swift */; };
+		DCCD01C3292DF08B00B98498 /* MXSceneDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD018B292DF08B00B98498 /* MXSceneDeviceCell.swift */; };
+		DCCD01C4292DF08B00B98498 /* MXSceneDeviceStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD018C292DF08B00B98498 /* MXSceneDeviceStatusView.swift */; };
+		DCCD01C5292DF08B00B98498 /* MXColorTemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD018D292DF08B00B98498 /* MXColorTemperatureView.swift */; };
+		DCCD01C6292DF08B00B98498 /* MXSceneListHearderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD018E292DF08B00B98498 /* MXSceneListHearderView.swift */; };
+		DCCD01C7292DF08B00B98498 /* MXSceneTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD018F292DF08B00B98498 /* MXSceneTypeCell.swift */; };
+		DCCD01C8292DF08B00B98498 /* MXAutomationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0190292DF08B00B98498 /* MXAutomationCell.swift */; };
+		DCCD01C9292DF08B00B98498 /* MXHSVSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0191292DF08B00B98498 /* MXHSVSettingView.swift */; };
+		DCCD01CA292DF08B00B98498 /* MXSceneSelectDeviceViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0192292DF08B00B98498 /* MXSceneSelectDeviceViewV2.swift */; };
+		DCCD01CB292DF08B00B98498 /* MXSceneTemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0193292DF08B00B98498 /* MXSceneTemperatureView.swift */; };
+		DCCD01CC292DF08B00B98498 /* MXSceneSliderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0194292DF08B00B98498 /* MXSceneSliderSettingView.swift */; };
+		DCCD01CD292DF08B00B98498 /* RadialHueColorPaletteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0195292DF08B00B98498 /* RadialHueColorPaletteDelegate.swift */; };
+		DCCD01CE292DF08B00B98498 /* MXScenePropertyTemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0196292DF08B00B98498 /* MXScenePropertyTemperatureCell.swift */; };
+		DCCD01CF292DF08B00B98498 /* MXScenePropertyHSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0197292DF08B00B98498 /* MXScenePropertyHSVCell.swift */; };
+		DCCD01D0292DF08B00B98498 /* MXSliderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0198292DF08B00B98498 /* MXSliderSettingView.swift */; };
+		DCCD01D2292DF08B00B98498 /* MXSceneSettingPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019A292DF08B00B98498 /* MXSceneSettingPropertyView.swift */; };
+		DCCD01D3292DF08B00B98498 /* MXSceneSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019B292DF08B00B98498 /* MXSceneSwitchView.swift */; };
+		DCCD01D4292DF08B00B98498 /* MXSelectedSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019C292DF08B00B98498 /* MXSelectedSettingView.swift */; };
+		DCCD01D5292DF08B00B98498 /* MXColorTemperatureSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019D292DF08B00B98498 /* MXColorTemperatureSettingView.swift */; };
+		DCCD01D6292DF08B00B98498 /* MXSceneSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019E292DF08B00B98498 /* MXSceneSheetView.swift */; };
+		DCCD01D7292DF08B00B98498 /* MXScenceSelectIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD019F292DF08B00B98498 /* MXScenceSelectIconView.swift */; };
+		DCCD01D9292DF08B00B98498 /* MXSceneItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A1292DF08B00B98498 /* MXSceneItemsView.swift */; };
+		DCCD01DA292DF08B00B98498 /* MXScenesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A2292DF08B00B98498 /* MXScenesCell.swift */; };
+		DCCD01DC292DF08B00B98498 /* MXScenePropertyIntCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A4292DF08B00B98498 /* MXScenePropertyIntCell.swift */; };
+		DCCD01DD292DF08B00B98498 /* MXHSVColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A5292DF08B00B98498 /* MXHSVColorView.swift */; };
+		DCCD01DF292DF08B00B98498 /* MXSceneEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A7292DF08B00B98498 /* MXSceneEditCell.swift */; };
+		DCCD01E0292DF08C00B98498 /* MXScenePropertyEnumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A8292DF08B00B98498 /* MXScenePropertyEnumCell.swift */; };
+		DCCD01E1292DF08C00B98498 /* MXSceneConditionEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01A9292DF08B00B98498 /* MXSceneConditionEnumView.swift */; };
+		DCCD01E2292DF08C00B98498 /* MXSceneDeviceEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01AA292DF08B00B98498 /* MXSceneDeviceEditCell.swift */; };
+		DCCD01E3292DF08C00B98498 /* MXSceneExceptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01AB292DF08B00B98498 /* MXSceneExceptionCell.swift */; };
+		DCCD01E5292DF08C00B98498 /* MXSceneSelectDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01AD292DF08B00B98498 /* MXSceneSelectDeviceView.swift */; };
+		DCCD01E6292DF08C00B98498 /* MXSceneActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01AE292DF08B00B98498 /* MXSceneActionCell.swift */; };
+		DCCD01E7292DF08C00B98498 /* MXSceneConditionSliderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01AF292DF08B00B98498 /* MXSceneConditionSliderSettingView.swift */; };
+		DCCD01E8292DF08C00B98498 /* MXSceneSwitchSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01B0292DF08B00B98498 /* MXSceneSwitchSettingView.swift */; };
+		DCCD01EA292DF08C00B98498 /* ScenesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01B2292DF08B00B98498 /* ScenesListViewController.swift */; };
+		DCCD01ED292DF08C00B98498 /* MXSceneSettingPropertyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01B5292DF08B00B98498 /* MXSceneSettingPropertyPage.swift */; };
+		DCCD01EE292DF08C00B98498 /* MXSceneSelectedActionsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01B6292DF08B00B98498 /* MXSceneSelectedActionsPage.swift */; };
+		DCCD01F1292DF08C00B98498 /* MXSceneSelectDevicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01B9292DF08B00B98498 /* MXSceneSelectDevicePage.swift */; };
+		DCCD01F4292DF25B00B98498 /* MXSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01F3292DF25B00B98498 /* MXSceneManager.swift */; };
+		DCCD01F6292DFF0700B98498 /* MXCron.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01F5292DFF0700B98498 /* MXCron.swift */; };
+		DCCD01FA292E410800B98498 /* MXCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01F9292E410800B98498 /* MXCollectionHeaderView.swift */; };
+		DCCD01FE292EFF9400B98498 /* MXDeviceItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD01FD292EFF9400B98498 /* MXDeviceItemCell.swift */; };
+		DCCD0205292F009900B98498 /* MXHomeSceneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0203292F009800B98498 /* MXHomeSceneCell.swift */; };
+		DCCD0208292F01BC00B98498 /* MXHomeDeviceControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0207292F01BC00B98498 /* MXHomeDeviceControlView.swift */; };
+		DCCD020E292F097200B98498 /* MXBridgeRequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD020A292F097200B98498 /* MXBridgeRequestApi.swift */; };
+		DCCD020F292F097200B98498 /* MXBridgePageApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD020B292F097200B98498 /* MXBridgePageApi.swift */; };
+		DCCD0210292F097200B98498 /* MXBridgeDeviceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD020C292F097200B98498 /* MXBridgeDeviceApi.swift */; };
+		DCCD0211292F097200B98498 /* MXBridgeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD020D292F097200B98498 /* MXBridgeWebViewController.swift */; };
+		DCCD0213292F44BA00B98498 /* MXHouseStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD0212292F44BA00B98498 /* MXHouseStatusInfo.swift */; };
+		DCEF0A7E29C2AF6E005E63BD /* MXGroupControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEF0A7D29C2AF6E005E63BD /* MXGroupControlView.swift */; };
+		DCF55974291B5933007BBC68 /* MXSceneConditionTimerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55973291B5932007BBC68 /* MXSceneConditionTimerInfo.swift */; };
+		DCF55976291BAA4E007BBC68 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55975291BAA4E007BBC68 /* Codable+Extension.swift */; };
+		DCF55978291BAA61007BBC68 /* MXSystemAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55977291BAA61007BBC68 /* MXSystemAuth.swift */; };
+		DCF5597A291BAA78007BBC68 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55979291BAA78007BBC68 /* UIColor+Extension.swift */; };
+		DCF5597C291BAADC007BBC68 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5597B291BAADC007BBC68 /* UIImage+Extension.swift */; };
+		DCF55989291BAE41007BBC68 /* MXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5597E291BAE41007BBC68 /* MXNavigationController.swift */; };
+		DCF5598A291BAE41007BBC68 /* MXBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5597F291BAE41007BBC68 /* MXBaseTableView.swift */; };
+		DCF5598B291BAE42007BBC68 /* MXCollectionViewRoundFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55981291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout.swift */; };
+		DCF5598C291BAE42007BBC68 /* MXCollectionViewRoundFlowLayout+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55982291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout+Alignment.swift */; };
+		DCF5598D291BAE42007BBC68 /* MXCollectionViewFlowLayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55983291BAE41007BBC68 /* MXCollectionViewFlowLayoutConfig.swift */; };
+		DCF5598E291BAE42007BBC68 /* MXCollectionViewRoundConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55984291BAE41007BBC68 /* MXCollectionViewRoundConfigModel.swift */; };
+		DCF5598F291BAE42007BBC68 /* MXCollectionViewFlowLayoutUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55985291BAE41007BBC68 /* MXCollectionViewFlowLayoutUtils.swift */; };
+		DCF55990291BAE42007BBC68 /* MXAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55986291BAE41007BBC68 /* MXAlertView.swift */; };
+		DCF55991291BAE42007BBC68 /* MXToastHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55987291BAE41007BBC68 /* MXToastHUD.swift */; };
+		DCF55992291BAE42007BBC68 /* MXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55988291BAE41007BBC68 /* MXBaseViewController.swift */; };
+		DCF55994291BAE78007BBC68 /* MXEmptyBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55993291BAE78007BBC68 /* MXEmptyBackgroundView.swift */; };
+		DCF55996291BAFC5007BBC68 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55995291BAFC5007BBC68 /* UIView+Extension.swift */; };
+		DCF55998291BB037007BBC68 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55997291BB037007BBC68 /* String+Extension.swift */; };
+		DCF5599A291BB0A4007BBC68 /* String+NSPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF55999291BB0A4007BBC68 /* String+NSPredicate.swift */; };
+		DCF5599F291BB5D2007BBC68 /* EmptySwizzing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5599D291BB5D2007BBC68 /* EmptySwizzing.swift */; };
+		DCF559A0291BB5D2007BBC68 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5599E291BB5D2007BBC68 /* EmptyView.swift */; };
+		DCF751DF2A2438A8000F0A3C /* MX_Agreement.zip in Resources */ = {isa = PBXBuildFile; fileRef = DCF751DE2A2438A8000F0A3C /* MX_Agreement.zip */; };
+		FBB074BC2AFB998D00B8B35C /* MXDeviceScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB074BB2AFB998D00B8B35C /* MXDeviceScanManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC67EF79291DF057004E7DCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		420575CDD7328DEE39FBB740 /* Pods_MXApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C6158AF1A55DC136CF0A79 /* Pods-MXApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXApp.debug.xcconfig"; path = "Target Support Files/Pods-MXApp/Pods-MXApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2393B742EFD21F0E5685E0 /* Pods-MXApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXApp.release.xcconfig"; path = "Target Support Files/Pods-MXApp/Pods-MXApp.release.xcconfig"; sourceTree = "<group>"; };
+		DC030119295D884100DF698B /* MXApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MXApp.entitlements; sourceTree = "<group>"; };
+		DC0776F92941B976002A9865 /* MXBridgeLightApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXBridgeLightApi.swift; sourceTree = "<group>"; };
+		DC0E63E52918D5D900D6BD18 /* MXProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXProductInfo.swift; sourceTree = "<group>"; };
+		DC0E63E72918D71200D6BD18 /* MXDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXDeviceInfo.swift; sourceTree = "<group>"; };
+		DC0E63E92918D73D00D6BD18 /* MXPropertyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXPropertyInfo.swift; sourceTree = "<group>"; };
+		DC0E63EB2918D74B00D6BD18 /* MXSceneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSceneInfo.swift; sourceTree = "<group>"; };
+		DC0E63ED2918D76900D6BD18 /* MXRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXRoomInfo.swift; sourceTree = "<group>"; };
+		DC0E63EF2918D79A00D6BD18 /* MXHomeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXHomeInfo.swift; sourceTree = "<group>"; };
+		DC0E63F12918D7E800D6BD18 /* MXProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXProductManager.swift; sourceTree = "<group>"; };
+		DC0E63F32918D7F900D6BD18 /* MXHomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXHomeManager.swift; sourceTree = "<group>"; };
+		DC0E63F52918D81F00D6BD18 /* MXDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXDeviceManager.swift; sourceTree = "<group>"; };
+		DC0E63F72918D8A100D6BD18 /* MXMainHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXMainHomePage.swift; sourceTree = "<group>"; };
+		DC0E63F92918D96F00D6BD18 /* MXMainScenePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXMainScenePage.swift; sourceTree = "<group>"; };
+		DC0E63FB2918DB0400D6BD18 /* MXMainRoomPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXMainRoomPage.swift; sourceTree = "<group>"; };
+		DC0E64072918E50F00D6BD18 /* MXAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXAccountManager.swift; sourceTree = "<group>"; };
+		DC0E64092918EB2E00D6BD18 /* MXCategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXCategoryInfo.swift; sourceTree = "<group>"; };
+		DC0E640B2918F16900D6BD18 /* AppUIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIConfiguration.swift; sourceTree = "<group>"; };
+		DC0E640E2918F7A800D6BD18 /* MXHSVColorHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXHSVColorHandle.swift; sourceTree = "<group>"; };
+		DC0E64112918F83D00D6BD18 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		DC0E64142919E6C000D6BD18 /* MXMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXMainTabBarController.swift; sourceTree = "<group>"; };
+		DC0E64172919E81C00D6BD18 /* MXTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXTabBar.swift; sourceTree = "<group>"; };
+		DC12E6CE29BEF09C008E0B3E /* MXGroupSelectCategoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSelectCategoryPage.swift; sourceTree = "<group>"; };
+		DC12E6CF29BEF09C008E0B3E /* MXGroupDevicesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupDevicesPage.swift; sourceTree = "<group>"; };
+		DC12E6D029BEF09C008E0B3E /* MXGroupSettingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSettingPage.swift; sourceTree = "<group>"; };
+		DC12E6D129BEF09C008E0B3E /* MXGroupDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupDetailViewController.swift; sourceTree = "<group>"; };
+		DC12E6D329BEF09C008E0B3E /* MXGroupSettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSettingHeaderView.swift; sourceTree = "<group>"; };
+		DC12E6D429BEF09C008E0B3E /* MXSelectDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectDeviceCell.swift; sourceTree = "<group>"; };
+		DC12E6D529BEF09C008E0B3E /* MXSelectCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectCategoryCell.swift; sourceTree = "<group>"; };
+		DC12E6D629BEF09C008E0B3E /* MXGroupSettingFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSettingFooterView.swift; sourceTree = "<group>"; };
+		DC12E6D729BEF09C008E0B3E /* MXGroupSettingRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSettingRoomCell.swift; sourceTree = "<group>"; };
+		DC12E6D829BEF09C008E0B3E /* MXGroupSelectCategoryAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupSelectCategoryAlertView.swift; sourceTree = "<group>"; };
+		DC12E6D929BEF09C008E0B3E /* MXGroupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupManager.swift; sourceTree = "<group>"; };
+		DC14D749293DB9240029F2F0 /* MXDeviceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceDetailViewController.swift; sourceTree = "<group>"; };
+		DC14D74B293DB9F60029F2F0 /* MXDeviceDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceDetailHeaderView.swift; sourceTree = "<group>"; };
+		DC14D74D293DBBB50029F2F0 /* MXLongPressMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXLongPressMenuCell.swift; sourceTree = "<group>"; };
+		DC14D74F293DC3A90029F2F0 /* MXDeviceSelectRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceSelectRoomViewController.swift; sourceTree = "<group>"; };
+		DC14D751293DD7710029F2F0 /* MXBleMeshConnectGuidePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBleMeshConnectGuidePage.swift; sourceTree = "<group>"; };
+		DC14D753293DD9BB0029F2F0 /* MXDeviceListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXDeviceListPage.swift; sourceTree = "<group>"; };
+		DC14D755293DEE850029F2F0 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		DC14D75A293DF7260029F2F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC14D75C293DF7320029F2F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DC2AB0742950137000C75BDA /* MXLinkageSelectedScenePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXLinkageSelectedScenePage.swift; sourceTree = "<group>"; };
+		DC5B39A229ADECFC00AA9CCB /* MXAppPageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAppPageConfig.swift; sourceTree = "<group>"; };
+		DC67EF2E291DD7B8004E7DCB /* MXHomeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeTitleView.swift; sourceTree = "<group>"; };
+		DC67EF3D291DD9BB004E7DCB /* MXProvisionDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXProvisionDeviceInfo.swift; sourceTree = "<group>"; };
+		DC67EF3F291DDBED004E7DCB /* MXHomeMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeMenuView.swift; sourceTree = "<group>"; };
+		DC67EF41291DDC93004E7DCB /* MXHomeMenuFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeMenuFooterView.swift; sourceTree = "<group>"; };
+		DC67EF43291DDD52004E7DCB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC67EF44291DDD52004E7DCB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC67EF46291DE925004E7DCB /* MXMenuAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMenuAlertView.swift; sourceTree = "<group>"; };
+		DC67EF4A291DEEE1004E7DCB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DC67EF4C291DEEE1004E7DCB /* loading_Light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_Light.json; sourceTree = "<group>"; };
+		DC67EF4D291DEEE1004E7DCB /* loading_Dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_Dark.json; sourceTree = "<group>"; };
+		DC67EF4E291DEEE1004E7DCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC67EF53291DEEE1004E7DCB /* smart-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "smart-dark.json"; sourceTree = "<group>"; };
+		DC67EF54291DEEE1004E7DCB /* home-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "home-dark.json"; sourceTree = "<group>"; };
+		DC67EF55291DEEE1004E7DCB /* device.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = device.json; sourceTree = "<group>"; };
+		DC67EF56291DEEE1004E7DCB /* smart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smart.json; sourceTree = "<group>"; };
+		DC67EF57291DEEE1004E7DCB /* device-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "device-dark.json"; sourceTree = "<group>"; };
+		DC67EF58291DEEE1004E7DCB /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		DC67EF6D291DEF33004E7DCB /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		DC67EF7E291DFC2E004E7DCB /* MXRouterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRouterManager.swift; sourceTree = "<group>"; };
+		DC6C5ECD29CDA5380092869E /* MXSelectedRoomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectedRoomHeaderView.swift; sourceTree = "<group>"; };
+		DC6C5ECF29CDAC2D0092869E /* MXSceneSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectionViewController.swift; sourceTree = "<group>"; };
+		DC6CDAC82A0F3B2500AEF992 /* MXScenePropertyBrightnessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenePropertyBrightnessCell.swift; sourceTree = "<group>"; };
+		DC701D202939909A00E74234 /* MXWebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXWebViewPage.swift; sourceTree = "<group>"; };
+		DC701D22293996CA00E74234 /* MXLaunchedPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXLaunchedPage.swift; sourceTree = "<group>"; };
+		DC78B27429150F7D0015B01C /* MXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC78B27729150F7D0015B01C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC78B28029150F7F0015B01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC78B28529150F7F0015B01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7A16BD29DED294009CAB6B /* MXSceneSelectConditionDevicePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectConditionDevicePage.swift; sourceTree = "<group>"; };
+		DC7A16BF29DFA3FD009CAB6B /* MXSelectCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectCollectionHeaderView.swift; sourceTree = "<group>"; };
+		DC7A16C229DFEB8B009CAB6B /* MXWriteRuleFailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXWriteRuleFailPage.swift; sourceTree = "<group>"; };
+		DC7FA4492A209BAD00F54244 /* MXResourcesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXResourcesManager.swift; sourceTree = "<group>"; };
+		DC7FA44D2A20D4A600F54244 /* AppResources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = AppResources.zip; sourceTree = "<group>"; };
+		DCAA1F082923290A008F653D /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		DCAF2CA62B26DE9D003B7F58 /* MXDeviceManager+Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MXDeviceManager+Gateway.swift"; sourceTree = "<group>"; };
+		DCB08E042934AEA9007257FE /* MXHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeListViewController.swift; sourceTree = "<group>"; };
+		DCB08E082934B261007257FE /* MXHomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeDetailViewController.swift; sourceTree = "<group>"; };
+		DCB271F2292714C4007272C5 /* MXManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXManualViewController.swift; sourceTree = "<group>"; };
+		DCB271F3292714C4007272C5 /* MXAddDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceViewController.swift; sourceTree = "<group>"; };
+		DCB271F4292714C4007272C5 /* MXAutoSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAutoSearchViewController.swift; sourceTree = "<group>"; };
+		DCB271F5292714C4007272C5 /* MXInputWifiPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXInputWifiPasswordViewController.swift; sourceTree = "<group>"; };
+		DCB271F6292714C4007272C5 /* MXAddDeviceStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceStepViewController.swift; sourceTree = "<group>"; };
+		DCB271F7292714C4007272C5 /* MXAddDeviceSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceSearchViewController.swift; sourceTree = "<group>"; };
+		DCB271F8292714C4007272C5 /* MXAddDeviceInitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceInitViewController.swift; sourceTree = "<group>"; };
+		DCB271FA292714C4007272C5 /* MXAddDeviceBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceBottomView.swift; sourceTree = "<group>"; };
+		DCB271FB292714C4007272C5 /* MXCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCategoryCell.swift; sourceTree = "<group>"; };
+		DCB271FC292714C4007272C5 /* MXAddDeviceSelectRoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceSelectRoomCell.swift; sourceTree = "<group>"; };
+		DCB271FD292714C4007272C5 /* MXWifiInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXWifiInputView.swift; sourceTree = "<group>"; };
+		DCB271FE292714C4007272C5 /* MXAddDeviceHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceHeaderView.swift; sourceTree = "<group>"; };
+		DCB271FF292714C4007272C5 /* MXSearchDeviceHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSearchDeviceHeader.swift; sourceTree = "<group>"; };
+		DCB27200292714C4007272C5 /* MXAddDeviceRoomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceRoomHeaderView.swift; sourceTree = "<group>"; };
+		DCB27201292714C4007272C5 /* MXProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXProductCell.swift; sourceTree = "<group>"; };
+		DCB27202292714C4007272C5 /* MXAddDeviceStepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceStepCell.swift; sourceTree = "<group>"; };
+		DCB27203292714C4007272C5 /* MXWifiPasswordHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXWifiPasswordHeaderView.swift; sourceTree = "<group>"; };
+		DCB27204292714C4007272C5 /* MXAutoAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAutoAnimationView.swift; sourceTree = "<group>"; };
+		DCB27205292714C4007272C5 /* MXProvisionStepHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXProvisionStepHeaderView.swift; sourceTree = "<group>"; };
+		DCB27206292714C4007272C5 /* DiscoveryDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryDeviceCell.swift; sourceTree = "<group>"; };
+		DCB27207292714C4007272C5 /* MXAddDeviceRoomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceRoomFooterView.swift; sourceTree = "<group>"; };
+		DCB27208292714C4007272C5 /* MXSelectWifiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectWifiView.swift; sourceTree = "<group>"; };
+		DCB27209292714C4007272C5 /* MXPermissionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPermissionCell.swift; sourceTree = "<group>"; };
+		DCB2720A292714C4007272C5 /* MXProvisionDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXProvisionDeviceCell.swift; sourceTree = "<group>"; };
+		DCB2720B292714C4007272C5 /* MXProductCollectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXProductCollectionHeader.swift; sourceTree = "<group>"; };
+		DCB2720C292714C4007272C5 /* MXAddDeviceHelpPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceHelpPage.swift; sourceTree = "<group>"; };
+		DCB2720D292714C4007272C5 /* MXDeviceProvisionStepPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceProvisionStepPage.swift; sourceTree = "<group>"; };
+		DCB2720E292714C4007272C5 /* MXAddDeviceSelectRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAddDeviceSelectRoomViewController.swift; sourceTree = "<group>"; };
+		DCB2722C292715C1007272C5 /* MXPageHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPageHeadView.swift; sourceTree = "<group>"; };
+		DCB2722D292715C1007272C5 /* MXPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXPageContentView.swift; sourceTree = "<group>"; };
+		DCB2723329278F29007272C5 /* MXTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXTableViewCell.swift; sourceTree = "<group>"; };
+		DCBF1A872937396400F1B067 /* MXFooterMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXFooterMenuCell.swift; sourceTree = "<group>"; };
+		DCBF1A882937396400F1B067 /* MXListFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXListFooterView.swift; sourceTree = "<group>"; };
+		DCBF1A8B29373A0E00F1B067 /* MXDeviceEditListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXDeviceEditListPage.swift; sourceTree = "<group>"; };
+		DCBF1A8D29373D1D00F1B067 /* MXSceneEditListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneEditListViewController.swift; sourceTree = "<group>"; };
+		DCBF1A8F29375C3A00F1B067 /* MXSceneDevicesSwitchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneDevicesSwitchPage.swift; sourceTree = "<group>"; };
+		DCBF1A91293851E500F1B067 /* MXSceneLightScenePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneLightScenePage.swift; sourceTree = "<group>"; };
+		DCBF1A92293851E500F1B067 /* MXSceneLightSceneStencilsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneLightSceneStencilsPage.swift; sourceTree = "<group>"; };
+		DCBF1A95293852D900F1B067 /* MXSceneTemplateInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneTemplateInfo.swift; sourceTree = "<group>"; };
+		DCBF1AA429389A8E00F1B067 /* MXMenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMenuViewModel.swift; sourceTree = "<group>"; };
+		DCBF1AA829389A8E00F1B067 /* MXAboutPageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAboutPageViewModel.swift; sourceTree = "<group>"; };
+		DCBF1AAE29389A8E00F1B067 /* MXMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMenuView.swift; sourceTree = "<group>"; };
+		DCBF1AB629389A8E00F1B067 /* MXMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMenuViewController.swift; sourceTree = "<group>"; };
+		DCBF1AC429389A8E00F1B067 /* MXAboutPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAboutPage.swift; sourceTree = "<group>"; };
+		DCBF1ACA29389A8E00F1B067 /* MXOTADeviceListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXOTADeviceListCell.swift; sourceTree = "<group>"; };
+		DCBF1AD029389A8E00F1B067 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		DCBF1AD229389A8E00F1B067 /* MXMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMenuModel.swift; sourceTree = "<group>"; };
+		DCBF1AD329389A8E00F1B067 /* MXDarkModeSettingPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDarkModeSettingPageModel.swift; sourceTree = "<group>"; };
+		DCBF1AD729389A8E00F1B067 /* MXAboutPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAboutPageModel.swift; sourceTree = "<group>"; };
+		DCBF1AD829389A8E00F1B067 /* MXMineSettingPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXMineSettingPageModel.swift; sourceTree = "<group>"; };
+		DCBF1B1C2938BB0600F1B067 /* MXRoomDetailsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomDetailsPage.swift; sourceTree = "<group>"; };
+		DCBF1B1D2938BB0600F1B067 /* MXRoomWallpaperPreviewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomWallpaperPreviewPage.swift; sourceTree = "<group>"; };
+		DCBF1B1E2938BB0600F1B067 /* MXRoomWallpaperPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomWallpaperPage.swift; sourceTree = "<group>"; };
+		DCBF1B1F2938BB0600F1B067 /* MXRoomsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomsPage.swift; sourceTree = "<group>"; };
+		DCBF1B202938BB0600F1B067 /* MXWallpapersPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXWallpapersPage.swift; sourceTree = "<group>"; };
+		DCBF1B332938BD7200F1B067 /* MXRoomCreatePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXRoomCreatePage.swift; sourceTree = "<group>"; };
+		DCCD017F292DEF3A00B98498 /* MXRoomDevicesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXRoomDevicesPage.swift; sourceTree = "<group>"; };
+		DCCD0182292DF08B00B98498 /* MXSceneDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneDetailPage.swift; sourceTree = "<group>"; };
+		DCCD0185292DF08B00B98498 /* MXSceneSelectedTypePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectedTypePage.swift; sourceTree = "<group>"; };
+		DCCD0187292DF08B00B98498 /* MXSceneExceptionListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneExceptionListPage.swift; sourceTree = "<group>"; };
+		DCCD018B292DF08B00B98498 /* MXSceneDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneDeviceCell.swift; sourceTree = "<group>"; };
+		DCCD018C292DF08B00B98498 /* MXSceneDeviceStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneDeviceStatusView.swift; sourceTree = "<group>"; };
+		DCCD018D292DF08B00B98498 /* MXColorTemperatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXColorTemperatureView.swift; sourceTree = "<group>"; };
+		DCCD018E292DF08B00B98498 /* MXSceneListHearderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneListHearderView.swift; sourceTree = "<group>"; };
+		DCCD018F292DF08B00B98498 /* MXSceneTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneTypeCell.swift; sourceTree = "<group>"; };
+		DCCD0190292DF08B00B98498 /* MXAutomationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAutomationCell.swift; sourceTree = "<group>"; };
+		DCCD0191292DF08B00B98498 /* MXHSVSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHSVSettingView.swift; sourceTree = "<group>"; };
+		DCCD0192292DF08B00B98498 /* MXSceneSelectDeviceViewV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectDeviceViewV2.swift; sourceTree = "<group>"; };
+		DCCD0193292DF08B00B98498 /* MXSceneTemperatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneTemperatureView.swift; sourceTree = "<group>"; };
+		DCCD0194292DF08B00B98498 /* MXSceneSliderSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSliderSettingView.swift; sourceTree = "<group>"; };
+		DCCD0195292DF08B00B98498 /* RadialHueColorPaletteDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialHueColorPaletteDelegate.swift; sourceTree = "<group>"; };
+		DCCD0196292DF08B00B98498 /* MXScenePropertyTemperatureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenePropertyTemperatureCell.swift; sourceTree = "<group>"; };
+		DCCD0197292DF08B00B98498 /* MXScenePropertyHSVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenePropertyHSVCell.swift; sourceTree = "<group>"; };
+		DCCD0198292DF08B00B98498 /* MXSliderSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSliderSettingView.swift; sourceTree = "<group>"; };
+		DCCD019A292DF08B00B98498 /* MXSceneSettingPropertyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSettingPropertyView.swift; sourceTree = "<group>"; };
+		DCCD019B292DF08B00B98498 /* MXSceneSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSwitchView.swift; sourceTree = "<group>"; };
+		DCCD019C292DF08B00B98498 /* MXSelectedSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSelectedSettingView.swift; sourceTree = "<group>"; };
+		DCCD019D292DF08B00B98498 /* MXColorTemperatureSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXColorTemperatureSettingView.swift; sourceTree = "<group>"; };
+		DCCD019E292DF08B00B98498 /* MXSceneSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSheetView.swift; sourceTree = "<group>"; };
+		DCCD019F292DF08B00B98498 /* MXScenceSelectIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenceSelectIconView.swift; sourceTree = "<group>"; };
+		DCCD01A1292DF08B00B98498 /* MXSceneItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneItemsView.swift; sourceTree = "<group>"; };
+		DCCD01A2292DF08B00B98498 /* MXScenesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenesCell.swift; sourceTree = "<group>"; };
+		DCCD01A4292DF08B00B98498 /* MXScenePropertyIntCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenePropertyIntCell.swift; sourceTree = "<group>"; };
+		DCCD01A5292DF08B00B98498 /* MXHSVColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHSVColorView.swift; sourceTree = "<group>"; };
+		DCCD01A7292DF08B00B98498 /* MXSceneEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneEditCell.swift; sourceTree = "<group>"; };
+		DCCD01A8292DF08B00B98498 /* MXScenePropertyEnumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXScenePropertyEnumCell.swift; sourceTree = "<group>"; };
+		DCCD01A9292DF08B00B98498 /* MXSceneConditionEnumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneConditionEnumView.swift; sourceTree = "<group>"; };
+		DCCD01AA292DF08B00B98498 /* MXSceneDeviceEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneDeviceEditCell.swift; sourceTree = "<group>"; };
+		DCCD01AB292DF08B00B98498 /* MXSceneExceptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneExceptionCell.swift; sourceTree = "<group>"; };
+		DCCD01AD292DF08B00B98498 /* MXSceneSelectDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectDeviceView.swift; sourceTree = "<group>"; };
+		DCCD01AE292DF08B00B98498 /* MXSceneActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneActionCell.swift; sourceTree = "<group>"; };
+		DCCD01AF292DF08B00B98498 /* MXSceneConditionSliderSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneConditionSliderSettingView.swift; sourceTree = "<group>"; };
+		DCCD01B0292DF08B00B98498 /* MXSceneSwitchSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSwitchSettingView.swift; sourceTree = "<group>"; };
+		DCCD01B2292DF08B00B98498 /* ScenesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenesListViewController.swift; sourceTree = "<group>"; };
+		DCCD01B5292DF08B00B98498 /* MXSceneSettingPropertyPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSettingPropertyPage.swift; sourceTree = "<group>"; };
+		DCCD01B6292DF08B00B98498 /* MXSceneSelectedActionsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectedActionsPage.swift; sourceTree = "<group>"; };
+		DCCD01B9292DF08B00B98498 /* MXSceneSelectDevicePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneSelectDevicePage.swift; sourceTree = "<group>"; };
+		DCCD01F3292DF25B00B98498 /* MXSceneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSceneManager.swift; sourceTree = "<group>"; };
+		DCCD01F5292DFF0700B98498 /* MXCron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCron.swift; sourceTree = "<group>"; };
+		DCCD01F9292E410800B98498 /* MXCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCollectionHeaderView.swift; sourceTree = "<group>"; };
+		DCCD01FD292EFF9400B98498 /* MXDeviceItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceItemCell.swift; sourceTree = "<group>"; };
+		DCCD0203292F009800B98498 /* MXHomeSceneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeSceneCell.swift; sourceTree = "<group>"; };
+		DCCD0207292F01BC00B98498 /* MXHomeDeviceControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHomeDeviceControlView.swift; sourceTree = "<group>"; };
+		DCCD020A292F097200B98498 /* MXBridgeRequestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBridgeRequestApi.swift; sourceTree = "<group>"; };
+		DCCD020B292F097200B98498 /* MXBridgePageApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBridgePageApi.swift; sourceTree = "<group>"; };
+		DCCD020C292F097200B98498 /* MXBridgeDeviceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBridgeDeviceApi.swift; sourceTree = "<group>"; };
+		DCCD020D292F097200B98498 /* MXBridgeWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBridgeWebViewController.swift; sourceTree = "<group>"; };
+		DCCD0212292F44BA00B98498 /* MXHouseStatusInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXHouseStatusInfo.swift; sourceTree = "<group>"; };
+		DCEF0A7D29C2AF6E005E63BD /* MXGroupControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXGroupControlView.swift; sourceTree = "<group>"; };
+		DCF55973291B5932007BBC68 /* MXSceneConditionTimerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSceneConditionTimerInfo.swift; sourceTree = "<group>"; };
+		DCF55975291BAA4E007BBC68 /* Codable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		DCF55977291BAA61007BBC68 /* MXSystemAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXSystemAuth.swift; sourceTree = "<group>"; };
+		DCF55979291BAA78007BBC68 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DCF5597B291BAADC007BBC68 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DCF5597E291BAE41007BBC68 /* MXNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXNavigationController.swift; sourceTree = "<group>"; };
+		DCF5597F291BAE41007BBC68 /* MXBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBaseTableView.swift; sourceTree = "<group>"; };
+		DCF55981291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCollectionViewRoundFlowLayout.swift; sourceTree = "<group>"; };
+		DCF55982291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout+Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MXCollectionViewRoundFlowLayout+Alignment.swift"; sourceTree = "<group>"; };
+		DCF55983291BAE41007BBC68 /* MXCollectionViewFlowLayoutConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCollectionViewFlowLayoutConfig.swift; sourceTree = "<group>"; };
+		DCF55984291BAE41007BBC68 /* MXCollectionViewRoundConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCollectionViewRoundConfigModel.swift; sourceTree = "<group>"; };
+		DCF55985291BAE41007BBC68 /* MXCollectionViewFlowLayoutUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXCollectionViewFlowLayoutUtils.swift; sourceTree = "<group>"; };
+		DCF55986291BAE41007BBC68 /* MXAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXAlertView.swift; sourceTree = "<group>"; };
+		DCF55987291BAE41007BBC68 /* MXToastHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXToastHUD.swift; sourceTree = "<group>"; };
+		DCF55988291BAE41007BBC68 /* MXBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXBaseViewController.swift; sourceTree = "<group>"; };
+		DCF55993291BAE78007BBC68 /* MXEmptyBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXEmptyBackgroundView.swift; sourceTree = "<group>"; };
+		DCF55995291BAFC5007BBC68 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DCF55997291BB037007BBC68 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DCF55999291BB0A4007BBC68 /* String+NSPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NSPredicate.swift"; sourceTree = "<group>"; };
+		DCF5599B291BB3AB007BBC68 /* MXApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MXApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DCF5599D291BB5D2007BBC68 /* EmptySwizzing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySwizzing.swift; sourceTree = "<group>"; };
+		DCF5599E291BB5D2007BBC68 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		DCF751DE2A2438A8000F0A3C /* MX_Agreement.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = MX_Agreement.zip; sourceTree = "<group>"; };
+		FBB074BB2AFB998D00B8B35C /* MXDeviceScanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXDeviceScanManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC78B27129150F7D0015B01C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0617B0F59B1DEAAC33750219 /* Pods_MXApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284515579193A8DEA3A869AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				420575CDD7328DEE39FBB740 /* Pods_MXApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B04CCD59F6CB32216B518D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88C6158AF1A55DC136CF0A79 /* Pods-MXApp.debug.xcconfig */,
+				AF2393B742EFD21F0E5685E0 /* Pods-MXApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC0E63FF2918E36D00D6BD18 /* MXConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E640B2918F16900D6BD18 /* AppUIConfiguration.swift */,
+				DC67EF7E291DFC2E004E7DCB /* MXRouterManager.swift */,
+				DC5B39A229ADECFC00AA9CCB /* MXAppPageConfig.swift */,
+			);
+			path = MXConfigs;
+			sourceTree = "<group>";
+		};
+		DC0E640D2918F78F00D6BD18 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E640E2918F7A800D6BD18 /* MXHSVColorHandle.swift */,
+				DCF55977291BAA61007BBC68 /* MXSystemAuth.swift */,
+				DCCD01F5292DFF0700B98498 /* MXCron.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DC0E64102918F80900D6BD18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E64112918F83D00D6BD18 /* UIFont+Extension.swift */,
+				DCF55975291BAA4E007BBC68 /* Codable+Extension.swift */,
+				DCF55979291BAA78007BBC68 /* UIColor+Extension.swift */,
+				DCF5597B291BAADC007BBC68 /* UIImage+Extension.swift */,
+				DCF55995291BAFC5007BBC68 /* UIView+Extension.swift */,
+				DCF55997291BB037007BBC68 /* String+Extension.swift */,
+				DCF55999291BB0A4007BBC68 /* String+NSPredicate.swift */,
+				DCAA1F082923290A008F653D /* UIButton+Extension.swift */,
+				DC14D755293DEE850029F2F0 /* UITapGestureRecognizer+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC0E64162919E7E500D6BD18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E64172919E81C00D6BD18 /* MXTabBar.swift */,
+				DC67EF2E291DD7B8004E7DCB /* MXHomeTitleView.swift */,
+				DC67EF3F291DDBED004E7DCB /* MXHomeMenuView.swift */,
+				DC67EF41291DDC93004E7DCB /* MXHomeMenuFooterView.swift */,
+				DC67EF46291DE925004E7DCB /* MXMenuAlertView.swift */,
+				DCCD01F9292E410800B98498 /* MXCollectionHeaderView.swift */,
+				DCBF1A872937396400F1B067 /* MXFooterMenuCell.swift */,
+				DCBF1A882937396400F1B067 /* MXListFooterView.swift */,
+				DCEF0A7D29C2AF6E005E63BD /* MXGroupControlView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC12E6CC29BEF09C008E0B3E /* MXGroupViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC12E6CE29BEF09C008E0B3E /* MXGroupSelectCategoryPage.swift */,
+				DC12E6CF29BEF09C008E0B3E /* MXGroupDevicesPage.swift */,
+				DC12E6D029BEF09C008E0B3E /* MXGroupSettingPage.swift */,
+				DC12E6D129BEF09C008E0B3E /* MXGroupDetailViewController.swift */,
+				DC12E6D229BEF09C008E0B3E /* Views */,
+			);
+			path = MXGroupViews;
+			sourceTree = "<group>";
+		};
+		DC12E6D229BEF09C008E0B3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC12E6D329BEF09C008E0B3E /* MXGroupSettingHeaderView.swift */,
+				DC12E6D429BEF09C008E0B3E /* MXSelectDeviceCell.swift */,
+				DC12E6D529BEF09C008E0B3E /* MXSelectCategoryCell.swift */,
+				DC12E6D629BEF09C008E0B3E /* MXGroupSettingFooterView.swift */,
+				DC12E6D729BEF09C008E0B3E /* MXGroupSettingRoomCell.swift */,
+				DC12E6D829BEF09C008E0B3E /* MXGroupSelectCategoryAlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC239119294085F700F0CB4D /* MXDevicePlanViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AB0742950137000C75BDA /* MXLinkageSelectedScenePage.swift */,
+			);
+			path = MXDevicePlanViews;
+			sourceTree = "<group>";
+		};
+		DC67EF48291DEEE1004E7DCB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCF751DE2A2438A8000F0A3C /* MX_Agreement.zip */,
+				DC7FA44D2A20D4A600F54244 /* AppResources.zip */,
+				DC67EF6D291DEF33004E7DCB /* iconfont.ttf */,
+				DC67EF49291DEEE1004E7DCB /* Localizable.strings */,
+				DC14D759293DF7260029F2F0 /* InfoPlist.strings */,
+				DC67EF4B291DEEE1004E7DCB /* loadingAnimations */,
+				DC67EF52291DEEE1004E7DCB /* tabbarAnimations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC67EF4B291DEEE1004E7DCB /* loadingAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				DC67EF4C291DEEE1004E7DCB /* loading_Light.json */,
+				DC67EF4D291DEEE1004E7DCB /* loading_Dark.json */,
+			);
+			path = loadingAnimations;
+			sourceTree = "<group>";
+		};
+		DC67EF52291DEEE1004E7DCB /* tabbarAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				DC67EF53291DEEE1004E7DCB /* smart-dark.json */,
+				DC67EF54291DEEE1004E7DCB /* home-dark.json */,
+				DC67EF55291DEEE1004E7DCB /* device.json */,
+				DC67EF56291DEEE1004E7DCB /* smart.json */,
+				DC67EF57291DEEE1004E7DCB /* device-dark.json */,
+				DC67EF58291DEEE1004E7DCB /* home.json */,
+			);
+			path = tabbarAnimations;
+			sourceTree = "<group>";
+		};
+		DC78B26B29150F7D0015B01C = {
+			isa = PBXGroup;
+			children = (
+				DC78B27629150F7D0015B01C /* MXApp */,
+				DC78B27529150F7D0015B01C /* Products */,
+				6B04CCD59F6CB32216B518D0 /* Pods */,
+				284515579193A8DEA3A869AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC78B27529150F7D0015B01C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC78B27429150F7D0015B01C /* MXApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC78B27629150F7D0015B01C /* MXApp */ = {
+			isa = PBXGroup;
+			children = (
+				DC030119295D884100DF698B /* MXApp.entitlements */,
+				DC67EF48291DEEE1004E7DCB /* Resources */,
+				DC78B28B291517EB0015B01C /* Classes */,
+				DC78B27729150F7D0015B01C /* AppDelegate.swift */,
+				DCF5599B291BB3AB007BBC68 /* MXApp-Bridging-Header.h */,
+				DC78B27D29150F7D0015B01C /* Main.storyboard */,
+				DC78B28029150F7F0015B01C /* Assets.xcassets */,
+				DC78B28229150F7F0015B01C /* LaunchScreen.storyboard */,
+				DC78B28529150F7F0015B01C /* Info.plist */,
+			);
+			path = MXApp;
+			sourceTree = "<group>";
+		};
+		DC78B28B291517EB0015B01C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E64102918F80900D6BD18 /* Extensions */,
+				DC0E640D2918F78F00D6BD18 /* Tools */,
+				DC0E63FF2918E36D00D6BD18 /* MXConfigs */,
+				DC78B28C291517EB0015B01C /* DataManagers */,
+				DC78B28D291517EB0015B01C /* ViewPages */,
+				DC78B28E291517EB0015B01C /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DC78B28C291517EB0015B01C /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				DC7FA4492A209BAD00F54244 /* MXResourcesManager.swift */,
+				DC0E63F12918D7E800D6BD18 /* MXProductManager.swift */,
+				DC0E63F32918D7F900D6BD18 /* MXHomeManager.swift */,
+				DC0E63F52918D81F00D6BD18 /* MXDeviceManager.swift */,
+				DCCD01F3292DF25B00B98498 /* MXSceneManager.swift */,
+				DC0E64072918E50F00D6BD18 /* MXAccountManager.swift */,
+				DC12E6D929BEF09C008E0B3E /* MXGroupManager.swift */,
+				DCAF2CA62B26DE9D003B7F58 /* MXDeviceManager+Gateway.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		DC78B28D291517EB0015B01C /* ViewPages */ = {
+			isa = PBXGroup;
+			children = (
+				DC12E6CC29BEF09C008E0B3E /* MXGroupViews */,
+				DC239119294085F700F0CB4D /* MXDevicePlanViews */,
+				DCBF1B1A2938BA8E00F1B067 /* MXRoomViews */,
+				DCBF1A972938976B00F1B067 /* MXPersonalViews */,
+				DCB08E032934AE90007257FE /* MXHomeViews */,
+				DCCD0209292F097200B98498 /* MXBridgeView */,
+				DCCD0181292DF05E00B98498 /* MXSceneViews */,
+				DCCD017C292DC96A00B98498 /* MXDeviceViews */,
+				DCB271F1292714C4007272C5 /* AddDevices */,
+				DCF5597D291BADEA007BBC68 /* MXBaseViews */,
+				DC0E63F72918D8A100D6BD18 /* MXMainHomePage.swift */,
+				DC0E63FB2918DB0400D6BD18 /* MXMainRoomPage.swift */,
+				DC0E63F92918D96F00D6BD18 /* MXMainScenePage.swift */,
+				DC0E64142919E6C000D6BD18 /* MXMainTabBarController.swift */,
+				DC701D22293996CA00E74234 /* MXLaunchedPage.swift */,
+				DC14D751293DD7710029F2F0 /* MXBleMeshConnectGuidePage.swift */,
+				DC0E64162919E7E500D6BD18 /* Views */,
+			);
+			path = ViewPages;
+			sourceTree = "<group>";
+		};
+		DC78B28E291517EB0015B01C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E63E52918D5D900D6BD18 /* MXProductInfo.swift */,
+				DC0E64092918EB2E00D6BD18 /* MXCategoryInfo.swift */,
+				DC0E63E72918D71200D6BD18 /* MXDeviceInfo.swift */,
+				DC0E63E92918D73D00D6BD18 /* MXPropertyInfo.swift */,
+				DC0E63EB2918D74B00D6BD18 /* MXSceneInfo.swift */,
+				DCF55973291B5932007BBC68 /* MXSceneConditionTimerInfo.swift */,
+				DC0E63ED2918D76900D6BD18 /* MXRoomInfo.swift */,
+				DC0E63EF2918D79A00D6BD18 /* MXHomeInfo.swift */,
+				DC67EF3D291DD9BB004E7DCB /* MXProvisionDeviceInfo.swift */,
+				DCCD0212292F44BA00B98498 /* MXHouseStatusInfo.swift */,
+				DCBF1A95293852D900F1B067 /* MXSceneTemplateInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCB08E032934AE90007257FE /* MXHomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCB08E042934AEA9007257FE /* MXHomeListViewController.swift */,
+				DCB08E082934B261007257FE /* MXHomeDetailViewController.swift */,
+			);
+			path = MXHomeViews;
+			sourceTree = "<group>";
+		};
+		DCB271F1292714C4007272C5 /* AddDevices */ = {
+			isa = PBXGroup;
+			children = (
+				FBB074BA2AFB998D00B8B35C /* ViewModels */,
+				DCB271F2292714C4007272C5 /* MXManualViewController.swift */,
+				DCB271F3292714C4007272C5 /* MXAddDeviceViewController.swift */,
+				DCB271F4292714C4007272C5 /* MXAutoSearchViewController.swift */,
+				DCB271F5292714C4007272C5 /* MXInputWifiPasswordViewController.swift */,
+				DCB271F6292714C4007272C5 /* MXAddDeviceStepViewController.swift */,
+				DCB271F7292714C4007272C5 /* MXAddDeviceSearchViewController.swift */,
+				DCB271F8292714C4007272C5 /* MXAddDeviceInitViewController.swift */,
+				DCB271F9292714C4007272C5 /* Views */,
+				DCB2720C292714C4007272C5 /* MXAddDeviceHelpPage.swift */,
+				DCB2720D292714C4007272C5 /* MXDeviceProvisionStepPage.swift */,
+				DCB2720E292714C4007272C5 /* MXAddDeviceSelectRoomViewController.swift */,
+			);
+			path = AddDevices;
+			sourceTree = "<group>";
+		};
+		DCB271F9292714C4007272C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCB271FA292714C4007272C5 /* MXAddDeviceBottomView.swift */,
+				DCB271FB292714C4007272C5 /* MXCategoryCell.swift */,
+				DCB271FC292714C4007272C5 /* MXAddDeviceSelectRoomCell.swift */,
+				DCB271FD292714C4007272C5 /* MXWifiInputView.swift */,
+				DCB271FE292714C4007272C5 /* MXAddDeviceHeaderView.swift */,
+				DCB271FF292714C4007272C5 /* MXSearchDeviceHeader.swift */,
+				DCB27200292714C4007272C5 /* MXAddDeviceRoomHeaderView.swift */,
+				DCB27201292714C4007272C5 /* MXProductCell.swift */,
+				DCB27202292714C4007272C5 /* MXAddDeviceStepCell.swift */,
+				DCB27203292714C4007272C5 /* MXWifiPasswordHeaderView.swift */,
+				DCB27204292714C4007272C5 /* MXAutoAnimationView.swift */,
+				DCB27205292714C4007272C5 /* MXProvisionStepHeaderView.swift */,
+				DCB27206292714C4007272C5 /* DiscoveryDeviceCell.swift */,
+				DCB27207292714C4007272C5 /* MXAddDeviceRoomFooterView.swift */,
+				DCB27208292714C4007272C5 /* MXSelectWifiView.swift */,
+				DCB27209292714C4007272C5 /* MXPermissionCell.swift */,
+				DCB2720A292714C4007272C5 /* MXProvisionDeviceCell.swift */,
+				DCB2720B292714C4007272C5 /* MXProductCollectionHeader.swift */,
+				DC6C5ECD29CDA5380092869E /* MXSelectedRoomHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCB2722B292715C1007272C5 /* MXPageVIew */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2722C292715C1007272C5 /* MXPageHeadView.swift */,
+				DCB2722D292715C1007272C5 /* MXPageContentView.swift */,
+			);
+			path = MXPageVIew;
+			sourceTree = "<group>";
+		};
+		DCBF1A972938976B00F1B067 /* MXPersonalViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1ACE29389A8E00F1B067 /* Models */,
+				DCBF1A9A29389A8E00F1B067 /* ViewModels */,
+				DCBF1AAD29389A8E00F1B067 /* Views */,
+			);
+			path = MXPersonalViews;
+			sourceTree = "<group>";
+		};
+		DCBF1A9A29389A8E00F1B067 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1AA429389A8E00F1B067 /* MXMenuViewModel.swift */,
+				DCBF1AA829389A8E00F1B067 /* MXAboutPageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DCBF1AAD29389A8E00F1B067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1AAE29389A8E00F1B067 /* MXMenuView.swift */,
+				DCBF1AB629389A8E00F1B067 /* MXMenuViewController.swift */,
+				DCBF1AC429389A8E00F1B067 /* MXAboutPage.swift */,
+				DC701D202939909A00E74234 /* MXWebViewPage.swift */,
+				DCBF1AC829389A8E00F1B067 /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCBF1AC829389A8E00F1B067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1ACA29389A8E00F1B067 /* MXOTADeviceListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCBF1ACE29389A8E00F1B067 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1AD029389A8E00F1B067 /* TableViewCellModel.swift */,
+				DCBF1AD229389A8E00F1B067 /* MXMenuModel.swift */,
+				DCBF1AD329389A8E00F1B067 /* MXDarkModeSettingPageModel.swift */,
+				DCBF1AD729389A8E00F1B067 /* MXAboutPageModel.swift */,
+				DCBF1AD829389A8E00F1B067 /* MXMineSettingPageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCBF1B1A2938BA8E00F1B067 /* MXRoomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1B1B2938BB0600F1B067 /* Views */,
+			);
+			path = MXRoomViews;
+			sourceTree = "<group>";
+		};
+		DCBF1B1B2938BB0600F1B067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF1B1C2938BB0600F1B067 /* MXRoomDetailsPage.swift */,
+				DCBF1B1D2938BB0600F1B067 /* MXRoomWallpaperPreviewPage.swift */,
+				DCBF1B1E2938BB0600F1B067 /* MXRoomWallpaperPage.swift */,
+				DCBF1B1F2938BB0600F1B067 /* MXRoomsPage.swift */,
+				DCBF1B202938BB0600F1B067 /* MXWallpapersPage.swift */,
+				DCBF1B332938BD7200F1B067 /* MXRoomCreatePage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCCD017C292DC96A00B98498 /* MXDeviceViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD017F292DEF3A00B98498 /* MXRoomDevicesPage.swift */,
+				DC14D753293DD9BB0029F2F0 /* MXDeviceListPage.swift */,
+				DCBF1A8B29373A0E00F1B067 /* MXDeviceEditListPage.swift */,
+				DC14D749293DB9240029F2F0 /* MXDeviceDetailViewController.swift */,
+				DC14D74F293DC3A90029F2F0 /* MXDeviceSelectRoomViewController.swift */,
+				DCCD01FC292EFF9400B98498 /* VIews */,
+			);
+			path = MXDeviceViews;
+			sourceTree = "<group>";
+		};
+		DCCD0181292DF05E00B98498 /* MXSceneViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD01B2292DF08B00B98498 /* ScenesListViewController.swift */,
+				DCBF1A8D29373D1D00F1B067 /* MXSceneEditListViewController.swift */,
+				DCCD0182292DF08B00B98498 /* MXSceneDetailPage.swift */,
+				DCCD0187292DF08B00B98498 /* MXSceneExceptionListPage.swift */,
+				DCCD01B9292DF08B00B98498 /* MXSceneSelectDevicePage.swift */,
+				DC7A16BD29DED294009CAB6B /* MXSceneSelectConditionDevicePage.swift */,
+				DCCD01B6292DF08B00B98498 /* MXSceneSelectedActionsPage.swift */,
+				DCCD0185292DF08B00B98498 /* MXSceneSelectedTypePage.swift */,
+				DCCD01B5292DF08B00B98498 /* MXSceneSettingPropertyPage.swift */,
+				DCBF1A8F29375C3A00F1B067 /* MXSceneDevicesSwitchPage.swift */,
+				DCBF1A91293851E500F1B067 /* MXSceneLightScenePage.swift */,
+				DCBF1A92293851E500F1B067 /* MXSceneLightSceneStencilsPage.swift */,
+				DC6C5ECF29CDAC2D0092869E /* MXSceneSelectionViewController.swift */,
+				DC7A16C229DFEB8B009CAB6B /* MXWriteRuleFailPage.swift */,
+				DCCD018A292DF08B00B98498 /* views */,
+			);
+			path = MXSceneViews;
+			sourceTree = "<group>";
+		};
+		DCCD018A292DF08B00B98498 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD018B292DF08B00B98498 /* MXSceneDeviceCell.swift */,
+				DCCD018C292DF08B00B98498 /* MXSceneDeviceStatusView.swift */,
+				DCCD018D292DF08B00B98498 /* MXColorTemperatureView.swift */,
+				DCCD018E292DF08B00B98498 /* MXSceneListHearderView.swift */,
+				DCCD018F292DF08B00B98498 /* MXSceneTypeCell.swift */,
+				DCCD0190292DF08B00B98498 /* MXAutomationCell.swift */,
+				DCCD0191292DF08B00B98498 /* MXHSVSettingView.swift */,
+				DCCD0192292DF08B00B98498 /* MXSceneSelectDeviceViewV2.swift */,
+				DCCD0193292DF08B00B98498 /* MXSceneTemperatureView.swift */,
+				DCCD0194292DF08B00B98498 /* MXSceneSliderSettingView.swift */,
+				DCCD0195292DF08B00B98498 /* RadialHueColorPaletteDelegate.swift */,
+				DCCD0196292DF08B00B98498 /* MXScenePropertyTemperatureCell.swift */,
+				DCCD0197292DF08B00B98498 /* MXScenePropertyHSVCell.swift */,
+				DCCD0198292DF08B00B98498 /* MXSliderSettingView.swift */,
+				DCCD019A292DF08B00B98498 /* MXSceneSettingPropertyView.swift */,
+				DCCD019B292DF08B00B98498 /* MXSceneSwitchView.swift */,
+				DCCD019C292DF08B00B98498 /* MXSelectedSettingView.swift */,
+				DCCD019D292DF08B00B98498 /* MXColorTemperatureSettingView.swift */,
+				DCCD019E292DF08B00B98498 /* MXSceneSheetView.swift */,
+				DCCD019F292DF08B00B98498 /* MXScenceSelectIconView.swift */,
+				DCCD01A1292DF08B00B98498 /* MXSceneItemsView.swift */,
+				DCCD01A2292DF08B00B98498 /* MXScenesCell.swift */,
+				DCCD01A4292DF08B00B98498 /* MXScenePropertyIntCell.swift */,
+				DC6CDAC82A0F3B2500AEF992 /* MXScenePropertyBrightnessCell.swift */,
+				DCCD01A5292DF08B00B98498 /* MXHSVColorView.swift */,
+				DCCD01A7292DF08B00B98498 /* MXSceneEditCell.swift */,
+				DCCD01A8292DF08B00B98498 /* MXScenePropertyEnumCell.swift */,
+				DCCD01A9292DF08B00B98498 /* MXSceneConditionEnumView.swift */,
+				DCCD01AA292DF08B00B98498 /* MXSceneDeviceEditCell.swift */,
+				DCCD01AB292DF08B00B98498 /* MXSceneExceptionCell.swift */,
+				DCCD01AD292DF08B00B98498 /* MXSceneSelectDeviceView.swift */,
+				DCCD01AE292DF08B00B98498 /* MXSceneActionCell.swift */,
+				DCCD01AF292DF08B00B98498 /* MXSceneConditionSliderSettingView.swift */,
+				DCCD01B0292DF08B00B98498 /* MXSceneSwitchSettingView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DCCD01FC292EFF9400B98498 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD01FD292EFF9400B98498 /* MXDeviceItemCell.swift */,
+				DCCD0203292F009800B98498 /* MXHomeSceneCell.swift */,
+				DCCD0207292F01BC00B98498 /* MXHomeDeviceControlView.swift */,
+				DC14D74B293DB9F60029F2F0 /* MXDeviceDetailHeaderView.swift */,
+				DC14D74D293DBBB50029F2F0 /* MXLongPressMenuCell.swift */,
+				DC7A16BF29DFA3FD009CAB6B /* MXSelectCollectionHeaderView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		DCCD0209292F097200B98498 /* MXBridgeView */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD020A292F097200B98498 /* MXBridgeRequestApi.swift */,
+				DCCD020B292F097200B98498 /* MXBridgePageApi.swift */,
+				DCCD020C292F097200B98498 /* MXBridgeDeviceApi.swift */,
+				DCCD020D292F097200B98498 /* MXBridgeWebViewController.swift */,
+				DC0776F92941B976002A9865 /* MXBridgeLightApi.swift */,
+			);
+			path = MXBridgeView;
+			sourceTree = "<group>";
+		};
+		DCF5597D291BADEA007BBC68 /* MXBaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2722B292715C1007272C5 /* MXPageVIew */,
+				DCF55988291BAE41007BBC68 /* MXBaseViewController.swift */,
+				DCF5597E291BAE41007BBC68 /* MXNavigationController.swift */,
+				DCF5597F291BAE41007BBC68 /* MXBaseTableView.swift */,
+				DCF55993291BAE78007BBC68 /* MXEmptyBackgroundView.swift */,
+				DCF5599C291BB5D2007BBC68 /* MXEmptyData */,
+				DCF55980291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout */,
+				DCF55987291BAE41007BBC68 /* MXToastHUD.swift */,
+				DCF55986291BAE41007BBC68 /* MXAlertView.swift */,
+				DCB2723329278F29007272C5 /* MXTableViewCell.swift */,
+			);
+			path = MXBaseViews;
+			sourceTree = "<group>";
+		};
+		DCF55980291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DCF55981291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout.swift */,
+				DCF55982291BAE41007BBC68 /* MXCollectionViewRoundFlowLayout+Alignment.swift */,
+				DCF55983291BAE41007BBC68 /* MXCollectionViewFlowLayoutConfig.swift */,
+				DCF55984291BAE41007BBC68 /* MXCollectionViewRoundConfigModel.swift */,
+				DCF55985291BAE41007BBC68 /* MXCollectionViewFlowLayoutUtils.swift */,
+			);
+			path = MXCollectionViewRoundFlowLayout;
+			sourceTree = "<group>";
+		};
+		DCF5599C291BB5D2007BBC68 /* MXEmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				DCF5599D291BB5D2007BBC68 /* EmptySwizzing.swift */,
+				DCF5599E291BB5D2007BBC68 /* EmptyView.swift */,
+			);
+			path = MXEmptyData;
+			sourceTree = "<group>";
+		};
+		FBB074BA2AFB998D00B8B35C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBB074BB2AFB998D00B8B35C /* MXDeviceScanManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC78B27329150F7D0015B01C /* MXApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC78B28829150F7F0015B01C /* Build configuration list for PBXNativeTarget "MXApp" */;
+			buildPhases = (
+				407CA87D7E05E4B9B3E15F6A /* [CP] Check Pods Manifest.lock */,
+				DC78B27029150F7D0015B01C /* Sources */,
+				DC78B27129150F7D0015B01C /* Frameworks */,
+				DC78B27229150F7D0015B01C /* Resources */,
+				0B607DDB8E045446DA6D37FC /* [CP] Embed Pods Frameworks */,
+				DC67EF79291DF057004E7DCB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MXApp;
+			productName = MXApp;
+			productReference = DC78B27429150F7D0015B01C /* MXApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC78B26C29150F7D0015B01C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DC78B27329150F7D0015B01C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DC78B26F29150F7D0015B01C /* Build configuration list for PBXProject "MXApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = DC78B26B29150F7D0015B01C;
+			productRefGroup = DC78B27529150F7D0015B01C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC78B27329150F7D0015B01C /* MXApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC78B27229150F7D0015B01C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC67EF65291DEEE1004E7DCB /* device.json in Resources */,
+				DC7FA44E2A20D4A600F54244 /* AppResources.zip in Resources */,
+				DC14D75B293DF7260029F2F0 /* InfoPlist.strings in Resources */,
+				DC67EF5F291DEEE1004E7DCB /* loading_Light.json in Resources */,
+				DC78B28429150F7F0015B01C /* LaunchScreen.storyboard in Resources */,
+				DC67EF5E291DEEE1004E7DCB /* Localizable.strings in Resources */,
+				DC67EF66291DEEE1004E7DCB /* smart.json in Resources */,
+				DC78B28129150F7F0015B01C /* Assets.xcassets in Resources */,
+				DC67EF6E291DEF33004E7DCB /* iconfont.ttf in Resources */,
+				DC67EF64291DEEE1004E7DCB /* home-dark.json in Resources */,
+				DC67EF60291DEEE1004E7DCB /* loading_Dark.json in Resources */,
+				DC67EF63291DEEE1004E7DCB /* smart-dark.json in Resources */,
+				DC78B27F29150F7D0015B01C /* Main.storyboard in Resources */,
+				DCF751DF2A2438A8000F0A3C /* MX_Agreement.zip in Resources */,
+				DC67EF68291DEEE1004E7DCB /* home.json in Resources */,
+				DC67EF67291DEEE1004E7DCB /* device-dark.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B607DDB8E045446DA6D37FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MXApp/Pods-MXApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MXApp/Pods-MXApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MXApp/Pods-MXApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407CA87D7E05E4B9B3E15F6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MXApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC78B27029150F7D0015B01C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD01C6292DF08B00B98498 /* MXSceneListHearderView.swift in Sources */,
+				DCCD01FE292EFF9400B98498 /* MXDeviceItemCell.swift in Sources */,
+				DCCD01DF292DF08B00B98498 /* MXSceneEditCell.swift in Sources */,
+				DC2AB0752950137000C75BDA /* MXLinkageSelectedScenePage.swift in Sources */,
+				DCB27228292714C4007272C5 /* MXAddDeviceHelpPage.swift in Sources */,
+				DCB27222292714C4007272C5 /* DiscoveryDeviceCell.swift in Sources */,
+				DCCD01CC292DF08B00B98498 /* MXSceneSliderSettingView.swift in Sources */,
+				DC67EF47291DE925004E7DCB /* MXMenuAlertView.swift in Sources */,
+				DCCD01E2292DF08C00B98498 /* MXSceneDeviceEditCell.swift in Sources */,
+				DCCD01C9292DF08B00B98498 /* MXHSVSettingView.swift in Sources */,
+				DCF55976291BAA4E007BBC68 /* Codable+Extension.swift in Sources */,
+				DC12E6E329BEF09C008E0B3E /* MXGroupSettingRoomCell.swift in Sources */,
+				DCF5598C291BAE42007BBC68 /* MXCollectionViewRoundFlowLayout+Alignment.swift in Sources */,
+				DCB27227292714C4007272C5 /* MXProductCollectionHeader.swift in Sources */,
+				DC7A16BE29DED294009CAB6B /* MXSceneSelectConditionDevicePage.swift in Sources */,
+				DCB2723429278F29007272C5 /* MXTableViewCell.swift in Sources */,
+				DCCD0208292F01BC00B98498 /* MXHomeDeviceControlView.swift in Sources */,
+				DC14D74C293DB9F60029F2F0 /* MXDeviceDetailHeaderView.swift in Sources */,
+				DCBF1B0E29389A8E00F1B067 /* TableViewCellModel.swift in Sources */,
+				DC5B39A329ADECFC00AA9CCB /* MXAppPageConfig.swift in Sources */,
+				DC0E63F82918D8A100D6BD18 /* MXMainHomePage.swift in Sources */,
+				DC0E63F62918D81F00D6BD18 /* MXDeviceManager.swift in Sources */,
+				DCBF1B1529389A8F00F1B067 /* MXAboutPageModel.swift in Sources */,
+				DC12E6E429BEF09C008E0B3E /* MXGroupSelectCategoryAlertView.swift in Sources */,
+				DC12E6DC29BEF09C008E0B3E /* MXGroupDevicesPage.swift in Sources */,
+				DC6CDAC92A0F3B2500AEF992 /* MXScenePropertyBrightnessCell.swift in Sources */,
+				DCB27225292714C4007272C5 /* MXPermissionCell.swift in Sources */,
+				DCAF2CA72B26DE9D003B7F58 /* MXDeviceManager+Gateway.swift in Sources */,
+				DCBF1AF629389A8E00F1B067 /* MXMenuViewController.swift in Sources */,
+				DC12E6DD29BEF09C008E0B3E /* MXGroupSettingPage.swift in Sources */,
+				DCF5597C291BAADC007BBC68 /* UIImage+Extension.swift in Sources */,
+				DCCD020E292F097200B98498 /* MXBridgeRequestApi.swift in Sources */,
+				DCB2721F292714C4007272C5 /* MXWifiPasswordHeaderView.swift in Sources */,
+				DCB27221292714C4007272C5 /* MXProvisionStepHeaderView.swift in Sources */,
+				FBB074BC2AFB998D00B8B35C /* MXDeviceScanManager.swift in Sources */,
+				DCBF1B232938BB0600F1B067 /* MXRoomWallpaperPage.swift in Sources */,
+				DCB2720F292714C4007272C5 /* MXManualViewController.swift in Sources */,
+				DC0E63F02918D79A00D6BD18 /* MXHomeInfo.swift in Sources */,
+				DCB27229292714C4007272C5 /* MXDeviceProvisionStepPage.swift in Sources */,
+				DCB27224292714C4007272C5 /* MXSelectWifiView.swift in Sources */,
+				DCCD01CB292DF08B00B98498 /* MXSceneTemperatureView.swift in Sources */,
+				DC14D74E293DBBB50029F2F0 /* MXLongPressMenuCell.swift in Sources */,
+				DCB27215292714C4007272C5 /* MXAddDeviceInitViewController.swift in Sources */,
+				DCCD01E6292DF08C00B98498 /* MXSceneActionCell.swift in Sources */,
+				DCEF0A7E29C2AF6E005E63BD /* MXGroupControlView.swift in Sources */,
+				DCCD01C8292DF08B00B98498 /* MXAutomationCell.swift in Sources */,
+				DC14D756293DEE850029F2F0 /* UITapGestureRecognizer+Extension.swift in Sources */,
+				DCCD01D3292DF08B00B98498 /* MXSceneSwitchView.swift in Sources */,
+				DCF55996291BAFC5007BBC68 /* UIView+Extension.swift in Sources */,
+				DC0E63E62918D5D900D6BD18 /* MXProductInfo.swift in Sources */,
+				DCB27223292714C4007272C5 /* MXAddDeviceRoomFooterView.swift in Sources */,
+				DCCD01C7292DF08B00B98498 /* MXSceneTypeCell.swift in Sources */,
+				DCF5598A291BAE41007BBC68 /* MXBaseTableView.swift in Sources */,
+				DCB2721D292714C4007272C5 /* MXProductCell.swift in Sources */,
+				DCBF1B1029389A8E00F1B067 /* MXMenuModel.swift in Sources */,
+				DC701D212939909A00E74234 /* MXWebViewPage.swift in Sources */,
+				DCCD01D7292DF08B00B98498 /* MXScenceSelectIconView.swift in Sources */,
+				DCCD01DD292DF08B00B98498 /* MXHSVColorView.swift in Sources */,
+				DCCD01E8292DF08C00B98498 /* MXSceneSwitchSettingView.swift in Sources */,
+				DC6C5ED029CDAC2D0092869E /* MXSceneSelectionViewController.swift in Sources */,
+				DC12E6E529BEF09C008E0B3E /* MXGroupManager.swift in Sources */,
+				DC701D23293996CA00E74234 /* MXLaunchedPage.swift in Sources */,
+				DCF55998291BB037007BBC68 /* String+Extension.swift in Sources */,
+				DC0E63F22918D7E800D6BD18 /* MXProductManager.swift in Sources */,
+				DCCD01E1292DF08C00B98498 /* MXSceneConditionEnumView.swift in Sources */,
+				DCCD0180292DEF3A00B98498 /* MXRoomDevicesPage.swift in Sources */,
+				DCF5597A291BAA78007BBC68 /* UIColor+Extension.swift in Sources */,
+				DCCD01ED292DF08C00B98498 /* MXSceneSettingPropertyPage.swift in Sources */,
+				DCB08E092934B262007257FE /* MXHomeDetailViewController.swift in Sources */,
+				DC0E63EC2918D74B00D6BD18 /* MXSceneInfo.swift in Sources */,
+				DCCD01C0292DF08B00B98498 /* MXSceneExceptionListPage.swift in Sources */,
+				DCBF1B1129389A8E00F1B067 /* MXDarkModeSettingPageModel.swift in Sources */,
+				DC7A16C329DFEB8B009CAB6B /* MXWriteRuleFailPage.swift in Sources */,
+				DC12E6DB29BEF09C008E0B3E /* MXGroupSelectCategoryPage.swift in Sources */,
+				DC6C5ECE29CDA5380092869E /* MXSelectedRoomHeaderView.swift in Sources */,
+				DC0E63FC2918DB0400D6BD18 /* MXMainRoomPage.swift in Sources */,
+				DCBF1B342938BD7200F1B067 /* MXRoomCreatePage.swift in Sources */,
+				DC0E640A2918EB2E00D6BD18 /* MXCategoryInfo.swift in Sources */,
+				DC14D752293DD7710029F2F0 /* MXBleMeshConnectGuidePage.swift in Sources */,
+				DCBF1A8C29373A0E00F1B067 /* MXDeviceEditListPage.swift in Sources */,
+				DCB27213292714C4007272C5 /* MXAddDeviceStepViewController.swift in Sources */,
+				DC12E6DF29BEF09C008E0B3E /* MXGroupSettingHeaderView.swift in Sources */,
+				DCCD01F4292DF25B00B98498 /* MXSceneManager.swift in Sources */,
+				DC7FA44A2A209BAD00F54244 /* MXResourcesManager.swift in Sources */,
+				DCCD01C4292DF08B00B98498 /* MXSceneDeviceStatusView.swift in Sources */,
+				DC0E64182919E81C00D6BD18 /* MXTabBar.swift in Sources */,
+				DCB27220292714C4007272C5 /* MXAutoAnimationView.swift in Sources */,
+				DCCD01CA292DF08B00B98498 /* MXSceneSelectDeviceViewV2.swift in Sources */,
+				DCB2722F292715C1007272C5 /* MXPageContentView.swift in Sources */,
+				DC12E6E129BEF09C008E0B3E /* MXSelectCategoryCell.swift in Sources */,
+				DC0E63EA2918D73D00D6BD18 /* MXPropertyInfo.swift in Sources */,
+				DCB27217292714C4007272C5 /* MXCategoryCell.swift in Sources */,
+				DCB08E062934AEA9007257FE /* MXHomeListViewController.swift in Sources */,
+				DCB2721E292714C4007272C5 /* MXAddDeviceStepCell.swift in Sources */,
+				DCAA1F092923290A008F653D /* UIButton+Extension.swift in Sources */,
+				DCF55989291BAE41007BBC68 /* MXNavigationController.swift in Sources */,
+				DC67EF7F291DFC2E004E7DCB /* MXRouterManager.swift in Sources */,
+				DCCD01EA292DF08C00B98498 /* ScenesListViewController.swift in Sources */,
+				DCCD01D6292DF08B00B98498 /* MXSceneSheetView.swift in Sources */,
+				DCBF1A8E29373D1D00F1B067 /* MXSceneEditListViewController.swift in Sources */,
+				DCF55994291BAE78007BBC68 /* MXEmptyBackgroundView.swift in Sources */,
+				DCF5598B291BAE42007BBC68 /* MXCollectionViewRoundFlowLayout.swift in Sources */,
+				DCCD01BE292DF08B00B98498 /* MXSceneSelectedTypePage.swift in Sources */,
+				DCCD01D2292DF08B00B98498 /* MXSceneSettingPropertyView.swift in Sources */,
+				DC7A16C029DFA3FD009CAB6B /* MXSelectCollectionHeaderView.swift in Sources */,
+				DCCD01F6292DFF0700B98498 /* MXCron.swift in Sources */,
+				DCF5599A291BB0A4007BBC68 /* String+NSPredicate.swift in Sources */,
+				DC0E63EE2918D76900D6BD18 /* MXRoomInfo.swift in Sources */,
+				DCCD01D9292DF08B00B98498 /* MXSceneItemsView.swift in Sources */,
+				DC0E63FA2918D96F00D6BD18 /* MXMainScenePage.swift in Sources */,
+				DCBF1B0929389A8E00F1B067 /* MXOTADeviceListCell.swift in Sources */,
+				DC0E63E82918D71200D6BD18 /* MXDeviceInfo.swift in Sources */,
+				DCF5598F291BAE42007BBC68 /* MXCollectionViewFlowLayoutUtils.swift in Sources */,
+				DC0E64082918E50F00D6BD18 /* MXAccountManager.swift in Sources */,
+				DCCD01E0292DF08C00B98498 /* MXScenePropertyEnumCell.swift in Sources */,
+				DCB27226292714C4007272C5 /* MXProvisionDeviceCell.swift in Sources */,
+				DC0E640C2918F16900D6BD18 /* AppUIConfiguration.swift in Sources */,
+				DCF55974291B5933007BBC68 /* MXSceneConditionTimerInfo.swift in Sources */,
+				DC0E640F2918F7A800D6BD18 /* MXHSVColorHandle.swift in Sources */,
+				DCCD01C5292DF08B00B98498 /* MXColorTemperatureView.swift in Sources */,
+				DC14D754293DD9BB0029F2F0 /* MXDeviceListPage.swift in Sources */,
+				DCB27216292714C4007272C5 /* MXAddDeviceBottomView.swift in Sources */,
+				DCBF1A9029375C3A00F1B067 /* MXSceneDevicesSwitchPage.swift in Sources */,
+				DCCD01BB292DF08B00B98498 /* MXSceneDetailPage.swift in Sources */,
+				DCB27214292714C4007272C5 /* MXAddDeviceSearchViewController.swift in Sources */,
+				DCBF1A93293851E500F1B067 /* MXSceneLightScenePage.swift in Sources */,
+				DCB2721B292714C4007272C5 /* MXSearchDeviceHeader.swift in Sources */,
+				DCB27219292714C4007272C5 /* MXWifiInputView.swift in Sources */,
+				DCCD01CE292DF08B00B98498 /* MXScenePropertyTemperatureCell.swift in Sources */,
+				DC0E63F42918D7F900D6BD18 /* MXHomeManager.swift in Sources */,
+				DCCD01D4292DF08B00B98498 /* MXSelectedSettingView.swift in Sources */,
+				DCCD0213292F44BA00B98498 /* MXHouseStatusInfo.swift in Sources */,
+				DCBF1AE529389A8E00F1B067 /* MXMenuViewModel.swift in Sources */,
+				DC12E6E029BEF09C008E0B3E /* MXSelectDeviceCell.swift in Sources */,
+				DCBF1B252938BB0600F1B067 /* MXWallpapersPage.swift in Sources */,
+				DC12E6E229BEF09C008E0B3E /* MXGroupSettingFooterView.swift in Sources */,
+				DCBF1B0429389A8E00F1B067 /* MXAboutPage.swift in Sources */,
+				DC0E64122918F83D00D6BD18 /* UIFont+Extension.swift in Sources */,
+				DCBF1B212938BB0600F1B067 /* MXRoomDetailsPage.swift in Sources */,
+				DCBF1A8A2937396400F1B067 /* MXListFooterView.swift in Sources */,
+				DC67EF3E291DD9BB004E7DCB /* MXProvisionDeviceInfo.swift in Sources */,
+				DCCD01E3292DF08C00B98498 /* MXSceneExceptionCell.swift in Sources */,
+				DCCD01F1292DF08C00B98498 /* MXSceneSelectDevicePage.swift in Sources */,
+				DC0776FA2941B976002A9865 /* MXBridgeLightApi.swift in Sources */,
+				DCCD0211292F097200B98498 /* MXBridgeWebViewController.swift in Sources */,
+				DCCD01CD292DF08B00B98498 /* RadialHueColorPaletteDelegate.swift in Sources */,
+				DCF5599F291BB5D2007BBC68 /* EmptySwizzing.swift in Sources */,
+				DC0E64152919E6C000D6BD18 /* MXMainTabBarController.swift in Sources */,
+				DC67EF40291DDBED004E7DCB /* MXHomeMenuView.swift in Sources */,
+				DCB2722A292714C4007272C5 /* MXAddDeviceSelectRoomViewController.swift in Sources */,
+				DCBF1AEE29389A8E00F1B067 /* MXMenuView.swift in Sources */,
+				DCBF1AE929389A8E00F1B067 /* MXAboutPageViewModel.swift in Sources */,
+				DCBF1B242938BB0600F1B067 /* MXRoomsPage.swift in Sources */,
+				DCF5598E291BAE42007BBC68 /* MXCollectionViewRoundConfigModel.swift in Sources */,
+				DCCD01CF292DF08B00B98498 /* MXScenePropertyHSVCell.swift in Sources */,
+				DCBF1B1629389A8F00F1B067 /* MXMineSettingPageModel.swift in Sources */,
+				DCCD01D5292DF08B00B98498 /* MXColorTemperatureSettingView.swift in Sources */,
+				DCCD01E7292DF08C00B98498 /* MXSceneConditionSliderSettingView.swift in Sources */,
+				DC78B27829150F7D0015B01C /* AppDelegate.swift in Sources */,
+				DCCD01D0292DF08B00B98498 /* MXSliderSettingView.swift in Sources */,
+				DC14D750293DC3A90029F2F0 /* MXDeviceSelectRoomViewController.swift in Sources */,
+				DCB2722E292715C1007272C5 /* MXPageHeadView.swift in Sources */,
+				DCCD01EE292DF08C00B98498 /* MXSceneSelectedActionsPage.swift in Sources */,
+				DCB27211292714C4007272C5 /* MXAutoSearchViewController.swift in Sources */,
+				DCF5598D291BAE42007BBC68 /* MXCollectionViewFlowLayoutConfig.swift in Sources */,
+				DCBF1A94293851E500F1B067 /* MXSceneLightSceneStencilsPage.swift in Sources */,
+				DC12E6DE29BEF09C008E0B3E /* MXGroupDetailViewController.swift in Sources */,
+				DCCD01C3292DF08B00B98498 /* MXSceneDeviceCell.swift in Sources */,
+				DCCD020F292F097200B98498 /* MXBridgePageApi.swift in Sources */,
+				DCB2721A292714C4007272C5 /* MXAddDeviceHeaderView.swift in Sources */,
+				DCBF1A892937396400F1B067 /* MXFooterMenuCell.swift in Sources */,
+				DCBF1B222938BB0600F1B067 /* MXRoomWallpaperPreviewPage.swift in Sources */,
+				DCB27218292714C4007272C5 /* MXAddDeviceSelectRoomCell.swift in Sources */,
+				DCB27210292714C4007272C5 /* MXAddDeviceViewController.swift in Sources */,
+				DCF55991291BAE42007BBC68 /* MXToastHUD.swift in Sources */,
+				DC14D74A293DB9240029F2F0 /* MXDeviceDetailViewController.swift in Sources */,
+				DCBF1A96293852D900F1B067 /* MXSceneTemplateInfo.swift in Sources */,
+				DCCD01DA292DF08B00B98498 /* MXScenesCell.swift in Sources */,
+				DCCD01DC292DF08B00B98498 /* MXScenePropertyIntCell.swift in Sources */,
+				DCF55990291BAE42007BBC68 /* MXAlertView.swift in Sources */,
+				DC67EF2F291DD7B8004E7DCB /* MXHomeTitleView.swift in Sources */,
+				DCB27212292714C4007272C5 /* MXInputWifiPasswordViewController.swift in Sources */,
+				DCF55978291BAA61007BBC68 /* MXSystemAuth.swift in Sources */,
+				DCCD0210292F097200B98498 /* MXBridgeDeviceApi.swift in Sources */,
+				DC67EF42291DDC93004E7DCB /* MXHomeMenuFooterView.swift in Sources */,
+				DCCD0205292F009900B98498 /* MXHomeSceneCell.swift in Sources */,
+				DCCD01E5292DF08C00B98498 /* MXSceneSelectDeviceView.swift in Sources */,
+				DCF55992291BAE42007BBC68 /* MXBaseViewController.swift in Sources */,
+				DCB2721C292714C4007272C5 /* MXAddDeviceRoomHeaderView.swift in Sources */,
+				DCF559A0291BB5D2007BBC68 /* EmptyView.swift in Sources */,
+				DCCD01FA292E410800B98498 /* MXCollectionHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC14D759293DF7260029F2F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC14D75A293DF7260029F2F0 /* en */,
+				DC14D75C293DF7320029F2F0 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC67EF49291DEEE1004E7DCB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC67EF4A291DEEE1004E7DCB /* zh-Hans */,
+				DC67EF4E291DEEE1004E7DCB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DC78B27D29150F7D0015B01C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC67EF43291DDD52004E7DCB /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC78B28229150F7F0015B01C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC67EF44291DDD52004E7DCB /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC78B28629150F7F0015B01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC78B28729150F7F0015B01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC78B28929150F7F0015B01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C6158AF1A55DC136CF0A79 /* Pods-MXApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = MXApp/MXApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AYDR2YFZ4K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MXApp/Resources/Frameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/RTK-frameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/MXFrameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlexColorPicker/FlexColorPicker.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PinLayout/PinLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZipArchive/ZipArchive.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+				);
+				INFOPLIST_FILE = MXApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks/MXHAC",
+					"$(PROJECT_DIR)/MXApp/Classes/MXFrameworks/MXHAC",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FlexColorPicker\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"PinLayout\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"ZipArchive\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mxchip.appDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MXApp/MXApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DC78B28A29150F7F0015B01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2393B742EFD21F0E5685E0 /* Pods-MXApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = MXApp/MXApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AYDR2YFZ4K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MXApp/Resources/Frameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/RTK-frameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/MXFrameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlexColorPicker/FlexColorPicker.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PinLayout/PinLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZipArchive/ZipArchive.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+				);
+				INFOPLIST_FILE = MXApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks",
+					"$(PROJECT_DIR)/MXApp/Classes/Libs/MXMeshFrameworks/MXHAC",
+					"$(PROJECT_DIR)/MXApp/Classes/MXFrameworks/MXHAC",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FlexColorPicker\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"PinLayout\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"ZipArchive\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mxchip.appDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MXApp/MXApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC78B26F29150F7D0015B01C /* Build configuration list for PBXProject "MXApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC78B28629150F7F0015B01C /* Debug */,
+				DC78B28729150F7F0015B01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC78B28829150F7F0015B01C /* Build configuration list for PBXNativeTarget "MXApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC78B28929150F7F0015B01C /* Debug */,
+				DC78B28A29150F7F0015B01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC78B26C29150F7D0015B01C /* Project object */;
+}

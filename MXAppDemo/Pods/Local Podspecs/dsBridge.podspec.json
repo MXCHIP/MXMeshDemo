@@ -1,0 +1,22 @@
+{
+  "name": "dsBridge",
+  "version": "1.0.0",
+  "summary": "A short description of dsbridge.",
+  "description": "dsBridge",
+  "homepage": "https://rd.mxchip.com/mx/mx_sdk_ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "huafeng": "zhanghf@mxchip.com"
+  },
+  "source": {
+    "git": "https://github.com/MXCHIP/MXFrameworks_IOS.git"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "vendored_frameworks": "MXFrameworks/dsBridge.framework"
+}

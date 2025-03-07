@@ -1,0 +1,24 @@
+{
+  "name": "MeshSDK",
+  "version": "1.0.0",
+  "summary": "A short description of MeshSDK.",
+  "description": "mxchip mesh sdk",
+  "homepage": "https://rd.mxchip.com/mx/mx_sdk_ios",
+  "license": "",
+  "authors": {
+    "huafeng": "zhanghf@mxchip.com"
+  },
+  "source": {
+    "git": "https://github.com/MXCHIP/MXFrameworks_IOS.git"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "vendored_frameworks": "MXFrameworks/MeshSDK.framework",
+  "dependencies": {
+    "CryptoSwift": [
+      "1.4.0"
+    ]
+  }
+}

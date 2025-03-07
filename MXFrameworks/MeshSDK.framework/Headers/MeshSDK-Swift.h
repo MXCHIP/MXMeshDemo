@@ -360,6 +360,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MXMeshProvis
 @property (nonatomic) BOOL isBusy;
 - (void)mxProvisionFinish;
 - (void)startUnprovisionedDeviceProvisionWithDevice:(UnprovisionedDevice * _Nonnull)device peripheral:(CBPeripheral * _Nonnull)peripheral networkKey:(NSString * _Nonnull)networkKey delegate:(id <MXMeshProvisioningDelegate> _Nullable)delegate;
+- (void)nextGattSwitch;
 - (void)startUnprovisionedDeviceProvisionWithMac:(NSString * _Nonnull)mac networkKey:(NSString * _Nonnull)networkKey delegate:(id <MXMeshProvisioningDelegate> _Nullable)delegate;
 - (void)startUnprovisionedDeviceProvisionWithAdvertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData peripheral:(CBPeripheral * _Nonnull)peripheral networkKey:(NSString * _Nonnull)networkKey provisioningDelegate:(id <MXMeshProvisioningDelegate> _Nullable)provisioningDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -445,12 +446,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 @end
 
 
+
+
 @interface MeshSDK (SWIFT_EXTENSION(MeshSDK))
-- (void)getGATTProxyStatusWithUuid:(NSString * _Nullable)uuid callback:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))callback;
+- (void)getGATTProxyStatusWithUuid:(NSString * _Nonnull)uuid callback:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))callback;
 @end
-
-
-
 
 
 
@@ -458,6 +458,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 - (void)subscribeMeshProxyFilterWithAddress:(uint16_t)address;
 - (void)unsubscribeMeshProxyFilterWithAddress:(uint16_t)address;
 @end
+
 
 
 

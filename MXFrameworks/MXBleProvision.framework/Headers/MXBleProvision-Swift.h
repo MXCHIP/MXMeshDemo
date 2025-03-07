@@ -301,7 +301,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class CBPeripheral;
 @class NSString;
+
+SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleDeviceLogDelegate_")
+@protocol MXBleDeviceLogDelegate
+@optional
+- (void)openDeviceLogSuccessWithPeripheral:(CBPeripheral * _Nonnull)peripheral;
+- (void)openDeviceLogFailWithPeripheral:(CBPeripheral * _Nullable)peripheral;
+- (void)sendCmdResultWithPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
+- (void)receiveDeviceLogWithPeripheral:(CBPeripheral * _Nonnull)peripheral log:(NSString * _Nonnull)log;
+@end
+
 @class NSError;
 
 SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleProvisionDelegate_")
@@ -321,11 +332,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MXBleProvisi
 + (MXBleProvisionManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Nonnull scanDevices;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)startScanWithTimeout:(NSInteger)timeout callback:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nonnull, BOOL))callback;
+- (void)startScanWithTimeout:(NSInteger)timeout deviceType:(NSInteger)deviceType callback:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nonnull, BOOL))callback;
 - (void)stopScan;
 @end
 
-@class CBPeripheral;
 
 @interface MXBleProvisionManager (SWIFT_EXTENSION(MXBleProvision))
 + (void)startProvisionWithType:(NSInteger)type peripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceIdentifier:(NSString * _Nonnull)deviceIdentifier productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
@@ -355,26 +365,53 @@ SWIFT_CLASS("_TtC14MXBleProvision12MXEncryption")
 @end
 
 
+SWIFT_CLASS("_TtC14MXBleProvision18MXFogBleLogManager")
+@interface MXFogBleLogManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleLogManager * _Nonnull shard;)
++ (MXFogBleLogManager * _Nonnull)shard SWIFT_WARN_UNUSED_RESULT;
++ (void)setShard:(MXFogBleLogManager * _Nonnull)value;
+@property (nonatomic, weak) id <MXBleDeviceLogDelegate> _Nullable logDelegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MXFogBleLogManager (SWIFT_EXTENSION(MXBleProvision))
+- (void)openDeviceLogWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout delegate:(id <MXBleDeviceLogDelegate> _Nullable)delegate;
+- (void)closeDeviceLog;
+- (void)sendCliMsgWithCmd:(NSString * _Nonnull)cmd;
+@end
+
+@class CBService;
+@class CBCharacteristic;
+
+@interface MXFogBleLogManager (SWIFT_EXTENSION(MXBleProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
+- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didConnectPeripheral:(CBPeripheral * _Nonnull)peripheral;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didFailToConnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverServices:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didModifyServices:(NSArray<CBService *> * _Nonnull)invalidatedServices;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral * _Nonnull)peripheral;
+@end
+
+
 SWIFT_CLASS("_TtC14MXBleProvision21MXFogProvisionManager")
 @interface MXFogProvisionManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogProvisionManager * _Nonnull shard;)
 + (MXFogProvisionManager * _Nonnull)shard SWIFT_WARN_UNUSED_RESULT;
 + (void)setShard:(MXFogProvisionManager * _Nonnull)value;
 @property (nonatomic, weak) id <MXBleProvisionDelegate> _Nullable provisionDelegate;
+@property (nonatomic, weak) id <MXBleDeviceLogDelegate> _Nullable log_delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setTimeOutWithTimeNum:(NSInteger)timeNum;
 @end
 
-
-@interface MXFogProvisionManager (SWIFT_EXTENSION(MXBleProvision))
-- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
-- (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class CBService;
-@class CBCharacteristic;
 
 @interface MXFogProvisionManager (SWIFT_EXTENSION(MXBleProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
 - (void)startScan;
@@ -393,6 +430,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogProvisionManager 
 @end
 
 
+@interface MXFogProvisionManager (SWIFT_EXTENSION(MXBleProvision))
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate logDelegate:(id <MXBleDeviceLogDelegate> _Nullable)logDelegate;
+- (void)cleanProvisionCache;
+- (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC14MXBleProvision24MXLivingProvisionManager")
 @interface MXLivingProvisionManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXLivingProvisionManager * _Nonnull shard;)
@@ -407,6 +452,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXLivingProvisionManag
 
 @interface MXLivingProvisionManager (SWIFT_EXTENSION(MXBleProvision))
 - (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey mac:(NSString * _Nonnull)mac productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)cleanProvisionCache;
 @end
 
 
@@ -441,11 +487,48 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXTMallProvisionManage
 
 @interface MXTMallProvisionManager (SWIFT_EXTENSION(MXBleProvision))
 - (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey mac:(NSString * _Nonnull)mac productId:(NSString * _Nullable)productId timeout:(NSInteger)timeout delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)cleanProvisionCache;
 - (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface MXTMallProvisionManager (SWIFT_EXTENSION(MXBleProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
+- (void)startScan;
+- (void)stopScan;
+- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didConnectPeripheral:(CBPeripheral * _Nonnull)peripheral;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didFailToConnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverServices:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didModifyServices:(NSArray<CBService *> * _Nonnull)invalidatedServices;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral * _Nonnull)peripheral;
+@end
+
+
+SWIFT_CLASS("_TtC14MXBleProvision21MXYatProvisionManager")
+@interface MXYatProvisionManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXYatProvisionManager * _Nonnull shard;)
++ (MXYatProvisionManager * _Nonnull)shard SWIFT_WARN_UNUSED_RESULT;
++ (void)setShard:(MXYatProvisionManager * _Nonnull)value;
+@property (nonatomic, weak) id <MXBleProvisionDelegate> _Nullable provisionDelegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setTimeOutWithTimeNum:(NSInteger)timeNum;
+@end
+
+
+@interface MXYatProvisionManager (SWIFT_EXTENSION(MXBleProvision))
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey mac:(NSString * _Nonnull)mac timeout:(NSInteger)timeout type:(NSInteger)type delegate:(id <MXBleProvisionDelegate> _Nullable)delegate;
+- (void)cleanProvisionCache;
+- (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MXYatProvisionManager (SWIFT_EXTENSION(MXBleProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
 - (void)startScan;
 - (void)stopScan;
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;

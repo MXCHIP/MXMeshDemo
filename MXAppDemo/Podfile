@@ -1,0 +1,41 @@
+platform:ios, '12.0'
+
+# github 官方 pod 源
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target "MXApp" do
+    
+  pod 'lottie-ios', '~> 4.2.0'
+  pod 'FlexColorPicker', '~> 1.4.2'
+  pod 'PinLayout', '~> 1.10.4'
+  pod 'SVProgressHUD', '~> 2.2.5'
+  pod 'SDWebImage', '~> 5.17.0'
+  pod 'MJRefresh', '3.1.15'
+  pod 'ZipArchive', '1.4.0'
+  
+  pod 'MeshSDK', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
+  pod 'dsBridge', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
+  pod 'MXURLRouter', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
+  
+end
+
+
+
+
+pre_install do |installer|
+  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+         end
+    end
+  end
+end
+
+

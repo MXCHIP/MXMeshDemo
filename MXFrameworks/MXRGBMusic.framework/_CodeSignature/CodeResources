@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iIWQJu60fLlkWa4sz3NldfHQjvo=
+		pBLWdtsiGlHZsqB3YhYFG0RP1nU=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MXRGBMusic.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		iRTEe7s85XnA6X8k0daFmvEJ97I=
+		Ssb0oHrh3BZpLU2/PCGlmcuoX9k=
 		</data>
 		<key>Modules/MXRGBMusic.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MXRGBMusic.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		p6s7skk1+yIzbdhg4lyCtSKfHMk=
+		G7VDtlPjHMqm6fzyzkdBuiMxBj4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -141,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iRTEe7s85XnA6X8k0daFmvEJ97I=
+			Ssb0oHrh3BZpLU2/PCGlmcuoX9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			TAO/CpZuxsWKYdXp9H5maaX+sDpPnH05i9NKgNzaDl8=
+			QAzwvacKm8KLNUdxz+nx6w6qwOu/JU51EXZOIhgehek=
 			</data>
 		</dict>
 		<key>Modules/MXRGBMusic.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p6s7skk1+yIzbdhg4lyCtSKfHMk=
+			G7VDtlPjHMqm6fzyzkdBuiMxBj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			iIFBwATklxr1V8kUkkVc8sa8Ma6JS4O1tZ0IYBa9sBw=
+			Hr9zregEHPVjT6jZV6WoJqfkrxnDJsYrCF1iuZvF3tc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

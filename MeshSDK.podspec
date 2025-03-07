@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
   spec.vendored_frameworks = 'MXFrameworks/MeshSDK.framework'
   
-  spec.dependency 'CryptoSwift', '1.4.0'
+  spec.dependency 'CryptoSwift'
 
 end
