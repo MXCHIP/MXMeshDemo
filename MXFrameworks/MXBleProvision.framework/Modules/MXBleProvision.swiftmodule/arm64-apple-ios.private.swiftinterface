@@ -1,14 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MXBleProvision
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MXBleProvision
 import CommonCrypto
 import CoreBluetooth
 import CryptoSwift
 import Foundation
 @_exported import MXBleProvision
 import Swift
-import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -21,7 +19,8 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol MXBleProvisionDelegate {
-  @objc optional func inputWifiInfo(handler: @escaping ((_ ssid: Swift.String, _ password: Swift.String, _ customParams: [Swift.String : Any]?) -> Swift.Void))
+  @objc optional func mxBleProvisionStep(productKey: Swift.String, deviceIdentifier: Swift.String, step: Swift.Int)
+  @objc optional func inputWifiInfo(handler: @escaping ((_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void))
   @objc optional func mxBleProvisionFinish(productKey: Swift.String, deviceIdentifier: Swift.String, error: Foundation.NSError?, device_name: Swift.String?)
   @objc optional func requestBleKey(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ cipher: Swift.String?) -> Swift.Void))
   @objc optional func requestConnectStatus(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ connectStatus: Swift.Bool) -> Swift.Void))
@@ -142,10 +141,13 @@ extension MXBleProvision.MXTMallProvisionManager : CoreBluetooth.CBCentralManage
   @objc weak public var log_delegate: (any MXBleProvision.MXBleDeviceLogDelegate)?
   @objc deinit
   @objc public func setTimeOut(timeNum: Swift.Int)
+  @objc public func setConnectTimeOut(timeNum: Swift.Int)
 }
 extension MXBleProvision.MXFogProvisionManager {
   @objc dynamic public func provisionDevice(peripheral: CoreBluetooth.CBPeripheral? = nil, productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Int = 30, delegate: (any MXBleProvision.MXBleProvisionDelegate)?, logDelegate: (any MXBleProvision.MXBleDeviceLogDelegate)? = nil)
   @objc dynamic public func cleanProvisionCache()
+  @objc dynamic public func startTimer()
+  @objc dynamic public func stopTimer()
   @objc dynamic public func createRandom() -> Swift.String?
   @objc dynamic public func createBleKey(secret: Swift.String) -> Swift.String?
 }
@@ -186,10 +188,13 @@ extension MXBleProvision.MXBleProvisionManager {
   @objc weak public var provisionDelegate: (any MXBleProvision.MXBleProvisionDelegate)?
   @objc deinit
   @objc public func setTimeOut(timeNum: Swift.Int)
+  @objc public func setConnectTimeOut(timeNum: Swift.Int)
 }
 extension MXBleProvision.MXYatProvisionManager {
   @objc dynamic public func provisionDevice(peripheral: CoreBluetooth.CBPeripheral? = nil, productKey: Swift.String, mac: Swift.String, timeout: Swift.Int = 30, type: Swift.Int = 4, delegate: (any MXBleProvision.MXBleProvisionDelegate)?)
   @objc dynamic public func cleanProvisionCache()
+  @objc dynamic public func startTimer()
+  @objc dynamic public func stopTimer()
   @objc dynamic public func createRandom() -> Swift.String?
 }
 extension MXBleProvision.MXYatProvisionManager : CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {

@@ -15,6 +15,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MXURLRouter"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MXURLRouterDelegate",
         "printedName": "MXURLRouterDelegate",
@@ -100,7 +107,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExistentialMetatype",
-                "printedName": "AnyObject.Type",
+                "printedName": "any AnyObject.Type",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -149,6 +156,101 @@
               "AccessControl",
               "RawDocComment",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHandleOverBlock",
+            "printedName": "setHandleOverBlock(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Bool?, [Swift.String : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Bool?, [Swift.String : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A7ServiceC18setHandleOverBlock5blockyySSSg_SbSgSDySSypGSgtc_tFZ",
+            "mangledName": "$s11MXURLRouter0A7ServiceC18setHandleOverBlock5blockyySSSg_SbSgSDySSypGSgtc_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -404,17 +506,10 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouterService.swift",
-      "kind": "StringLiteral",
-      "offset": 1229,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouterService.swift",
-      "kind": "StringLiteral",
-      "offset": 1981,
-      "length": 2,
-      "value": "\"\""
+      "kind": "Dictionary",
+      "offset": 726,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
@@ -429,90 +524,6 @@
       "offset": 481,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "StringLiteral",
-      "offset": 594,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1243,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1574,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1905,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2121,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "StringLiteral",
-      "offset": 3829,
-      "length": 3,
-      "value": "\"&\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3891,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3916,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "StringLiteral",
-      "offset": 4060,
-      "length": 3,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4134,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4198,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 1,
-      "value": "0"
     }
   ]
 }

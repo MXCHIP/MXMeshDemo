@@ -146,12 +146,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                "printedName": "(any MXRGBMusic.MXRGBMusicDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXRGBMusicDelegate",
-                    "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                    "printedName": "any MXRGBMusic.MXRGBMusicDelegate",
                     "usr": "s:10MXRGBMusic0A8DelegateP"
                   }
                 ],
@@ -177,12 +177,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                    "printedName": "(any MXRGBMusic.MXRGBMusicDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXRGBMusicDelegate",
-                        "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                        "printedName": "any MXRGBMusic.MXRGBMusicDelegate",
                         "usr": "s:10MXRGBMusic0A8DelegateP"
                       }
                     ],
@@ -209,12 +209,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXRGBMusic.MXRGBMusicDelegate?",
+                    "printedName": "(any MXRGBMusic.MXRGBMusicDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXRGBMusicDelegate",
-                        "printedName": "MXRGBMusic.MXRGBMusicDelegate",
+                        "printedName": "any MXRGBMusic.MXRGBMusicDelegate",
                         "usr": "s:10MXRGBMusic0A8DelegateP"
                       }
                     ],
@@ -371,69 +371,6 @@
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
       "kind": "IntegerLiteral",
       "offset": 896,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 994,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "FloatLiteral",
-      "offset": 1118,
-      "length": 4,
-      "value": "0.15"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1226,
-      "length": 3,
-      "value": "360"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1263,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1306,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "StringLiteral",
-      "offset": 1627,
-      "length": 47,
-      "value": "\"device name:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "StringLiteral",
-      "offset": 1673,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2088,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXRGBMusic\/MXRGBMusic\/MXMicrophone.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2148,
       "length": 1,
       "value": "0"
     }

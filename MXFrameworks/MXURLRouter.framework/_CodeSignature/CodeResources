@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MXURLRouter-Swift.h</key>
 		<data>
-		xAkgDFy7mp89TUPDI8X6ZGBrCF4=
+		RwE4beTGbQ1IChVCq/F8wECq9V8=
 		</data>
 		<key>Headers/MXURLRouter.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8wrp7hZFvq36HdQIDNocNrPrPRc=
+		e5PyohSLnTEEJJRWuRLo8aCgl4A=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		gefVJb5ek+v9yzGPHvDzj5uNOR8=
+		eycHe7Me/dwMekanJkbuKYiuVJY=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		rBcICMrAwDegzZLZg9X/h4m5rEk=
+		sYIXjYXIWN0Pt910m1OCtr3uF0s=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		hkFpz8oldPWHApej0O8Td0uvqN8=
+		zYsKdCvt5s+OU+D4z0qsGJmRosw=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		b/C0TBo1nYu18A4A6fKnMM6a2Wc=
+		8qe7gCdKQyYTrpgf0MZNHGQZYoE=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hkFpz8oldPWHApej0O8Td0uvqN8=
+		zYsKdCvt5s+OU+D4z0qsGJmRosw=
 		</data>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		buQo96IdzQ91qBasB+Jjb7CSUwk=
+		SWCEJdPz/ARzhovdujPMK8l8gjY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xAkgDFy7mp89TUPDI8X6ZGBrCF4=
+			RwE4beTGbQ1IChVCq/F8wECq9V8=
 			</data>
 			<key>hash2</key>
 			<data>
-			M+hUz+F6//Wqh79XFOyVcDqKFfBFYN/i4CG7BsF8WBA=
+			C68nFDJazQfqTjYLYNCVhMMG12IoTh8vdIk6QC2Chsc=
 			</data>
 		</dict>
 		<key>Headers/MXURLRouter.h</key>
@@ -73,66 +73,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gefVJb5ek+v9yzGPHvDzj5uNOR8=
+			eycHe7Me/dwMekanJkbuKYiuVJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BkTiMida9BkPSUyMZBez31c0piG44RMixpItRNi0DtM=
+			zInZo5pzxJrJZ0MyYL6wbr223dXHPSZYj6tFwAnwM+o=
 			</data>
 		</dict>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rBcICMrAwDegzZLZg9X/h4m5rEk=
+			sYIXjYXIWN0Pt910m1OCtr3uF0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			tM4ChFNMKE9GS810awGEjmwfD7Q9TqrxMFEwgrviKmw=
+			Redorcq8tfb7InbnqgooTG7nK6UMb6U4xBE06R9da0Y=
 			</data>
 		</dict>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hkFpz8oldPWHApej0O8Td0uvqN8=
+			zYsKdCvt5s+OU+D4z0qsGJmRosw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cJ0NaAagFtIsv3PkSuH9hsewT5ZmD/oEad649woRCeM=
+			T6nEHi4hYpdNIIY7U0qg4wy+9ltPLBHUWf0lcv9rCBA=
 			</data>
 		</dict>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b/C0TBo1nYu18A4A6fKnMM6a2Wc=
+			8qe7gCdKQyYTrpgf0MZNHGQZYoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iC5UcBTsl1jOn2m1APVn6mr+aRs2BGPI8m6/JJ9b3wQ=
+			Z1M4xKzkv8xe6UJne8b3cQ5/qLgBFu09xzl5g//oeWc=
 			</data>
 		</dict>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hkFpz8oldPWHApej0O8Td0uvqN8=
+			zYsKdCvt5s+OU+D4z0qsGJmRosw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cJ0NaAagFtIsv3PkSuH9hsewT5ZmD/oEad649woRCeM=
+			T6nEHi4hYpdNIIY7U0qg4wy+9ltPLBHUWf0lcv9rCBA=
 			</data>
 		</dict>
 		<key>Modules/MXURLRouter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			buQo96IdzQ91qBasB+Jjb7CSUwk=
+			SWCEJdPz/ARzhovdujPMK8l8gjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DmXzou0fX445yvX+HA/dJRqIVemuET8TzyiiSecg1hE=
+			iKrBjWTLpI8WxO/75usyCDWRLdsNWATnyWzNz+F2drs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -288,12 +288,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -389,12 +389,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MXMatter.MXMatterDelegate?",
+                "printedName": "(any MXMatter.MXMatterDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXMatterDelegate",
-                    "printedName": "MXMatter.MXMatterDelegate",
+                    "printedName": "any MXMatter.MXMatterDelegate",
                     "usr": "s:8MXMatter0A8DelegateP"
                   }
                 ],
@@ -420,12 +420,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXMatterDelegate?",
+                    "printedName": "(any MXMatter.MXMatterDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXMatterDelegate",
-                        "printedName": "MXMatter.MXMatterDelegate",
+                        "printedName": "any MXMatter.MXMatterDelegate",
                         "usr": "s:8MXMatter0A8DelegateP"
                       }
                     ],
@@ -452,12 +452,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXMatterDelegate?",
+                    "printedName": "(any MXMatter.MXMatterDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXMatterDelegate",
-                        "printedName": "MXMatter.MXMatterDelegate",
+                        "printedName": "any MXMatter.MXMatterDelegate",
                         "usr": "s:8MXMatter0A8DelegateP"
                       }
                     ],
@@ -536,12 +536,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -710,12 +710,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -760,12 +760,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -929,12 +929,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1079,12 +1079,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1121,12 +1121,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1424,6 +1424,39 @@
             "moduleName": "MXMatter"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MXMatter.MXBTOPCodeControl?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXBTOPCodeControl",
+                    "printedName": "MXMatter.MXBTOPCodeControl",
+                    "usr": "s:8MXMatter17MXBTOPCodeControlO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8MXMatter17MXBTOPCodeControlO8rawValueACSgs6UInt16V_tcfc",
+            "mangledName": "$s8MXMatter17MXBTOPCodeControlO8rawValueACSgs6UInt16V_tcfc",
+            "moduleName": "MXMatter",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -1461,39 +1494,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MXMatter.MXBTOPCodeControl?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MXBTOPCodeControl",
-                    "printedName": "MXMatter.MXBTOPCodeControl",
-                    "usr": "s:8MXMatter17MXBTOPCodeControlO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt16",
-                "printedName": "Swift.UInt16",
-                "usr": "s:s6UInt16V"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8MXMatter17MXBTOPCodeControlO8rawValueACSgs6UInt16V_tcfc",
-            "mangledName": "$s8MXMatter17MXBTOPCodeControlO8rawValueACSgs6UInt16V_tcfc",
-            "moduleName": "MXMatter",
-            "implicit": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -4790,12 +4790,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5199,12 +5199,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MXMatter.MXBTChannalDelegate?",
+                "printedName": "(any MXMatter.MXBTChannalDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBTChannalDelegate",
-                    "printedName": "MXMatter.MXBTChannalDelegate",
+                    "printedName": "any MXMatter.MXBTChannalDelegate",
                     "usr": "s:8MXMatter19MXBTChannalDelegateP"
                   }
                 ],
@@ -5231,12 +5231,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXBTChannalDelegate?",
+                    "printedName": "(any MXMatter.MXBTChannalDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBTChannalDelegate",
-                        "printedName": "MXMatter.MXBTChannalDelegate",
+                        "printedName": "any MXMatter.MXBTChannalDelegate",
                         "usr": "s:8MXMatter19MXBTChannalDelegateP"
                       }
                     ],
@@ -5263,12 +5263,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXBTChannalDelegate?",
+                    "printedName": "(any MXMatter.MXBTChannalDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBTChannalDelegate",
-                        "printedName": "MXMatter.MXBTChannalDelegate",
+                        "printedName": "any MXMatter.MXBTChannalDelegate",
                         "usr": "s:8MXMatter19MXBTChannalDelegateP"
                       }
                     ],
@@ -5455,12 +5455,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5505,12 +5505,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5555,12 +5555,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5679,12 +5679,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6084,6 +6084,39 @@
             "moduleName": "MXMatter"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MXMatter.MXBTShareSecrectType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXBTShareSecrectType",
+                    "printedName": "MXMatter.MXBTShareSecrectType",
+                    "usr": "s:8MXMatter20MXBTShareSecrectTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8MXMatter20MXBTShareSecrectTypeO8rawValueACSgs5UInt8V_tcfc",
+            "mangledName": "$s8MXMatter20MXBTShareSecrectTypeO8rawValueACSgs5UInt8V_tcfc",
+            "moduleName": "MXMatter",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -6121,39 +6154,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MXMatter.MXBTShareSecrectType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MXBTShareSecrectType",
-                    "printedName": "MXMatter.MXBTShareSecrectType",
-                    "usr": "s:8MXMatter20MXBTShareSecrectTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt8",
-                "printedName": "Swift.UInt8",
-                "usr": "s:s5UInt8V"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:8MXMatter20MXBTShareSecrectTypeO8rawValueACSgs5UInt8V_tcfc",
-            "mangledName": "$s8MXMatter20MXBTShareSecrectTypeO8rawValueACSgs5UInt8V_tcfc",
-            "moduleName": "MXMatter",
-            "implicit": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -6255,12 +6255,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6299,12 +6299,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6554,12 +6554,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6716,12 +6716,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6799,12 +6799,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MXMatter.MXBTDelegate?",
+                "printedName": "(any MXMatter.MXBTDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBTDelegate",
-                    "printedName": "MXMatter.MXBTDelegate",
+                    "printedName": "any MXMatter.MXBTDelegate",
                     "usr": "s:8MXMatter12MXBTDelegateP"
                   }
                 ],
@@ -6830,12 +6830,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXBTDelegate?",
+                    "printedName": "(any MXMatter.MXBTDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBTDelegate",
-                        "printedName": "MXMatter.MXBTDelegate",
+                        "printedName": "any MXMatter.MXBTDelegate",
                         "usr": "s:8MXMatter12MXBTDelegateP"
                       }
                     ],
@@ -6862,12 +6862,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MXMatter.MXBTDelegate?",
+                    "printedName": "(any MXMatter.MXBTDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBTDelegate",
-                        "printedName": "MXMatter.MXBTDelegate",
+                        "printedName": "any MXMatter.MXBTDelegate",
                         "usr": "s:8MXMatter12MXBTDelegateP"
                       }
                     ],
@@ -7051,12 +7051,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -8033,90 +8033,6 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 591,
-      "length": 45,
-      "value": "\"segment data count:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 624,
-      "length": 3,
-      "value": "\" mtu:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 635,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 795,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 937,
-      "length": 78,
-      "value": "\"segment single packet single at index: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 981,
-      "length": 4,
-      "value": "\" data count:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1014,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1356,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1425,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1507,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1693,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1854,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
       "kind": "IntegerLiteral",
       "offset": 3558,
       "length": 1,
@@ -8125,177 +8041,9 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4067,
-      "length": 103,
-      "value": "\"message >>> version: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4099,
-      "length": 4,
-      "value": "\" type: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4113,
-      "length": 3,
-      "value": "\" mps: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4125,
-      "length": 6,
-      "value": "\" random: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4157,
-      "length": 3,
-      "value": "\" mtu: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 4169,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
       "offset": 4750,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4955,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5103,
-      "length": 93,
-      "value": "\"message >>> seq: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5132,
-      "length": 3,
-      "value": "\" mic: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5158,
-      "length": 3,
-      "value": "\" mps: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5184,
-      "length": 3,
-      "value": "\" mtu:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5195,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5392,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5569,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5573,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5606,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5610,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5643,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5811,
-      "length": 93,
-      "value": "\"message >>> seq: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5840,
-      "length": 3,
-      "value": "\" mic: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5866,
-      "length": 3,
-      "value": "\" mps: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5892,
-      "length": 3,
-      "value": "\" mtu:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 5903,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTGATTService.swift",
@@ -8319,104 +8067,6 @@
       "value": "\"0xFFE1\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/String+MXExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 412,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/String+MXExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 474,
-      "length": 57,
-      "value": "\"pdu >>> opCode:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 499,
-      "length": 6,
-      "value": "\" opData:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 530,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "IntegerLiteral",
-      "offset": 652,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "IntegerLiteral",
-      "offset": 656,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "IntegerLiteral",
-      "offset": 737,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 847,
-      "length": 57,
-      "value": "\"pdu >>> opCode:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 6,
-      "value": "\" opData:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTPDU.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTEncryption.swift",
-      "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTEncryption.swift",
-      "kind": "IntegerLiteral",
-      "offset": 806,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTEncryption.swift",
-      "kind": "IntegerLiteral",
-      "offset": 900,
-      "length": 1,
-      "value": "1"
-    },
-    {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
       "kind": "IntegerLiteral",
       "offset": 314,
@@ -8431,167 +8081,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 834,
-      "length": 93,
-      "value": "\"ftp >>> data:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 874,
-      "length": 4,
-      "value": "\" size:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 892,
-      "length": 4,
-      "value": "\" type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 910,
-      "length": 3,
-      "value": "\" crc:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 926,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1223,
-      "length": 21,
-      "value": "\"ftp error: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1243,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1462,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1617,
-      "length": 93,
-      "value": "\"ftp >>> data:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1657,
-      "length": 4,
-      "value": "\" size:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1675,
-      "length": 4,
-      "value": "\" type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1693,
-      "length": 3,
-      "value": "\" crc:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 1709,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2279,
-      "length": 4,
-      "value": "0x00"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2305,
-      "length": 43,
-      "value": "\"ftp >>> info data: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2347,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2533,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2770,
-      "length": 67,
-      "value": "\"ftp >>> packetData: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2818,
-      "length": 6,
-      "value": "\" offset: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2836,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 2997,
-      "length": 41,
-      "value": "\"ftp >>> end data: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTPFile.swift",
-      "kind": "StringLiteral",
-      "offset": 3037,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacketType.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
@@ -8632,237 +8121,6 @@
       "offset": 335,
       "length": 4,
       "value": "0x01"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 900,
-      "length": 42,
-      "value": "\"sync gateway: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 925,
-      "length": 4,
-      "value": "\" scan peripheral\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2087,
-      "length": 42,
-      "value": "\"gate did finish sync with error:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2128,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2631,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2962,
-      "length": 47,
-      "value": "\"centralManagerDidUpdateState:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3008,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3876,
-      "length": 38,
-      "value": "\"did Connect peripheral:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3913,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4163,
-      "length": 62,
-      "value": "\"did Fail To Connect peripheral:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4208,
-      "length": 5,
-      "value": "\" error: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4224,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4523,
-      "length": 57,
-      "value": "\"did Disconnect peripheral:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4563,
-      "length": 5,
-      "value": "\" error: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4579,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 850,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1052,
-      "length": 108,
-      "value": "\"packet >>> sar:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1083,
-      "length": 1,
-      "value": "\", type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1106,
-      "length": 1,
-      "value": "\", prefix: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1125,
-      "length": 1,
-      "value": "\", bytes:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1159,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1245,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1318,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1378,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1382,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1467,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1473,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1531,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1563,
-      "length": 108,
-      "value": "\"packet >>> sar:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1594,
-      "length": 1,
-      "value": "\", type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1617,
-      "length": 1,
-      "value": "\", prefix: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1636,
-      "length": 1,
-      "value": "\", bytes:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTPacket.swift",
-      "kind": "StringLiteral",
-      "offset": 1670,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterConfig.swift",
@@ -8894,48 +8152,6 @@
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 612,
-      "length": 50,
-      "value": "\"connect peripheral with macAddress:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 661,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1027,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 1061,
-      "length": 39,
-      "value": "\"gateway connected, start sync devices\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 1399,
-      "length": 44,
-      "value": "\"gateway disconnected, waiting reconnect...\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1470,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
       "kind": "BooleanLiteral",
       "offset": 1857,
       "length": 5,
@@ -8944,65 +8160,9 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2020,
-      "length": 102,
-      "value": "\"MXMatter >>> Gateway type: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2067,
-      "length": 12,
-      "value": "\" shareSecrect:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2096,
-      "length": 10,
-      "value": "\" macAddress:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2121,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
       "offset": 290,
       "length": 15,
       "value": "\"MXMatter.MXMatterGateway\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2461,
-      "length": 34,
-      "value": "\"ftp on ready with error:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2494,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 2981,
-      "length": 36,
-      "value": "\"ftp did finish with error:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 3016,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBTOPCode.swift",
@@ -10798,192 +9958,10 @@
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1274,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2098,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 2376,
-      "length": 23,
-      "value": "\"peripheral writeValue\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 3665,
-      "length": 56,
-      "value": "\"channal >>> type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 3690,
-      "length": 12,
-      "value": "\" shareSecrect:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 3719,
-      "length": 2,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
       "kind": "StringLiteral",
       "offset": 460,
       "length": 11,
       "value": "\"MXMatter.MXBTChannal\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 4004,
-      "length": 65,
-      "value": "\"didDiscoverServices: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 4068,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 4438,
-      "length": 79,
-      "value": "\"didDiscoverCharacteristicsFor: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 4516,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4767,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 5429,
-      "length": 43,
-      "value": "\"peripheral Is Ready to send:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 5471,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5794,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 6024,
-      "length": 23,
-      "value": "\"peripheral writeValue\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 6449,
-      "length": 54,
-      "value": "\"did Update Notification State For: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 6502,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6617,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 6976,
-      "length": 26,
-      "value": "\"ready To Send:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 7001,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 7275,
-      "length": 36,
-      "value": "\"on Received: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTChannal.swift",
-      "kind": "StringLiteral",
-      "offset": 7310,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 467,
-      "length": 104,
-      "value": "\"MXMatter >>> Device meshAddress:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 514,
-      "length": 12,
-      "value": "\" serviceIndex:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 543,
-      "length": 11,
-      "value": "\" serviceKind:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXMatterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 570,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTShareSecrectType.swift",
@@ -11084,272 +10062,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1630,
-      "length": 4,
-      "value": "0x00"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1661,
-      "length": 6,
-      "value": "0x0400"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2066,
-      "length": 53,
-      "value": "\"network send data: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2107,
-      "length": 3,
-      "value": "\" mtu:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2118,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2324,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2599,
-      "length": 56,
-      "value": "\"network receive data: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2643,
-      "length": 3,
-      "value": "\" mtu:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2654,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2818,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2852,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2891,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2895,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2982,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2986,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3087,
-      "length": 96,
-      "value": "\"on start: device >>> version:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3127,
-      "length": 4,
-      "value": "\" type:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3140,
-      "length": 3,
-      "value": "\" mps:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3151,
-      "length": 6,
-      "value": "\" random:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3182,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4380,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4450,
-      "length": 163,
-      "value": "\"encrypt >>> data:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4489,
-      "length": 1,
-      "value": "\" \nkey:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4524,
-      "length": 1,
-      "value": "\" \nnonce:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4555,
-      "length": 1,
-      "value": "\" \nlength:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4577,
-      "length": 1,
-      "value": "\" \naddData:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4612,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4798,
-      "length": 84,
-      "value": "\"cipherText: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4846,
-      "length": 1,
-      "value": "\" \nmic:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 4881,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 5306,
-      "length": 39,
-      "value": "\"decrypt >>> :\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 5344,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "Array",
-      "offset": 5475,
-      "length": 6,
-      "value": "[0x00]"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "Array",
-      "offset": 5606,
-      "length": 24,
-      "value": "[0x00, 0x00, 0x00, 0x00]"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5812,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5816,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5867,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/TransportLayer\/MXBTNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5871,
-      "length": 3,
-      "value": "255"
-    },
-    {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
       "kind": "BooleanLiteral",
       "offset": 701,
@@ -11366,114 +10078,9 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
       "kind": "StringLiteral",
-      "offset": 1634,
-      "length": 14,
-      "value": "\"ftp transfer\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1702,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1732,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 1923,
-      "length": 15,
-      "value": "\"reboot device\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1968,
-      "length": 4,
-      "value": "2000"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
       "offset": 469,
       "length": 5,
       "value": "\"MXMatter.MXFTP\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2149,
-      "length": 35,
-      "value": "\"ftp on ready with error: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2183,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2347,
-      "length": 55,
-      "value": "\"did Received data:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2387,
-      "length": 4,
-      "value": "\" type: \""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2401,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2659,
-      "length": 18,
-      "value": "\"status:\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 2676,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3266,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3612,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXFTP\/MXFTP.swift",
-      "kind": "StringLiteral",
-      "offset": 3768,
-      "length": 7,
-      "value": "\"MXFTP\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXMatter\/MXMatter\/MXBT\/MXBT.swift",
