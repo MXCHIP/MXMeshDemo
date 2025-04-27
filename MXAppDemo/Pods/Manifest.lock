@@ -1,10 +1,10 @@
 PODS:
-  - CryptoSwift (1.4.0)
+  - CryptoSwift (1.8.3)
   - dsBridge (1.0.0)
   - FlexColorPicker (1.4.4)
   - lottie-ios (4.2.0)
-  - MeshSDK (1.0.0):
-    - CryptoSwift (= 1.4.0)
+  - MeshSDK (1.0.1):
+    - CryptoSwift
   - MJRefresh (3.1.15)
   - MXURLRouter (1.0.0)
   - PinLayout (1.10.5)
@@ -15,6 +15,7 @@ PODS:
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
+  - CryptoSwift (~> 1.8.0)
   - dsBridge (from `https://github.com/MXCHIP/MXFrameworks_IOS.git`)
   - FlexColorPicker (~> 1.4.2)
   - lottie-ios (~> 4.2.0)
@@ -47,21 +48,21 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   dsBridge:
-    :commit: e20ef05f7f51f701e8fd2f3790d33b19f409491d
+    :commit: ecb566e081106e20ff170f5db7c1b0499f25017e
     :git: https://github.com/MXCHIP/MXFrameworks_IOS.git
   MeshSDK:
-    :commit: e20ef05f7f51f701e8fd2f3790d33b19f409491d
+    :commit: ecb566e081106e20ff170f5db7c1b0499f25017e
     :git: https://github.com/MXCHIP/MXFrameworks_IOS.git
   MXURLRouter:
-    :commit: e20ef05f7f51f701e8fd2f3790d33b19f409491d
+    :commit: ecb566e081106e20ff170f5db7c1b0499f25017e
     :git: https://github.com/MXCHIP/MXFrameworks_IOS.git
 
 SPEC CHECKSUMS:
-  CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
+  CryptoSwift: 967f37cea5a3294d9cce358f78861652155be483
   dsBridge: 12f8655a6d114e591b80880c8f05cc160e545e71
   FlexColorPicker: ce72e0a9e0870815a0beba419ac3e09913401624
   lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
-  MeshSDK: d989f1aa4ae8f8e7a8944a57048ddd48b93a3995
+  MeshSDK: 772f780d4d98c20f080db84c9b56e0b37bd72a61
   MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
   MXURLRouter: 61985b61a475b75d9cfa34f4177bcd5202b5381d
   PinLayout: f6c2b63a5a5b24864064e1d15c67de41b4e74748
@@ -69,6 +70,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 35eeb11305c1a7bd73901e7fdcd929b3f0af44e9
+PODFILE CHECKSUM: 078c411f2ac49f0784bbe16946dc2e5161c66e37
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.16.2

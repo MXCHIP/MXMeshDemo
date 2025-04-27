@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeshSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeshSDK
 import CoreBluetooth
 import CryptoSwift
 import Foundation
@@ -2201,6 +2200,10 @@ public struct MessageHandle {
   public let destination: MeshSDK.Address
   public func cancel()
 }
+extension MeshSDK.MeshSDK {
+  @objc dynamic public func getCompositionData(uuid: Swift.String, callback: @escaping MeshSDK.MeshSDK.MXMeshProvisionCallback)
+  @objc dynamic public func getTtl(uuid: Swift.String, callback: @escaping MeshSDK.MeshSDK.MXMeshProvisionCallback)
+}
 public struct LightLCPropertySet : MeshSDK.AcknowledgedSensorPropertyMessage {
   public static let opCode: Swift.UInt32
   public static let responseType: any MeshSDK.StaticMeshMessage.Type
@@ -2770,6 +2773,7 @@ public struct GenericPowerRangeSet : MeshSDK.AcknowledgedGenericMessage {
 @objc @_inheritsConvenienceInitializers @objcMembers open class MeshSDK : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MeshSDK.MeshSDK
   @objc public var delegate: (any MeshSDK.MXMeshDelegate)?
+  @objc public var messageTimeout: Swift.Double
   @objc public var isSegmented: Swift.Bool
   @objc public var nextUnicastAddress: Swift.UInt16
   @objc public var proxyRSSI: Swift.Int
@@ -3065,7 +3069,7 @@ public struct LightLightnessLastStatus : MeshSDK.GenericMessage {
   public init?(parameters: Foundation.Data)
 }
 extension MeshSDK.MeshSDK {
-  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String?, callback: @escaping MeshSDK.MeshSDK.MeshMessageCallBack)
+  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String, callback: @escaping MeshSDK.MeshSDK.MeshMessageCallBack)
 }
 public enum PduType : Swift.UInt8 {
   case networkPdu
@@ -3907,6 +3911,7 @@ public enum MeshMessageSendStatusCode : Swift.Int {
   case MeshMessageSendStatus_NoAppKey
   case MeshMessageSendStatus_NetworkKey_UnbindAppKey
   case MeshMessageSendStatus_timeout
+  case MeshMessageSendStatus_Disconnect
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -3914,7 +3919,7 @@ public enum MeshMessageSendStatusCode : Swift.Int {
   }
 }
 extension MeshSDK.MeshSDK : MeshSDK.MeshNetworkDelegate {
-  @objc dynamic public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval = 1.5, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MeshSDK.MeshMessageCallBack? = nil)
+  @objc dynamic public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval = MeshSDK.sharedInstance.messageTimeout, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MeshSDK.MeshMessageCallBack? = nil)
   @objc dynamic public func sendMessage(address: Swift.String, opCode: Swift.String, tid: Swift.String? = nil, message: Any, networkKey: Swift.String, repeatNum: Swift.Int = 1, isQueue: Swift.Bool = true)
   public func meshNetworkManager(_ manager: MeshSDK.MeshNetworkManager, didReceiveMessage message: any MeshSDK.MeshMessage, sentFrom source: MeshSDK.Address, to destination: MeshSDK.Address)
   public func meshNetworkManager(_ manager: MeshSDK.MeshNetworkManager, didSendMessage message: any MeshSDK.MeshMessage, from localElement: MeshSDK.Element, to destination: MeshSDK.Address)
@@ -4210,12 +4215,10 @@ extension MeshSDK.MeshNetwork {
   @objc public static let shared: MeshSDK.MXMeshProvisionManager
   @objc public var isNeedCompositionData: Swift.Bool
   @objc weak public var provisionDelegate: (any MeshSDK.MXMeshProvisioningDelegate)?
-  @objc public var isBusy: Swift.Bool {
-    @objc get
-    @objc set
-  }
+  @objc public var isBusy: Swift.Bool
   @objc public func mxProvisionFinish()
   @objc public func startUnprovisionedDeviceProvision(device: MeshSDK.UnprovisionedDevice, peripheral: CoreBluetooth.CBPeripheral, networkKey: Swift.String, delegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
+  @objc public func nextGattSwitch()
   @objc public func startUnprovisionedDeviceProvision(mac: Swift.String, networkKey: Swift.String, delegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
   @objc public func startUnprovisionedDeviceProvision(advertisementData: [Swift.String : Any], peripheral: CoreBluetooth.CBPeripheral, networkKey: Swift.String, provisioningDelegate: (any MeshSDK.MXMeshProvisioningDelegate)? = nil)
   @objc override dynamic public init()
@@ -4593,7 +4596,7 @@ extension MeshSDK.MeshSDK {
   @objc dynamic public func triggerVirtualButton(vid: Swift.String, networkKey: Swift.String, repeatNum: Swift.Int)
   @objc dynamic public func writeLinkageRulesToDevice(uuid: Swift.String, rule: Swift.String, callback: @escaping MeshSDK.MeshSDK.SendCommandCallback)
   @objc dynamic public func writeRules(uuid: Swift.String, ruleId: Swift.Int, rule: Swift.String = "", callback: @escaping MeshSDK.MeshSDK.SendCommandCallback)
-  @objc dynamic public func sendWiFiPasswordToDevice(uuid: Swift.String, ssid: Swift.String, password: Swift.String, isUpdate: Swift.Bool = false, callback: @escaping MeshSDK.MeshSDK.WiFiConfigStatusCallback)
+  @objc dynamic public func sendWiFiPasswordToDevice(uuid: Swift.String, ssid: Swift.String, password: Swift.String?, isUpdate: Swift.Bool = false, callback: @escaping MeshSDK.MeshSDK.WiFiConfigStatusCallback)
   @objc dynamic public func groupAddDevice(uuid: Swift.String, groups: [[Swift.String : Any]]? = nil, callback: @escaping MeshSDK.MeshSDK.SendCommandCallback)
   @objc dynamic public func groupDeleteDevice(uuid: Swift.String, groups: [[Swift.String : Any]]? = nil, callback: @escaping MeshSDK.MeshSDK.SendCommandCallback)
   @objc dynamic public func resetDeviceGroupSetting(uuid: Swift.String, groups: [[Swift.String : Any]]? = nil, callback: @escaping MeshSDK.MeshSDK.SendCommandCallback)
@@ -4688,9 +4691,9 @@ public struct ConfigSIGModelSubscriptionGet : MeshSDK.AcknowledgedConfigMessage,
   @objc public func updateTranscodingMapping(data: Foundation.NSDictionary?)
   public static func identifierTakeOutService(oldIdentifier: Swift.String) -> (identifier: Swift.String, service: Swift.Int)
   @objc public static func createIdentifier(oldIdentifier: Swift.String, service: Swift.Int) -> Swift.String?
-  @objc public static func identifierConvertToAttrType(identifier: Swift.String) -> Swift.String?
-  @objc public static func properiesToMessageHex(identifier: Swift.String, value: Any) -> Swift.String?
-  @objc public static func resolveMeshMessageToProperties(message: Swift.String) -> [Swift.String : Any]
+  @objc public static func identifierConvertToAttrType(identifier: Swift.String, attrMap: [Swift.String : Any]? = nil) -> Swift.String?
+  @objc public static func properiesToMessageHex(identifier: Swift.String, value: Any, attrMap: [Swift.String : Any]? = nil) -> Swift.String?
+  @objc public static func resolveMeshMessageToProperties(message: Swift.String, attrMap: [Swift.String : Any]? = nil) -> [Swift.String : Any]
   @objc public static func getMeshResolveMap(attrType: Swift.String, attrInfo: [Swift.String : Any]) -> [Swift.String : Any]?
   @objc deinit
 }
@@ -4794,12 +4797,15 @@ public struct ConfigNetKeyStatus : MeshSDK.ConfigNetKeyMessage, MeshSDK.ConfigSt
 }
 extension MeshSDK.MeshSDK {
   public func lookupNode(uuid: Swift.String) -> MeshSDK.Node?
+  public func getMeshNode(address: Swift.String) -> MeshSDK.Node?
   @objc dynamic public func addNode(jsonObject: Swift.Dictionary<Swift.String, Any>) -> Swift.Bool
   @objc dynamic public func deleteNode(uuid: Swift.String) -> Swift.Bool
   @objc dynamic public func resetNode(uuid: Swift.String, callback: MeshSDK.MeshSDK.MXMeshProvisionCallback? = nil)
   @objc dynamic public func fetchAllNodeUUID() -> Swift.Array<Swift.String>
   @objc dynamic public func getNodeAddress(uuid: Swift.String) -> Swift.String
   @objc dynamic public func getNodeUUID(mac: Swift.String) -> Swift.String?
+  public func getNodeElement(address: Swift.String) -> MeshSDK.Element?
+  @objc dynamic public func getNodeElementInfo(address: Swift.String) -> Swift.Dictionary<Swift.String, Any>?
   @objc dynamic public func getNodeInfo(uuid: Swift.String) -> Swift.Dictionary<Swift.String, Any>?
 }
 public struct LightLightnessRangeGet : MeshSDK.AcknowledgedGenericMessage {

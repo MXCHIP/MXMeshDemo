@@ -1,6 +1,6 @@
 //  CryptoSwift
 //
-//  Copyright (C) 2014-2018 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
+//  Copyright (C) 2014-2022 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
 //  This software is provided 'as-is', without any express or implied warranty.
 //
 //  In no event will the authors be held liable for any damages arising from the use of this software.
@@ -14,6 +14,11 @@
 
 @usableFromInline
 final class StreamDecryptor: Cryptor, Updatable {
+
+  @usableFromInline
+  enum Error: Swift.Error {
+    case unsupported
+  }
 
   @usableFromInline
   internal let blockSize: Int
@@ -83,7 +88,7 @@ final class StreamDecryptor: Cryptor, Updatable {
   @inlinable
   public func seek(to position: Int) throws {
     guard var worker = self.worker as? SeekableModeWorker else {
-      fatalError("Not supported")
+      throw Error.unsupported
     }
 
     try worker.seek(to: position)

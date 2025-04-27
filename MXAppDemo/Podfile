@@ -15,14 +15,13 @@ target "MXApp" do
   pod 'MJRefresh', '3.1.15'
   pod 'ZipArchive', '1.4.0'
   
+  pod 'CryptoSwift', '~> 1.8.3'
+  
   pod 'MeshSDK', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
   pod 'dsBridge', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
   pod 'MXURLRouter', :git => 'https://github.com/MXCHIP/MXFrameworks_IOS.git'
   
 end
-
-
-
 
 pre_install do |installer|
   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
@@ -33,6 +32,15 @@ post_install do |installer|
     project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+            # 添加 Swift 版本设置
+            config.build_settings['SWIFT_VERSION'] = '5.0'
+            # 添加架构设置
+            config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
+            # 确保正确的链接设置
+            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+            config.build_settings['SWIFT_COMPILATION_MODE'] = 'wholemodule'
+            config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-O'
          end
     end
   end
