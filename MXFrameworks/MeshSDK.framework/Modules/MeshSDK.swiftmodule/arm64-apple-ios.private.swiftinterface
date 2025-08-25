@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeshSDK
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeshSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreBluetooth
 import CryptoSwift
 import Foundation
@@ -651,6 +652,7 @@ public struct ConfigBeaconStatus : MeshSDK.ConfigMessage {
 }
 @objc open class MXPBGattBearer : ObjectiveC.NSObject, MeshSDK.MXProvisioningBearer, CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {
   public var mac: Swift.String?
+  public var rssi: Swift.Int?
   weak public var delegate: (any MeshSDK.BearerDelegate)?
   weak public var dataDelegate: (any MeshSDK.BearerDataDelegate)?
   weak public var logger: (any MeshSDK.LoggerDelegate)?
@@ -930,6 +932,7 @@ open class BaseGattProxyBearer<Service> : ObjectiveC.NSObject, MeshSDK.Bearer, C
   weak public var dataDelegate: (any MeshSDK.BearerDataDelegate)?
   weak public var logger: (any MeshSDK.LoggerDelegate)?
   public var mac: Swift.String?
+  public var rssi: Swift.Int?
   public var supportedPduTypes: MeshSDK.PduTypes {
     get
   }
@@ -1477,10 +1480,10 @@ public struct ConfigNetKeyAdd : MeshSDK.AcknowledgedConfigMessage, MeshSDK.Confi
   @objc optional func receiveMeshMessage(uuid: Swift.String, elementIndex: Swift.Int, message: Swift.String)
 }
 @objc public protocol MXMeshProvisioningDelegate {
-  @objc optional func inputExchangeInformation(uuid: Swift.String?, confirmationKey: Swift.String, handler: @escaping ((_ uuid: Swift.String?, _ provisionerRandom: Swift.String?, _ provisionerConfirmation: Swift.String?, _ authValueKey: Swift.String?) -> Swift.Void))
-  @objc optional func checkStaticOOBDeviceInfo(uuid: Swift.String?, provisionerRandom: Swift.String, deviceConfirmation: Swift.String, deviceRandom: Swift.String, handler: @escaping ((_ uuid: Swift.String?, _ isSuccess: Swift.Bool) -> Swift.Void))
-  @objc optional func inputPublicKey(uuid: Swift.String?, handler: @escaping ((Swift.String) -> Swift.Void))
-  @objc optional func inputUnicastAddress(uuid: Swift.String?, elementNum: Swift.Int, handler: @escaping ((_ uuid: Swift.String?, _ address: Swift.Int) -> Swift.Void))
+  @objc optional func inputExchangeInformation(uuid: Swift.String?, confirmationKey: Swift.String, handler: @escaping (_ uuid: Swift.String?, _ provisionerRandom: Swift.String?, _ provisionerConfirmation: Swift.String?, _ authValueKey: Swift.String?) -> Swift.Void)
+  @objc optional func checkStaticOOBDeviceInfo(uuid: Swift.String?, provisionerRandom: Swift.String, deviceConfirmation: Swift.String, deviceRandom: Swift.String, handler: @escaping (_ uuid: Swift.String?, _ isSuccess: Swift.Bool) -> Swift.Void)
+  @objc optional func inputPublicKey(uuid: Swift.String?, handler: @escaping (Swift.String) -> Swift.Void)
+  @objc optional func inputUnicastAddress(uuid: Swift.String?, elementNum: Swift.Int, handler: @escaping (_ uuid: Swift.String?, _ address: Swift.Int) -> Swift.Void)
   @objc optional func meshProvisionProcess(uuid: Swift.String?, step: Swift.Int)
   @objc optional func meshProvisionFinish(uuid: Swift.String?, error: Foundation.NSError?)
 }
@@ -2777,6 +2780,7 @@ public struct GenericPowerRangeSet : MeshSDK.AcknowledgedGenericMessage {
   @objc public var isSegmented: Swift.Bool
   @objc public var nextUnicastAddress: Swift.UInt16
   @objc public var proxyRSSI: Swift.Int
+  @objc public var isConnectRSSIBest: Swift.Bool
   @objc public var meshMaxConnections: Swift.Int
   public var meshNetworkManager: MeshSDK.MeshNetworkManager
   public typealias MeshMessageCallBack = ([Swift.String : Any]) -> ()
@@ -2786,6 +2790,8 @@ public struct GenericPowerRangeSet : MeshSDK.AcknowledgedGenericMessage {
   public typealias FetchDeviceFirmwareVersionCallback = (Swift.String) -> ()
   public typealias SendCommandCallback = (Swift.Bool) -> ()
   @objc public var listenResult: [Swift.String : Any]
+  @objc public var heartTimeout: Swift.Double
+  @objc public var cacheInvalid: Swift.Double
   public typealias MeshGattRSSICallback = (_ peripheral: CoreBluetooth.CBPeripheral, _ rssi: Swift.Int) -> ()
   @objc public var meshGattRssiback: MeshSDK.MeshSDK.MeshGattRSSICallback?
   @objc public var connectedDeviceMac: Swift.String? {
@@ -3101,6 +3107,7 @@ public protocol Bearer : MeshSDK.Transmitter {
   var name: Swift.String? { get }
   var identifier: Foundation.UUID { get }
   var mac: Swift.String? { get set }
+  var rssi: Swift.Int? { get set }
   var delegate: (any MeshSDK.BearerDelegate)? { get set }
   var dataDelegate: (any MeshSDK.BearerDataDelegate)? { get set }
   var supportedPduTypes: MeshSDK.PduTypes { get }
